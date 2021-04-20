@@ -42,6 +42,9 @@ header .phone a::before {
     margin-right: 1rem;
     background-image: url(../icons/phone-2.png);
 }
+.ots {
+    padding-top: 50px;
+}
 img {
     max-width: 100%;
 }
@@ -60,10 +63,6 @@ header .container {
     justify-content: space-between;
     position: relative;
 }
-header {
-    padding-top: 0;
-    padding-bottom: 230px;
-}
 header .logo {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -76,7 +75,7 @@ header .lamp {
     width: 225px;
     min-width: 225px;
     height: 225px;
-    right: 0;
+    right: -110px;
 }
 header nav a {
     color: inherit;
@@ -89,16 +88,24 @@ header ul.menu {
 }
 header div.phone {
     font-size: 14px;
-    padding-bottom: 25px;
 }
+.slider-item {
+    display: flex;
+    align-items: center;
+}
+
 
 /* -----------------------------------Main start----------------------------------------------------------------- */
 main section .decoration {
     position: relative;
     margin-bottom: 15px;
 }
+.img-wrapper {
+    padding: 0 30px;
+}
 main .text-wrapper {
     padding-left: 95px;
+    padding-right: 30px;
 }
 main section p .modern1 {
     font-family: 'Oswald';
