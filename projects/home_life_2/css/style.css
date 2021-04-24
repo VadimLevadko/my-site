@@ -97,8 +97,7 @@ header div.phone {
 
 
 /* -----------------------------------Main start----------------------------------------------------------------- */
-main section .decoration {
-    position: relative;
+.bottom {
     margin-bottom: 15px;
 }
 .img-wrapper {
@@ -119,6 +118,7 @@ main section p .modern1 {
 main section p .modern2 {
     font-family: 'Oswald';
     font-size: 48px;
+    letter-spacing: 0.025em;
     font-weight: 700;
     color: #585a5e;
 }
@@ -126,11 +126,12 @@ main section p .modern3 {
     font-family: 'Oswald';
     font-size: 37px;
     line-height: 1.2;
-    font-weight: 400;
     letter-spacing: 0.1em;
+    font-weight: 400;
     color: #989ea6;
-    position: relative;
-    left: inherit;
+}
+.right {
+    text-align: right;
 }
 main section .comment {
     font-family: Roboto;
@@ -145,7 +146,8 @@ main section .btn {
     display: inline-block;
     background: var(--color-yellow);
     color: #FFF;
-    padding: 15px 36px;
+    letter-spacing: 0.075em;
+    padding: 15px 40px;
     border-radius: 10px;
 }
 /* -----------------------------------Main end----------------------------------------------------------------- */
@@ -175,8 +177,9 @@ main section .btn {
     margin: 0 auto;
 }
 .item {
-    padding: 35px 25px 55px 25px;
-    height: 100%;
+    padding: 55px 25px 55px 25px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
 }
 .title {
@@ -185,7 +188,7 @@ main section .btn {
     font-weight: 300;
     line-height: 1.2;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 15px;
     color: #585a5e;
 }
@@ -197,5 +200,4 @@ main section .btn {
     letter-spacing: 0.075em;
     color: #989ea6;
 }
-
 /* -----------------------------------advantages end----------------------------------------------------------------- */
