@@ -24,6 +24,39 @@ a {
 .relative {
     position: relative;
 }
+.absolute-full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.pseudo::before, .pseudo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all 0.3s linear;
+}
+.right {
+    text-align: right;
+}
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    color: #989ea6;
+}
+.section-title .bold {
+    font-weight: 700;
+    color: #585a5e;
+}
+.slick-dots button {
+    width: 50px;
+    height: 10px;
+}
+/* --------------------------------------------------------------------------------------------------------- */
 header .phone a {
     display: inline-flex;
     align-items: center;
@@ -91,7 +124,7 @@ header div.phone {
     font-size: 14px;
 }
 .slider-item {
-    display: flex;
+    display: flex !important;
     align-items: center;
 }
 
@@ -130,9 +163,6 @@ main section p .modern3 {
     font-weight: 400;
     color: #989ea6;
 }
-.right {
-    text-align: right;
-}
 main section .comment {
     font-family: Roboto;
     font-size: 13px;
@@ -169,18 +199,54 @@ main section .btn {
     font-weight: 700;
     color: #585a5e;
 }
-.adv-item {
-    background-color: #f8f8f8;
-}
 .icon {
     display: block;
     margin: 0 auto;
 }
-.item {
-    padding: 55px 25px 55px 25px;
-    width: 350px;
-    height: 350px;
+.advantages .item {
+    padding: 55px 25px;
+    max-width: 350px;
+    min-height: 350px;
     border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f8f8;
+}
+.advantages .item::before, .advantages .item::after {
+    width: 0;
+    height: 5px;
+    background-color: var(--color-yellow);
+}
+.advantages .item::before {
+    left: 10px;
+    top: 0;
+}
+.advantages .item::after {
+    right: 20px;
+    bottom: 0;
+}
+.advantages .item:hover::before, .advantages .item:hover::after {
+    width: 210px;
+}
+.advantages .item .absolute-full::before, .advantages .item .absolute-full::after {
+    height: 0;
+    width: 5px;
+    background-color: var(--color-yellow);
+}
+.advantages .item .absolute-full::before {
+    left: 0;
+    bottom: 40px;
+}
+.advantages .item:hover .absolute-full::before {
+    height: 143px;
+}
+.advantages .item .absolute-full::after {
+    right: 0;
+    top: 20px;
+}
+.advantages .item:hover .absolute-full::after {
+    height: 61px;
 }
 .title {
     font-family: 'Oswald';
