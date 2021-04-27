@@ -52,9 +52,13 @@ a {
     font-weight: 700;
     color: #585a5e;
 }
-.slick-dots button {
-    width: 50px;
-    height: 10px;
+.slick-dots li button::before {
+    font-size: 35px;
+    line-height: 10px;
+        
+}
+.slick-dots li {
+    margin: 0;
 }
 /* --------------------------------------------------------------------------------------------------------- */
 header .phone a {
