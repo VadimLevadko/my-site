@@ -302,5 +302,11 @@ main .btn {
 .item-service {
     display: inline-flex;
 }
+.item-service .section {
+    max-width: 350px;
+}
+.item-service .description {
+    max-width: 350px;
+}
 
 /* -----------------------------------services end----------------------------------------------------------------- */
