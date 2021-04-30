@@ -136,7 +136,9 @@ header div.phone {
     display: flex !important;
     align-items: center;
 }
-
+.item-service .description {
+    max-width: 350px;
+}
 
 /* -----------------------------------Main start----------------------------------------------------------------- */
 
