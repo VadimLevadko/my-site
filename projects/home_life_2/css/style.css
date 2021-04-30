@@ -54,7 +54,7 @@ a {
 }
 .slick-dots li button::before {
     font-size: 35px;
-    line-height: 10px;  
+    line-height: 10px;
 }
 .slick-dots li {
     margin: 0;
@@ -133,6 +133,19 @@ header div.phone {
 
 
 /* -----------------------------------Main start----------------------------------------------------------------- */
+
+.main-slider .slick-prev,
+.main-slider .slick-next {
+    background-color: rgba(15, 15, 15, 0.15);
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: initial;
+}
+.main-slider .slick-next {
+    flex-direction: row-reverse;
+}
 .bottom {
     margin-bottom: 15px;
 }
