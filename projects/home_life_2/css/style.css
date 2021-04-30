@@ -59,6 +59,12 @@ a {
 .slick-dots li {
     margin: 0;
 }
+.slick-prev::before {
+    content: "‹";
+}
+.slick-next::before {
+    content: "›";
+}
 /* --------------------------------------------------------------------------------------------------------- */
 header .phone a {
     display: inline-flex;
@@ -292,6 +298,9 @@ main .btn {
     font-weight: 700;
     letter-spacing: 0.1em;
     color: #585a5e;
+}
+.item-service {
+    display: inline-flex;
 }
 
 /* -----------------------------------services end----------------------------------------------------------------- */
