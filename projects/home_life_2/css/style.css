@@ -45,6 +45,7 @@ a {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: 0.075em;
     color: #989ea6;
 }
@@ -60,11 +61,17 @@ a {
     margin: 0;
 }
 .slick-prev::before {
-    content: "‹";
+    content: "<";
+    color: #989ea6;
+    font-size: 51px;
 }
+
 .slick-next::before {
-    content: "›";
+    content: ">";
+    color: #989ea6;
+    font-size: 51px;
 }
+
 /* --------------------------------------------------------------------------------------------------------- */
 header .phone a {
     display: inline-flex;
@@ -144,15 +151,27 @@ header div.phone {
 
 .main-slider .slick-prev,
 .main-slider .slick-next {
-    background-color: rgba(15, 15, 15, 0.15);
     color: black;
-    font-size: 16px;
     display: flex;
     align-items: center;
     width: initial;
 }
 .main-slider .slick-next {
     flex-direction: row-reverse;
+}
+.slick-prev::after {
+    font-family: 'Oswald';
+    content: "НАЗАД";
+    font-size: 14px;
+    letter-spacing: 0,1em;
+    color: #989ea6;
+}
+.slick-next::after {
+    font-family: 'Oswald';
+    content: "ВПЕРЕД";
+    font-size: 14px;
+    letter-spacing: 0,1em;
+    color: #989ea6;
 }
 .bottom {
     margin-bottom: 15px;
@@ -206,9 +225,12 @@ main .btn {
 }
 /* -----------------------------------Main end----------------------------------------------------------------- */
 /* -----------------------------------advantages start----------------------------------------------------------------- */
+.advantages {
+    margin-bottom: 50px;
+}
 .center-text {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .advantages-main {
     font-family: 'Oswald';
@@ -287,6 +309,7 @@ main .btn {
     font-size: 13px;
     font-weight: 400;
     line-height: 1.2;
+    margin-bottom: 15px;
     letter-spacing: 0.075em;
     color: #989ea6;
 }
@@ -298,6 +321,7 @@ main .btn {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 700;
+    margin-bottom: 10px;
     letter-spacing: 0.1em;
     color: #585a5e;
 }
@@ -310,5 +334,10 @@ main .btn {
 .item-service .description {
     max-width: 350px;
 }
-
+.img-service {
+    padding-right: 35px;
+}
+.bottom-right {
+    text-align: right;
+}
 /* -----------------------------------services end----------------------------------------------------------------- */
