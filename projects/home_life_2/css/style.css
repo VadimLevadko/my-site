@@ -86,6 +86,7 @@ img {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: 0.075em;
     color: #989ea6;
 }
@@ -183,9 +184,7 @@ header div.phone {
 }
 .main-slider .slick-prev,
 .main-slider .slick-next {
-    background-color: rgba(15, 15, 15, 0.15);
     color: black;
-    font-size: 16px;
     display: flex;
     align-items: center;
     width: initial;
@@ -193,6 +192,7 @@ header div.phone {
 .main-slider .slick-next {
     flex-direction: row-reverse;
 }
+
 main .slider-title { /* старайся как можно реже привязываться к тэгам, используй классы (тем более "майн" у тебя главный для всей страницы, какой смысл в том что ты его указал?)*/
     padding-left: 95px;
     padding-right: 30px;
@@ -252,6 +252,22 @@ main .slider-title { /* старайся как можно реже привяз
 /* следуя рекомендациям выше и ниже - приведи а порядок этот код: */
 
 .bottom { /* просто "снизу" не понятно что происходит (может течёт что-то внизу?). Можно назвать типа "отступ снизу 15" или "стандартный отступ снизу" */
+
+.slick-prev::after {
+    font-family: 'Oswald';
+    content: "НАЗАД";
+    font-size: 14px;
+    letter-spacing: 0,1em;
+    color: #989ea6;
+}
+.slick-next::after {
+    font-family: 'Oswald';
+    content: "ВПЕРЕД";
+    font-size: 14px;
+    letter-spacing: 0,1em;
+    color: #989ea6;
+}
+.bottom {
     margin-bottom: 15px;
 }
 .chair {
@@ -327,8 +343,11 @@ main .btn { /* сделай отдельно универсальный клас
 /* -----------------------------------advantages start----------------------------------------------------------------- */
 .center-text { /* выведи в отдельный кастомный (выше) класс "text-center" который не имеет отношение к отступам, только к тексту (тут название говорит за себя и отступ не упоминается)*/
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
+.advantages {
+    margin-bottom: 50px;
+}  
 .advantages-main { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
     font-family: 'Oswald'; /* уже есть класс для заголовка */
     font-size: 30px;
@@ -409,6 +428,7 @@ main .btn { /* сделай отдельно универсальный клас
     font-size: 13px;
     font-weight: 400;
     line-height: 1.2;
+    margin-bottom: 15px;
     letter-spacing: 0.075em;
     color: #989ea6;
 }
@@ -420,11 +440,23 @@ main .btn { /* сделай отдельно универсальный клас
     font-size: 30px;
     line-height: 1.2;
     font-weight: 700;
+    margin-bottom: 10px;
     letter-spacing: 0.1em;
     color: #585a5e;
 }
 .item-service {
     display: inline-flex;
 }
-
+.item-service .section {
+    max-width: 350px;
+}
+.item-service .description {
+    max-width: 350px;
+}
+.img-service {
+    padding-right: 35px;
+}
+.bottom-right {
+    text-align: right;
+}
 /* -----------------------------------services end----------------------------------------------------------------- */
