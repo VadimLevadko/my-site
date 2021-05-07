@@ -1,26 +1,59 @@
+/* определяем статические переменные,
+которые будут использоваться на странице
+и в случае необходимости быстро изменяются
+
+(Представь что решили поменять шрифт. В скольких местах он был у тебя указан?)
+*/
+
 :root {
     --color-yellow: #ffc517;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Oswald', sans-serif;
 }
-h1, h2, h3, h4, p {
-    margin: 0;
+
+/* -------Begin default styles--------------------------------------------------------------------------------- */
+/* стили которые повторяются для всей страницы
+или большинства его элементов - задаём для всей
+страницы и они потом наследуются другими
+
+(например не надо каждому элементу указывать
+параметры шрифта, а только тем, которые
+отличаются от основного текста - заголовкам)
+*/
+html {
+    font-family: var(--primary-font);
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    color: #989ea6;
 }
 *, ::before, ::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    color: #111111;
+
+h1, h2, h3, h4, p {
+    margin: 0;
 }
-a {
-    font-family: 'Roboto';
+a, a:hover {
     color: inherit;
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+}
+/* -------End default styles----------------------------------------------------------------------------------- */
+
+
+/* -------Begin custom styles---------------------------------------------------------------------------------- */
+/* делаем заготовки со стилями из классов,
+которые будут использованы более одного раза
+
+(классы должны носить информативное название
+и могут называться как и свойство стиля)
+*/
 .relative {
     position: relative;
 }
@@ -31,17 +64,25 @@ a {
     bottom: 0;
     left: 0;
 }
+.right {
+    text-align: right;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
 .pseudo::before, .pseudo::after {
     content: "";
     display: block;
     position: absolute;
     transition: all 0.3s linear;
 }
-.right {
-    text-align: right;
+.font-oswald {
+    font-family: var(--secondary-font);
 }
 .section-title {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 30px;
     line-height: 1.2;
     font-weight: 400;
@@ -49,30 +90,19 @@ a {
     letter-spacing: 0.075em;
     color: #989ea6;
 }
-.section-title .bold {
-    font-weight: 700;
+.section-title .bold,
+.title-bold {
     color: #585a5e;
+    font-weight: bold !important;
 }
-.slick-dots li button::before {
-    font-size: 35px;
-    line-height: 10px;
+.section-indent {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.slick-dots li {
-    margin: 0;
-}
-.slick-prev::before {
-    content: "<";
-    color: #989ea6;
-    font-size: 51px;
-}
+/* -------End custom styles------------------------------------------------------------------------------------ */
 
-.slick-next::before {
-    content: ">";
-    color: #989ea6;
-    font-size: 51px;
-}
 
-/* --------------------------------------------------------------------------------------------------------- */
+/* -------Begin header styles---------------------------------------------------------------------------------- */
 header .phone a {
     display: inline-flex;
     align-items: center;
@@ -86,17 +116,8 @@ header .phone a::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*right: 82px;*/
-    /*top: 18px;*/
     margin-right: 1rem;
     background-image: url(../icons/phone-2.png);
-}
-.indent {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-img {
-    max-width: 100%;
 }
 header nav li {
     list-style: none;
@@ -139,16 +160,28 @@ header ul.menu {
 header div.phone {
     font-size: 14px;
 }
+
+/* -------End header styles------------------------------------------------------------------------------------ */
+
+
+/* -------Begin main-banner styles----------------------------------------------------------------------------- */
+.slick-dots li button::before {
+    font-size: 35px;
+    line-height: 10px;
+}
+.slick-dots li {
+    margin: 0;
+}
+.slick-prev::before {
+    content: "‹";
+}
+.slick-next::before {
+    content: "›";
+}
 .slider-item {
     display: flex !important;
     align-items: center;
 }
-.item-service .description {
-    max-width: 350px;
-}
-
-/* -----------------------------------Main start----------------------------------------------------------------- */
-
 .main-slider .slick-prev,
 .main-slider .slick-next {
     color: black;
@@ -159,6 +192,67 @@ header div.phone {
 .main-slider .slick-next {
     flex-direction: row-reverse;
 }
+
+main .slider-title { /* старайся как можно реже привязываться к тэгам, используй классы (тем более "майн" у тебя главный для всей страницы, какой смысл в том что ты его указал?)*/
+    padding-left: 95px;
+    padding-right: 30px;
+}
+
+/* -------End main-banner styles------------------------------------------------------------------------------- */
+
+
+/* -------Begin advantages styles------------------------------------------------------------------------------ */
+/*
+/* !!! заготовка для секции, сортируй стили ниже и переноси сюда !!!
+/*
+/* -------End advantages styles-------------------------------------------------------------------------------- */
+
+
+/* -------Begin services styles-------------------------------------------------------------------------------- */
+.item-service .description {
+    max-width: 350px;
+}
+/* -------End services styles---------------------------------------------------------------------------------- */
+
+
+/* -------Begin about styles----------------------------------------------------------------------------------- */
+/*
+/* !!! заготовка для секции, сортируй стили ниже и переноси сюда !!!
+/*
+/* -------End about styles------------------------------------------------------------------------------------- */
+
+
+/* -------Begin footer styles---------------------------------------------------------------------------------- */
+/* -------End footer styles------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+
+/* всё что находится ниже - надо пересмотреть и нормально разложить по секциям которые подготовлены выше */
+
+
+
+/* -----------------------------------Main start----------------------------------------------------------------- */
+
+/* следуя рекомендациям выше и ниже - приведи а порядок этот код: */
+
+.bottom { /* просто "снизу" не понятно что происходит (может течёт что-то внизу?). Можно назвать типа "отступ снизу 15" или "стандартный отступ снизу" */
+
 .slick-prev::after {
     font-family: 'Oswald';
     content: "НАЗАД";
@@ -179,43 +273,58 @@ header div.phone {
 .chair {
     padding: 0 30px;
 }
-main .slider-title {
-    padding-left: 95px;
-    padding-right: 30px;
-}
 main .modern1 {
-    font-family: 'Oswald';
     font-size: 37px;
+    /*
+
+    это уже не надо указывать постоянно для каждого
+
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #989ea6;
+     */
 }
 main .modern2 {
-    font-family: 'Oswald';
     font-size: 48px;
     letter-spacing: 0.025em;
+
+    /*
+
+    это можно сделать просто задав элементу классы "title-bold" и "font-oswald"
+
+    font-family: 'Oswald';
     font-weight: 700;
     color: #585a5e;
+    */
 }
 main .modern3 {
-    font-family: 'Oswald';
     font-size: 37px;
+
+    /*
+
+    это можно сделать просто задав элементу класс "font-oswald"
+    font-family: 'Oswald';
+
+
+    это уже не надо указывать постоянно для каждого
     line-height: 1.2;
     letter-spacing: 0.1em;
     font-weight: 400;
     color: #989ea6;
+
+    */
 }
-main .comment {
+main .comment { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
     font-family: Roboto;
     font-size: 13px;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #989898;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* второй раз встречается, можно вывести в класс */
 }
-main .btn {
+main .btn { /* сделай отдельно универсальный класс для кнопки, и класс/классы для разновидностей кнопок */
     display: inline-block;
     background: var(--color-yellow);
     color: #FFF;
@@ -223,28 +332,38 @@ main .btn {
     padding: 15px 40px;
     border-radius: 10px;
 }
+/*
+например в "btn" ты можешь указать размер кнопки и стили шрифтов (размер, плотность)
+а в "btn-yellow" (или "btn-default", или другое - на твоё усмотрение)
+просто допиши цвет фона (возможно поменяется цвет текста в зависимости
+от того же фона), и стили ховера для этого цвета кнопки
+*/
+
 /* -----------------------------------Main end----------------------------------------------------------------- */
 /* -----------------------------------advantages start----------------------------------------------------------------- */
-.advantages {
-    margin-bottom: 50px;
-}
-.center-text {
+.center-text { /* выведи в отдельный кастомный (выше) класс "text-center" который не имеет отношение к отступам, только к тексту (тут название говорит за себя и отступ не упоминается)*/
     text-align: center;
     margin-bottom: 70px;
 }
-.advantages-main {
-    font-family: 'Oswald';
+.advantages {
+    margin-bottom: 50px;
+}  
+.advantages-main { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
+    font-family: 'Oswald'; /* уже есть класс для заголовка */
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.075em;
     color: #989ea6;
 }
-.homelife {
+.homelife { /* уже есть класс для заголовка (или два класса вместе строка 84 и 93) */
     font-family: 'Oswald';
     font-size: 30px;
     font-weight: 700;
     color: #585a5e;
 }
+
+/*  \|/  ТУТ НАВЕДИ ПОРЯДОК В СТИЛЯХ, КЛАССАХ И РАСКИДАЙ ИХ ПО ГОТОВЫМ СЕКЦИЯМ ВЫШЕ  \|/  */
+
 .icon {
     display: block;
     margin: 0 auto;
@@ -294,7 +413,7 @@ main .btn {
 .advantages .item:hover .absolute-full::after {
     height: 61px;
 }
-.title {
+.title { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
     font-family: 'Oswald';
     font-size: 22px;
     font-weight: 300;
@@ -304,7 +423,7 @@ main .btn {
     padding-bottom: 15px;
     color: #585a5e;
 }
-.description {
+.description {  /* то же самое повторение большинства стилей текста (family, weight, spacing, color)*/
     font-family: 'Roboto';
     font-size: 13px;
     font-weight: 400;
@@ -316,7 +435,7 @@ main .btn {
 /* -----------------------------------advantages end----------------------------------------------------------------- */
 
 /* -----------------------------------services start----------------------------------------------------------------- */
-.title-services {
+.title-services {  /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
     font-family: 'Oswald';
     font-size: 30px;
     line-height: 1.2;
