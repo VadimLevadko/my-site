@@ -24,6 +24,7 @@ html {
     font-family: var(--primary-font);
     line-height: 1.2;
     font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.1em;
     font-style: normal;
     color: #989ea6;
@@ -64,7 +65,10 @@ img {
     bottom: 0;
     left: 0;
 }
-.right {
+.text-center {
+    text-align: center;
+}
+.text-right {
     text-align: right;
 }
 .menu {
@@ -99,6 +103,15 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+.description {
+    margin-bottom: 15px;
+}
+.indent-bottom {
+    margin-bottom: 15px;
+}
 /* -------End custom styles------------------------------------------------------------------------------------ */
 
 
@@ -119,20 +132,15 @@ header .phone a::before {
     margin-right: 1rem;
     background-image: url(../icons/phone-2.png);
 }
-header nav li {
-    list-style: none;
-}
 header .logo {
     padding-top: 10px;
 }
 header nav {
-    position: relative;
     right: 9%;
 }
 header .container {
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 header .logo {
     padding-top: 1rem;
@@ -148,19 +156,12 @@ header .lamp {
     height: 225px;
     right: -110px;
 }
-header nav a {
-    color: inherit;
-    text-decoration: none;
+nav a {
     padding: 5px 35px;
 }
-header ul.menu {
-    display: flex;
+ul.menu {
     padding: 2px 70px;
 }
-header div.phone {
-    font-size: 14px;
-}
-
 /* -------End header styles------------------------------------------------------------------------------------ */
 
 
@@ -178,81 +179,6 @@ header div.phone {
 .slick-next::before {
     content: "›";
 }
-.slider-item {
-    display: flex !important;
-    align-items: center;
-}
-.main-slider .slick-prev,
-.main-slider .slick-next {
-    color: black;
-    display: flex;
-    align-items: center;
-    width: initial;
-}
-.main-slider .slick-next {
-    flex-direction: row-reverse;
-}
-
-main .slider-title { /* старайся как можно реже привязываться к тэгам, используй классы (тем более "майн" у тебя главный для всей страницы, какой смысл в том что ты его указал?)*/
-    padding-left: 95px;
-    padding-right: 30px;
-}
-
-/* -------End main-banner styles------------------------------------------------------------------------------- */
-
-
-/* -------Begin advantages styles------------------------------------------------------------------------------ */
-/*
-/* !!! заготовка для секции, сортируй стили ниже и переноси сюда !!!
-/*
-/* -------End advantages styles-------------------------------------------------------------------------------- */
-
-
-/* -------Begin services styles-------------------------------------------------------------------------------- */
-.item-service .description {
-    max-width: 350px;
-}
-/* -------End services styles---------------------------------------------------------------------------------- */
-
-
-/* -------Begin about styles----------------------------------------------------------------------------------- */
-/*
-/* !!! заготовка для секции, сортируй стили ниже и переноси сюда !!!
-/*
-/* -------End about styles------------------------------------------------------------------------------------- */
-
-
-/* -------Begin footer styles---------------------------------------------------------------------------------- */
-/* -------End footer styles------------------------------------------------------------------------------------ */
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-
-
-
-/* всё что находится ниже - надо пересмотреть и нормально разложить по секциям которые подготовлены выше */
-
-
-
-/* -----------------------------------Main start----------------------------------------------------------------- */
-
-/* следуя рекомендациям выше и ниже - приведи а порядок этот код: */
-
-.bottom { /* просто "снизу" не понятно что происходит (может течёт что-то внизу?). Можно назвать типа "отступ снизу 15" или "стандартный отступ снизу" */
-
 .slick-prev::after {
     font-family: 'Oswald';
     content: "НАЗАД";
@@ -267,106 +193,55 @@ main .slider-title { /* старайся как можно реже привяз
     letter-spacing: 0,1em;
     color: #989ea6;
 }
-.bottom {
-    margin-bottom: 15px;
+.banner-text-1 {
+    font-size: 37px;
+}
+.banner-text-2 {
+    font-size: 48px;
+    letter-spacing: 0.025em;
+}
+.banner-text-3 {
+    font-size: 37px;
+}
+.slider-item {
+    display: flex !important;
+    align-items: center;
+}
+.main-slider .slick-prev,
+.main-slider .slick-next {
+    color: black;
+    display: flex;
+    align-items: center;
+    width: initial;
+}
+.main-slider .slick-next {
+    flex-direction: row-reverse;
+}
+.slider-title {
+    padding-left: 95px;
+    padding-right: 30px;
+}
+.comment {
+    max-width: 430px;
 }
 .chair {
     padding: 0 30px;
 }
-main .modern1 {
-    font-size: 37px;
-    /*
 
-    это уже не надо указывать постоянно для каждого
-
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    color: #989ea6;
-     */
-}
-main .modern2 {
-    font-size: 48px;
-    letter-spacing: 0.025em;
-
-    /*
-
-    это можно сделать просто задав элементу классы "title-bold" и "font-oswald"
-
-    font-family: 'Oswald';
-    font-weight: 700;
-    color: #585a5e;
-    */
-}
-main .modern3 {
-    font-size: 37px;
-
-    /*
-
-    это можно сделать просто задав элементу класс "font-oswald"
-    font-family: 'Oswald';
+/* -------End main-banner styles------------------------------------------------------------------------------- */
 
 
-    это уже не надо указывать постоянно для каждого
-    line-height: 1.2;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    color: #989ea6;
-
-    */
-}
-main .comment { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
-    font-family: Roboto;
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    color: #989898;
-    margin-bottom: 15px; /* второй раз встречается, можно вывести в класс */
-}
-main .btn { /* сделай отдельно универсальный класс для кнопки, и класс/классы для разновидностей кнопок */
-    display: inline-block;
-    background: var(--color-yellow);
-    color: #FFF;
-    letter-spacing: 0.075em;
-    padding: 15px 40px;
-    border-radius: 10px;
-}
-/*
-например в "btn" ты можешь указать размер кнопки и стили шрифтов (размер, плотность)
-а в "btn-yellow" (или "btn-default", или другое - на твоё усмотрение)
-просто допиши цвет фона (возможно поменяется цвет текста в зависимости
-от того же фона), и стили ховера для этого цвета кнопки
-*/
-
-/* -----------------------------------Main end----------------------------------------------------------------- */
-/* -----------------------------------advantages start----------------------------------------------------------------- */
-.center-text { /* выведи в отдельный кастомный (выше) класс "text-center" который не имеет отношение к отступам, только к тексту (тут название говорит за себя и отступ не упоминается)*/
-    text-align: center;
-    margin-bottom: 70px;
-}
+/* -------Begin advantages styles------------------------------------------------------------------------------ */
 .advantages {
     margin-bottom: 50px;
-}  
-.advantages-main { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
-    font-family: 'Oswald'; /* уже есть класс для заголовка */
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 0.075em;
-    color: #989ea6;
 }
-.homelife { /* уже есть класс для заголовка (или два класса вместе строка 84 и 93) */
-    font-family: 'Oswald';
-    font-size: 30px;
-    font-weight: 700;
+.advantages-title {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
     color: #585a5e;
-}
-
-/*  \|/  ТУТ НАВЕДИ ПОРЯДОК В СТИЛЯХ, КЛАССАХ И РАСКИДАЙ ИХ ПО ГОТОВЫМ СЕКЦИЯМ ВЫШЕ  \|/  */
-
-.icon {
-    display: block;
-    margin: 0 auto;
 }
 .advantages .item {
     padding: 55px 25px;
@@ -413,36 +288,21 @@ main .btn { /* сделай отдельно универсальный клас
 .advantages .item:hover .absolute-full::after {
     height: 61px;
 }
-.title { /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
-    font-family: 'Oswald';
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.2;
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 15px;
-    color: #585a5e;
+.icon {
+    display: block;
+    margin: 0 auto;
 }
-.description {  /* то же самое повторение большинства стилей текста (family, weight, spacing, color)*/
-    font-family: 'Roboto';
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    letter-spacing: 0.075em;
-    color: #989ea6;
-}
-/* -----------------------------------advantages end----------------------------------------------------------------- */
+/* -------End advantages styles-------------------------------------------------------------------------------- */
 
-/* -----------------------------------services start----------------------------------------------------------------- */
-.title-services {  /* то же самое повторение большинства стилей текста (weight, spacing, color)*/
-    font-family: 'Oswald';
-    font-size: 30px;
-    line-height: 1.2;
+
+/* -------Begin services styles-------------------------------------------------------------------------------- */
+.title-services {
     font-weight: 700;
     margin-bottom: 10px;
-    letter-spacing: 0.1em;
     color: #585a5e;
+}
+.item-service .description {
+    max-width: 350px;
 }
 .item-service {
     display: inline-flex;
@@ -456,7 +316,90 @@ main .btn { /* сделай отдельно универсальный клас
 .img-service {
     padding-right: 35px;
 }
-.bottom-right {
+.right-bottom {
     text-align: right;
 }
+/* -------End services styles---------------------------------------------------------------------------------- */
+
+
+/* -------Begin about styles----------------------------------------------------------------------------------- */
+/*
+/* !!! заготовка для секции, сортируй стили ниже и переноси сюда !!!
+/*
+/* -------End about styles------------------------------------------------------------------------------------- */
+
+
+/* -------Begin footer styles---------------------------------------------------------------------------------- */
+/* -------End footer styles------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.center-text {
+    text-align: center;
+    margin-bottom: 70px;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+
+/* всё что находится ниже - надо пересмотреть и нормально разложить по секциям которые подготовлены выше */
+
+
+
+/* -----------------------------------Main start----------------------------------------------------------------- */
+
+/* следуя рекомендациям выше и ниже - приведи а порядок этот код: */
+/* .btn {
+    display: inline-block;
+    background: var(--color-yellow);               
+    color: #FFF;
+    letter-spacing: 0.075em;
+    padding: 15px 40px;
+    border-radius: 10px;
+} */
+.btn {
+    display: inline-block;
+    color: #FFF;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 16;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.5;
+}
+.btn-yellow {
+    background-color: var(--color-yellow);
+}
+.btn-green {
+    background-color: #0d9106;
+}
+.btn-blue {
+    background-color: #0416d4;
+}
+.btn-red {
+    background-color: #d40404;
+}
+/*
+например в "btn" ты можешь указать размер кнопки и стили шрифтов (размер, плотность)
+а в "btn-yellow" (или "btn-default", или другое - на твоё усмотрение)
+просто допиши цвет фона (возможно поменяется цвет текста в зависимости
+от того же фона), и стили ховера для этого цвета кнопки
+*/
+/* -----------------------------------Main end----------------------------------------------------------------- */
+/* -----------------------------------advantages start----------------------------------------------------------------- */
+/* -----------------------------------advantages end----------------------------------------------------------------- */
+
+/* -----------------------------------services start----------------------------------------------------------------- */
 /* -----------------------------------services end----------------------------------------------------------------- */
