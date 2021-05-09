@@ -42,6 +42,9 @@ a, a:hover {
     color: inherit;
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
 img {
     max-width: 100%;
 }
@@ -103,13 +106,11 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+.mini-section-indent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .margin-bottom-15 {
-    margin-bottom: 15px;
-}
-.description {
-    margin-bottom: 15px;
-}
-.indent-bottom {
     margin-bottom: 15px;
 }
 /* -------End custom styles------------------------------------------------------------------------------------ */
@@ -298,6 +299,7 @@ ul.menu {
 /* -------Begin services styles-------------------------------------------------------------------------------- */
 .title-services {
     font-weight: 700;
+    font-size: 25px;
     margin-bottom: 10px;
     color: #585a5e;
 }
@@ -314,7 +316,7 @@ ul.menu {
     max-width: 350px;
 }
 .img-service {
-    padding-right: 35px;
+    padding-right: 30px;
 }
 .right-bottom {
     text-align: right;
@@ -323,19 +325,17 @@ ul.menu {
 
 
 /* -------Begin about styles----------------------------------------------------------------------------------- */
-/*
-/* !!! заготовка для секции, сортируй стили ниже и переноси сюда !!!
-/*
+.about-indent-30 {
+    margin-bottom: 50px;
+}
 /* -------End about styles------------------------------------------------------------------------------------- */
 
 
 /* -------Begin footer styles---------------------------------------------------------------------------------- */
 /* -------End footer styles------------------------------------------------------------------------------------ */
-
-
-
-
-
+.about-indent  {
+    margin-bottom: 10px;
+}
 
 
 
