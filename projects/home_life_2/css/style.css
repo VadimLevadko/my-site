@@ -175,10 +175,10 @@ ul.menu {
     margin: 0;
 }
 .slick-prev::before {
-    content: "‹";
+    content: url(../arrows/lnr-chevron-left.svg);
 }
 .slick-next::before {
-    content: "›";
+    content: url(../arrows/lnr-chevron-right.svg);
 }
 .slick-prev::after {
     font-family: 'Oswald';
@@ -325,7 +325,7 @@ ul.menu {
 
 
 /* -------Begin about styles----------------------------------------------------------------------------------- */
-.about-indent-30 {
+.about-indent-50 {
     margin-bottom: 50px;
 }
 /* -------End about styles------------------------------------------------------------------------------------- */
@@ -336,7 +336,6 @@ ul.menu {
 .about-indent  {
     margin-bottom: 10px;
 }
-
 
 
 
