@@ -121,7 +121,7 @@ header .phone a {
     display: inline-flex;
     align-items: center;
 }
-header .phone a::before {
+.phone a::before {
     content: "";
     display: block;
     position: relative;
@@ -336,6 +336,39 @@ ul.menu {
 .about-indent  {
     margin-bottom: 10px;
 }
+.space-between {
+    justify-content: space-between;
+}
+.indent-left-48 {
+    margin-left: 48px;
+}
+.phone-footer a, .mail-image a {
+    display: inline-flex;
+    align-items: center;
+}
+.phone-footer a::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 2rem;
+    background-image: url(../icons/phone-2.png);
+}
+.mail-image a::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 2rem;
+    background-image: url(../icons/email.png);
+}
+
 
 
 
@@ -402,3 +435,14 @@ ul.menu {
 
 /* -----------------------------------services start----------------------------------------------------------------- */
 /* -----------------------------------services end----------------------------------------------------------------- */
+.oa {
+    position: relative;
+}
+.test {
+    font-family: 'Oswald';
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    font-size: 150px;
+    opacity: 0.5;
+}
