@@ -1,0 +1,18 @@
+@media screen and (max-width: 991px) {
+    .section-indent {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .media-center {
+        margin: 0 auto;
+    }
+    .img-service {
+        flex: 1;
+        text-align: center;
+        width: 300px;
+    }
+    .media-img {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}

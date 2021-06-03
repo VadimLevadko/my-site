@@ -245,7 +245,7 @@ ul.menu {
     color: #585a5e;
 }
 .advantages .item {
-    padding: 55px 25px;
+    padding: 35px 25px;
     max-width: 350px;
     min-height: 350px;
     border-radius: 10px;
@@ -317,6 +317,8 @@ ul.menu {
 }
 .img-service {
     padding-right: 30px;
+    flex: 1;
+    text-align: center;
 }
 .right-bottom {
     text-align: right;
