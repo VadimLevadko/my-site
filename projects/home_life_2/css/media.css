@@ -1,4 +1,19 @@
 @media screen and (max-width: 991px) {
+    .main-banner {
+        padding-top: 140px;
+    }
+    span.banner-text-1, span.banner-text-2, p.banner-text-3  {
+        font-size: 26px;
+    }
+    .chair img {
+        max-width: 110%;
+    }
+    .img-lamp .lamp {
+        right: -128px;
+    }
+    .container .phone a::before {
+        background-size: contain;
+    }
     .section-indent {
         padding-top: 20px;
         padding-bottom: 20px;
