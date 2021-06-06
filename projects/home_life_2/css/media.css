@@ -5,9 +5,9 @@
     span.banner-text-1, span.banner-text-2, p.banner-text-3  {
         font-size: 26px;
     }
-    .chair img {
+    /* .chair img {
         max-width: 110%;
-    }
+    } */
     .img-lamp .lamp {
         right: -128px;
     }
@@ -29,5 +29,66 @@
     .media-img {
         text-align: center;
         padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 640px) {
+    header {
+        font-size: 10px;
+    }
+    header nav {
+        right: initial;
+    }
+    ul.menu {
+        padding: 0;
+    }
+    nav a {
+        padding: 5px;
+    }
+    header .img-lamp {
+        display: none;
+    }
+    .phone a::before {
+        width: 20px;
+        height: 20px;
+    }
+    .main-banner {
+        padding-top: 35px;
+    }
+    .slider-item {
+        flex-wrap: wrap;
+    }
+    .slider-title {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .main-slider .slick-prev, .main-slider .slick-next {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 425px) {
+    
+    header .container {
+        flex-direction: column;
+    }
+    .menu {
+        display: initial;
+        text-align: center;
+    }
+    .slider-title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .item-service {
+        display: initial;
+    }
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-title-contacts {
+        margin-left: 0;
+    }
+    .footer .col-auto + .col-auto {
+        margin-top: 15px;
     }
 }
