@@ -194,15 +194,12 @@ ul.menu {
     letter-spacing: 0,1em;
     color: #989ea6;
 }
-.banner-text-1 {
+.banner-text-1, .banner-text-3 {
     font-size: 37px;
 }
 .banner-text-2 {
     font-size: 48px;
     letter-spacing: 0.025em;
-}
-.banner-text-3 {
-    font-size: 37px;
 }
 .slider-item {
     display: flex !important;

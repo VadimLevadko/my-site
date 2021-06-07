@@ -1,6 +1,38 @@
+@media screen and (max-width: 1199px) {
+    header nav {
+        right: initial;
+    }
+    nav a {
+        padding: 5px 15px;
+    }
+    ul.menu {
+        padding: 0;
+    }
+    .main-banner {
+        padding-top: 80px;
+    }
+    .banner-text-1, .banner-text-2 {
+        font-size: 39px;
+    }
+    .col-md-6 {
+        width: 33.3%;
+    }
+    .img-service {
+        flex: initial;
+    }
+}
 @media screen and (max-width: 991px) {
+    header {
+        font-size: 12px;
+    }
+    nav a {
+        padding: 5px;
+    }
     .main-banner {
         padding-top: 140px;
+    }
+    .banner-text-1, .banner-text-2, .banner-text-3 {
+        font-size: initial;
     }
     span.banner-text-1, span.banner-text-2, p.banner-text-3  {
         font-size: 26px;
@@ -8,9 +40,6 @@
     /* .chair img {
         max-width: 110%;
     } */
-    .img-lamp .lamp {
-        right: -128px;
-    }
     .container .phone a::before {
         background-size: contain;
     }
@@ -30,26 +59,36 @@
         text-align: center;
         padding-bottom: 15px;
     }
-}
-@media screen and (max-width: 640px) {
-    header {
-        font-size: 10px;
+    .col-md-6 {
+        width: initial;
     }
-    header nav {
-        right: initial;
+}
+@media screen and (max-width: 767px) {
+    header {
+        font-size: 9px;
     }
     ul.menu {
         padding: 0;
     }
+    .phone a::before {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.3rem;
+    }
+    .slider-title {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-slider .slick-prev, .main-slider .slick-next {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 640px) {
     nav a {
         padding: 5px;
     }
     header .img-lamp {
         display: none;
-    }
-    .phone a::before {
-        width: 20px;
-        height: 20px;
     }
     .main-banner {
         padding-top: 35px;
@@ -61,12 +100,8 @@
         padding-left: 30px;
         padding-right: 0;
     }
-    .main-slider .slick-prev, .main-slider .slick-next {
-        display: none !important;
-    }
 }
-@media screen and (max-width: 425px) {
-    
+@media screen and (max-width: 425px) {  
     header .container {
         flex-direction: column;
     }
