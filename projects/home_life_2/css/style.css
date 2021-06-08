@@ -317,6 +317,14 @@ ul.menu {
     flex: 1;
     text-align: center;
 }
+.number {
+    font-family: 'Oswald';
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    font-size: 150px;
+    opacity: 0.5;
+}
 .right-bottom {
     text-align: right;
 }
@@ -434,14 +442,3 @@ ul.menu {
 
 /* -----------------------------------services start----------------------------------------------------------------- */
 /* -----------------------------------services end----------------------------------------------------------------- */
-.oa {
-    position: relative;
-}
-.test {
-    font-family: 'Oswald';
-    position: absolute;
-    bottom: 45%;
-    left: 0;
-    font-size: 150px;
-    opacity: 0.5;
-}
