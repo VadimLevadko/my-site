@@ -60,11 +60,23 @@ button {
 .al-center {
     align-items: center;
 }
-.jus-end {
+.main-title {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: none;
+    line-height: 49px;
+}
+.justify-end {
     justify-content: flex-end;
 }
 .justify-between {
     justify-content: space-between;
+}
+.align-self {
+    align-self: flex-start;
 }
 .phone {
     font-weight: 700;
@@ -154,4 +166,18 @@ button {
     line-height: 18px;
     display: flex;
     align-items: center;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 51px;
+}
+.slick-dots li button {
+    width: 16px;
+    height: 16px;
+}
+.slick-dots li button:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: var(--blue-color);
+    border-radius: 50%;
 }

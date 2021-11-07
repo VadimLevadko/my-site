@@ -26,15 +26,6 @@ body {
 .phone::before, .after-dots .phone::after {
     background-image: url(../images/svg/point.svg);
 }
-.main-title {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 700;
-    font-size: 42px;
-    text-transform: none;
-    line-height: 49px;
-}
 .average-container {
     max-width: 1095px;
     margin: 0 auto;
@@ -45,7 +36,6 @@ body {
     max-width: 641px;
 }
 .advantages {
-    max-height: 320px;
     border-left: 4px solid #E6E6F0;
     padding-left: 20px;
     color: #323264;
@@ -82,19 +72,19 @@ body {
 .experience::before {
     width: 22px;
     height: 26px;
-    background-image: url("../images/svg/Experience.svg");
+    background-image: url("../../images/about/svg/Experience.svg");
     margin-right: 10px;
 }
 .clients::before {
     width: 25px;
     height: 20px;
-    background-image: url("../images/svg/Clients.svg");
+    background-image: url("../../images/about/svg/Clients.svg");
     margin-right: 10px;
 }
 .pro-bono::before {
     width: 25px;
     height: 25px;
-    background-image: url("../images/svg/Pro-bono.svg");
+    background-image: url("../../images/about/svg/Pro-bono.svg");
     margin-right: 10px;
 }
 .quality {
@@ -115,7 +105,6 @@ body {
 }
 .md-pd-indent {
     padding-top: 30px;
-    padding-bottom: 78px;
 }
 .img-box {
     background: #FFF;
@@ -139,10 +128,10 @@ body {
     border-bottom: 4px solid #E6E6F0;
 }
 .phone::before, .after-dots .phone::after {
-    background-image: url("../images/svg/dark-point.svg");
+    background-image: url("../../images/svg/dark-point.svg");
 }
 .dark-point::before {
-    background-image: url("../images/svg/dark-point.svg");
+    background-image: url("../../images/svg/dark-point.svg");
     width: 6px;
     height: 6px;
     margin-right: 10px;
@@ -152,4 +141,10 @@ body {
 }
 .map-adress p:first-child {
     color: var(--dark-blue);
+}
+.slider .flex {
+    display: flex !important;
+}
+.slick-dotted.slick-slider {
+    padding-bottom: 30px;
 }

@@ -425,7 +425,7 @@
     display: none;
 }
 .main-slider {
-    height: 574px;
+    max-height: 574px;
 }
 .slick-dotted.slick-slider {
     margin-bottom: 51px;
