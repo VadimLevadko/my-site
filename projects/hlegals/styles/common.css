@@ -1,0 +1,157 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blue-color: #24A3FF;
+    --gray-color: #B3B3BA;
+    --dark-blue: #323264;
+}
+.body {
+    font-family: "TT-Norms";
+    font-weight: 400;
+}
+img {
+    max-width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+button {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+.active-trans-btn {
+    background: #F0145A;
+    border-radius: 8px;
+    padding: 5px 6px;
+    color: #FFF;
+}
+.main-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.relative {
+    position: relative;
+}
+.item-al-center {
+    display: flex;
+    align-items: center;
+}
+.items-between {
+    justify-content: space-between;
+    align-items: center;
+}
+.al-center {
+    align-items: center;
+}
+.jus-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.phone {
+    font-weight: 700;
+    line-height: 18px;
+}
+.after-dots .phone::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+}
+.phone::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+.white-text {
+    color: #FFF;
+}
+.indent-top {
+    padding-top: 40px;
+}
+.indent-bottom {
+    margin-bottom: 40px;
+}
+.gray-background {
+    background: #F5F5FA;
+}
+.hide {
+    display: none;
+}
+.gap {
+    gap: 1px;
+}
+.header {
+    padding-top: 50px;
+}
+.adress {
+    margin-bottom: 18px;
+}
+.adress div:nth-child(2) {
+    margin-left: 20px;
+}
+.adress a + a:not(:last-child) {
+    padding: 0 20px;
+}
+.nav {
+    font-size: 18px;
+    line-height: 21px;
+    justify-content: end;
+}
+.nav ul li + li {
+    margin-left: 15px;
+}
+.before::before, .after::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-pd-bottom {
+    padding-bottom: 11px;
+}
+.footer-pd-indent {
+    padding-left: 47px;
+}
+.footer-tel-indent {
+    padding: 0 26px 0 17px;
+}
+.dark-point {
+    font-weight: 700;
+    color: var(--blue-color);
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
