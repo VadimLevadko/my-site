@@ -311,7 +311,7 @@
 }
 @media screen and (max-width: 700px) {
     .main-container, .services-container {
-        max-width: 600px;
+        max-width: 380px;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -340,6 +340,13 @@
     .successful-items div:nth-child(6) {
         border-radius: 0 0 12px 12px;
     }
+    .indent-top {
+        padding-top: 20px;
+    }
+    .footer-pd {
+        padding-top: 20px;
+        padding-bottom: 110px;
+    }
     .team img {
         display: none;
     }
@@ -349,9 +356,6 @@
     .team .main-title {
         line-height: 37px;
         max-width: 304px;
-    }
-    .team .slick-dots li {
-        display: none;
     }
     .team-inside-container {
         padding: 20px 0 27px 0;
@@ -396,6 +400,16 @@
     .pills-none .d-flex {
         display: none;
     }
+    .main-slider {
+        min-height: 400px;
+        max-height: initial;
+    }
+    .margin-top {
+        margin-top: 40px;
+    }
+    .rarius-12px {
+        border-radius: 12px;
+    }
     .pills-none .slider {
         display: initial;
     }
@@ -404,10 +418,21 @@
     }
     .slider-box {
         max-width: 366px;
-        margin: 0 auto;;
+        margin: 0 auto;
     }
     .slick-dots {
-        bottom: -30px;
+        bottom: -35px;
+    }
+    .slick-dots li button:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: var(--blue-color);
+        border-radius: 50%;
+    }
+    .slick-dots li button {
+        width: 16px;
+        height: 16px;
     }
     .tab-comment {
         font-size: 18px;
@@ -421,10 +446,6 @@
         font-size: 14px;
         text-transform: uppercase;
         line-height: 16px;
-    }
-    .slider-item p:nth-child(2) {
-        margin-top: 10px;
-        margin-bottom: 15px;
     }
     .slider-box .slick-track {
         margin-bottom: 20px;
@@ -595,4 +616,37 @@
     .trust-me img {
         max-width: 180px;
     }
+}
+@media screen and (max-width: 320px) {
+    .ultra-box, .min-box, .max-box, .successful-box {
+        max-width: 280px;
+    }
+    .main-container, .services-container {
+        max-width: 280px;
+        padding: 0;
+    }
+    .news-box {
+        max-width: 100%;
+    }
+    .main-title {
+        font-size: 29px;
+        line-height: 36px;
+        max-width: 320px;
+    }
+    .slider-content {
+        max-width: 280px;
+    }
+    .trust-me img {
+        max-width: 100%;
+    }
+    .team .main-container {
+        max-width: 300px;
+    }
+    .team-inside-container {
+        padding: 20px 15px 27px 15px;
+    }
+    .the-best {
+        padding-bottom: 30px;
+    }
+    
 }
