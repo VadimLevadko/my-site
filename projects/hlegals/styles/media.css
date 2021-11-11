@@ -114,6 +114,11 @@
         max-width: 400px;
         border-radius: 0;
         flex-grow: 1;
+        width: initial;
+    }
+    .successful-items {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 960px) {
@@ -556,6 +561,14 @@
     .slider-content {
         max-width: 335px;
         margin: 0 auto;
+    }
+    .main-container, .services-container {
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .news-box {
+        width: initial;
     }
     .the-best {
         padding-bottom: 20px;
