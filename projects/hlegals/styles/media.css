@@ -279,6 +279,9 @@
     .footer-pd-bottom {
         padding-bottom: 0;
     }
+    .footer-media p:first-child {
+        font-weight: 700;
+    }
     .the-best .justify-between {
         justify-content: center;
     }
@@ -606,9 +609,6 @@
     .footer-pd {
         padding-bottom: 118px;
         padding-top: 20px;
-    }
-    .footer-media p:first-child {
-        font-weight: 700;
     }
     .footer-media p:last-child {
         max-width: 310px;
