@@ -108,7 +108,8 @@ body {
 }
 .img-box {
     background: #FFF;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 109px;
     border-radius: 12px;
     display: flex;
