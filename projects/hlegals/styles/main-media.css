@@ -12,18 +12,18 @@
     .successful .main-container {
         justify-content: center;
     }
-    .successful-box {
-        width: 397px;
+    .successful-box, .successful-setting {
+        max-width: 397px;
     }
     .main-container {
         max-width: 1200px;
     }
     .max-box {
-        width: 403px;
+        max-width: 403px;
         flex-grow: 0;
     }
     .ultra-box {
-        width: 480px;
+        max-width: 480px;
     }
     .news-box {
         max-width: 378px;
@@ -43,16 +43,16 @@
         max-width: 1150px;
     }
     .min-box {
-        width: 300px;
+        max-width: 300px;
     }
     .max-box {
-        width: 336px;
+        max-width: 336px;
     }
     .ultra-box {
-        width: 434px;
+        max-width: 434px;
     }
     .news-box {
-        max-width: 358px;
+        max-width: 100%;
     }
     .trans-bg {
         max-width: 1152px;
@@ -110,15 +110,23 @@
     .media-md-indent {
         margin-bottom: 34px;
     }
-    .ultra-box, .min-box, .max-box, .successful-box {
+    .ultra-box, .min-box, .max-box, .successful-box, .successful-setting {
         max-width: 400px;
         border-radius: 0;
         flex-grow: 1;
-        width: initial;
+        width: 100%;
+        margin: 0 auto;
     }
     .successful-items {
         display: flex;
         flex-direction: column;
+    }
+    .successful-setting div:first-child {
+        min-height: 57px;
+        border-top-left-radius: 12px;
+    }
+    .successful-items div:nth-child(6) {
+        border-radius: 0 0 12px 12px;
     }
 }
 @media screen and (max-width: 960px) {
@@ -247,8 +255,8 @@
     .better-box {
         margin-bottom: 40px;
     }
-    .ultra-box, .min-box, .max-box, .successful-box {
-        max-width: 300px;
+    .ultra-box, .min-box, .max-box, .successful-box, .successful-setting {
+        max-width: 400px;
     }
     .footer-media {
         flex-direction: column;
@@ -333,20 +341,13 @@
         line-height: 38px;
         max-width: 335px;
     }
-    .ultra-box, .min-box, .max-box, .successful-box {
+    .ultra-box, .min-box, .max-box, .successful-box, .successful-setting {
         max-width: 335px;
         min-height: 140px;
-    }
-    .successful-setting div:first-child {
-        min-height: 57px;
-        border-top-left-radius: 12px;
     }
     .successful-title {
         font-size: 18px;
         line-height: 21px;
-    }
-    .successful-items div:nth-child(6) {
-        border-radius: 0 0 12px 12px;
     }
     .indent-top {
         padding-top: 20px;
@@ -630,7 +631,7 @@
         max-width: 180px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
     .ultra-box, .min-box, .max-box, .successful-box {
         max-width: 280px;
     }
@@ -660,6 +661,10 @@
     }
     .the-best {
         padding-bottom: 30px;
+    }
+    .slider-content {
+        max-width: 300px;
+        margin: 0 auto;
     }
     
 }
