@@ -1,0 +1,52 @@
+body {
+    font-size: 18px;
+    line-height: 22px;
+}
+.menu {
+    color: var(--blue-color);
+}
+.nav-adress, .translate-button button {
+    color: var(--gray-color);
+}
+.translate-button button:first-child {
+    color: #fff;
+}
+.phone::before, .phone::after {
+    background-image: url("../images/svg/point.svg");
+}
+.responsibility {
+    max-width: 864px;
+    margin: 80px auto;
+}
+.staff-column p:last-child {
+    color: var(--gray-color);
+    padding-top: 5px;
+    font-size: 16px;
+}
+.staff-title {
+    color: var(--dark-blue);
+}
+.min-md-indent {
+    margin-top: 20px;
+}
+.staff div.staff-column:first-child {
+    margin-bottom: 40px;
+}
+.staff-bottom {
+    padding-bottom: 60px;
+}
+.footer-pd {
+    padding: 32px 0 50px 0;
+}
+.footer .phone::before {
+    background-image: url("../images/svg/dark-point.svg");
+}
+.dark-point::before {
+    background-image: url(../images/svg/dark-point.svg);
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+}
+.adress, .translate-button button {
+    color: var(--gray-color);
+}

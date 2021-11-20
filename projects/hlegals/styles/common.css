@@ -181,3 +181,7 @@ button {
     background: var(--blue-color);
     border-radius: 50%;
 }
+.active-link {
+    color: #F0145A;
+    border-bottom: 1px solid #F0145A;
+}
