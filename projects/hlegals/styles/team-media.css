@@ -189,6 +189,12 @@
     .adress, .nav {
         justify-content: space-between;
     }
+    .staff .staff-column .reset-margin {
+        margin-top: 0;
+    }
+    .staff-column {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 480px) {
     .responsibility {
