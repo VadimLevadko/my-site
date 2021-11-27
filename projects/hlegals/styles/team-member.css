@@ -1,0 +1,72 @@
+.translate-button button:not(:first-child), .adress {
+    color: var(--gray-color);
+}
+.menu {
+    color: var(--blue-color);
+}
+.phone::before, .phone::after {
+    background-image: url("../images/svg/point.svg");
+}
+.member-container {
+    margin: 80px auto;
+    max-width: 1095px;
+}
+.about {
+    max-width: 641px;
+}
+.member-img {
+    margin-right: 41px;
+}
+.member-img img {
+    border-radius: 12px;
+}
+.about-nav {
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #E6E6F0;
+}
+.about-nav li + li {
+    color: var(--blue-color);
+    padding-left: 26px;
+}
+.about-nav li:first-child {
+    color: var(--gray-color);
+}
+.about-nav .before::before {
+    background-image: url("../images/svg/point.svg");
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+}
+.min-md-bottom {
+    margin-bottom: 10px;
+}
+.avarage-md-bottom {
+    margin-bottom: 25px;
+}
+.information {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 26px;
+}
+.information div + div {
+    margin-top: 40px;
+}
+.inf-title {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-pd {
+    padding: 32px 0 50px 0;
+}
+.dark-point::before {
+    background-image: url(../images/svg/dark-point.svg);
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+}

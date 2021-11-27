@@ -134,10 +134,9 @@
     }
     .staff-column {
         display: flex;
-        align-items: center;
         width: 100%;
         max-width: 50%;
-        align-items: end;
+        align-items: flex-end;
     }
     .staff-column img {
         max-width: 158px;
@@ -204,5 +203,8 @@
     }
     .staff-column {
         max-width: 100%;
+    }
+    .header {
+        padding-top: 20px;
     }
 }
