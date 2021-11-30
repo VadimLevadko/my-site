@@ -1,7 +1,4 @@
 @media screen and (max-width: 1440px) {
-    .main-container {
-        padding: 0 20px;
-    }
     .footer-pd {
         padding: 32px 20px 50px 20px;
     }
@@ -86,6 +83,9 @@
     }
     .phone::before, .after-dots .phone::after {
         display: none;
+    }
+    .main-container {
+        padding: 0 20px;
     }
 }
 @media screen and (max-width: 880px) {
