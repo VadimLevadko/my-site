@@ -7,6 +7,7 @@
     <title>Hlegals Contact</title>
     <link rel="stylesheet" href="../fonts/fonts.css">
     <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body class="body">
     <header class="header">
@@ -38,39 +39,44 @@
                     <ul class="menu flex justify-end">
                         <li><a href="../about">о нас</a></li>
                         <li><a href="#">послуги</a></li>
-                        <li><a class="active-link">команда</a></li>
+                        <li><a href="../team">команда</a></li>
                         <li><a href="#">публікації</a></li>
-                        <li><a href="#">контакти</a></li>
+                        <li><a class="active-link" href="#">контакти</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <section>
-        <div>
-            <div>
-                <div>
-                    <p>Одеса, Адміральський пр., 3</p>
-                    <p>	+38 (050) 390 15 95</p>
-                    <p>contact@hlegals.net</p>
-                    <p>Наша сторінка в фейсбуці</p>
+        <div class="form-container form-setting">
+            <div class="item-al-center justify-between">
+                <div class="adress-block">
+                    <a href="#" class="adress-title margin-bottom dark-blue">Одеса, Адміральський пр., 3</a>
+                    <div class="border">
+                        <a href="tel:+38(050)3901595" class="margin-bottom dark-blue">
+                            +38 (050) 390 15 95</a>
+                        <a href="mailto:contact@hlegals.net" class="blue">contact@hlegals.net</a>
+                    </div>
+                    <div class="item-al-center margin-top">
+                        <img src="../images/svg/footer-facebook.svg" alt="Facebook">
+                        <a class="facebook-link blue" href="#">Наша сторінка в фейсбуці</a>
+                    </div>   
                 </div>
-                <div>
-                    <p>Ми хотіли б Вам допомогти</p>
-                    <form>
+                <div class="form-block gray-background">
+                    <p class="main-title">Ми хотіли б Вам допомогти</p>
+                    <form class="form">
                         <input type="email" placeholder="Iм’я" required>
                         <textarea name="comment" placeholder="Повідомлення"></textarea>
-                        <p>Як вам відповісти?</p>
+                        <p class="form-title">Як вам відповісти?</p>
                         <input type="text" placeholder="Номер телефона">
                         <input type="text" placeholder="Чи email">
-                        <button type="submit">Надіслати запит</button>
+                        <button class="submit" type="submit">Надіслати запит</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
     <section>
-
     </section>
     <footer class="footer">
         <div class="gray-background">
