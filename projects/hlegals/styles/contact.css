@@ -82,6 +82,10 @@ textarea {
     resize: none;
     height: 180px;
 }
+iframe {
+    width: 100%;
+    min-height: 600px;
+}
 .form-title {
     font-size: 14px;
     line-height: 16px;

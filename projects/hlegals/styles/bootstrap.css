@@ -6421,10 +6421,6 @@ textarea.form-control-lg {
   transform: translateY(-50%) !important;
 }
 
-.border {
-  border: 1px solid #dee2e6 !important;
-}
-
 .border-0 {
   border: 0 !important;
 }
@@ -6583,10 +6579,6 @@ textarea.form-control-lg {
 
 .flex-row {
   flex-direction: row !important;
-}
-
-.flex-column {
-  flex-direction: column !important;
 }
 
 .flex-row-reverse {

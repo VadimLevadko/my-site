@@ -1,4 +1,3 @@
-@import url("../../main-styles/styles.css");
 /* ------------------------------------Main-Styles------------------------------------------------------- */
 .background-blue {
     background: #323264;
@@ -109,9 +108,6 @@
 .tab-comment {
     font-size: 21px;
     font-weight: 400;
-}
-.tab-wrapper {
-    max-width: 860px;
 }
 .tab-pane {
     padding-left: 40px;
