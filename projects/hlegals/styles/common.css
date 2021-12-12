@@ -8,7 +8,7 @@
     --gray-color: #B3B3BA;
     --dark-blue: #323264;
 }
-.body {
+body {
     font-family: "TT-Norms";
     font-weight: 400;
 }
@@ -42,6 +42,9 @@ button {
 }
 .flex {
     display: flex;
+}
+.text-center {
+    text-align: center;
 }
 .wrap {
     flex-wrap: wrap;

@@ -1,0 +1,82 @@
+.header {
+    color: #FFF;
+}
+.cover-bg {
+    background: url("../images/services-page/cover.png") no-repeat;
+}
+.intro-container {
+    max-width: 861px;
+    margin: 0 auto;
+    margin-top: 52px;
+    margin-bottom: 80px;
+    color: #FFF;
+}
+.svg-shopping {
+    border-radius: 24px;
+    margin-bottom: 20px;
+    background: #FFF;
+    height: 94px;
+    width: 94px;
+}
+.average-bottom {
+    margin-bottom: 20px;
+}
+.intro-setting {
+    font-size: 21px;
+    line-height: 30px;
+}
+.blue-bg {
+    background: #323264;
+}
+.btn {
+    background-color: var(--blue-color);
+    max-width: 250px;
+    min-height: 50px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.services-container {
+    max-width: 1092px;
+    margin: 0 auto;
+}
+.services-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFF;
+    font-weight: 500;
+}
+.border-top {
+    border-top: 4px solid #B3B3BA;
+    padding-top: 20px;
+}
+.services-comments {
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFF;
+}
+.comment-box {
+    max-width: 500px;
+}
+.comment-box p {
+    display: flex;
+    align-items: baseline;
+    padding-left: 20px;
+}
+.comment-box p::before {
+    content: "";
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 7px;
+    width: 6px;
+    height: 6px;
+    background-image: url("../images/services-page/svg/dot-separator.svg");
+}
