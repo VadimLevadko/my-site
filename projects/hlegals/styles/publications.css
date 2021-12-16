@@ -1,7 +1,13 @@
+.header {
+    padding-bottom: 60px;
+}
 .menu {
     color: #24A3FF;
     font-size: 18px;
     line-height: 21px;
+}
+.translate-button button:not(:first-child), .adress {
+    color: var(--gray-color);
 }
 .hover-link {
     border-bottom: 2px solid #F0145A;
@@ -9,10 +15,31 @@
 .masonry {
     min-height: 718px;
     height: 100%;
+    border-bottom: none;
 }
 .min-limit {
     max-width: 360px;
 }
 .hignest-limit {
     max-width: 345px;
+}
+.gray-bottom {
+    border-bottom: 4px solid #E6E6F0;
+}
+.btn-public-more {
+    display: inline-block;
+    padding: 0;
+    width: 250px;
+    height: 50px;
+    background: #24A3FF;
+    border-radius: 12px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.public-indent {
+    padding: 40px 0 60px 0;
 }
