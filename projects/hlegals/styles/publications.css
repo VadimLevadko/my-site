@@ -1,0 +1,18 @@
+.menu {
+    color: #24A3FF;
+    font-size: 18px;
+    line-height: 21px;
+}
+.hover-link {
+    border-bottom: 2px solid #F0145A;
+}
+.masonry {
+    min-height: 718px;
+    height: 100%;
+}
+.min-limit {
+    max-width: 360px;
+}
+.hignest-limit {
+    max-width: 345px;
+}
