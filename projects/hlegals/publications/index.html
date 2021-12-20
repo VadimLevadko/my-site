@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/main-media.css">
     <link rel="stylesheet" href="../styles/publications.css">
+    <link rel="stylesheet" href="../styles/publications-media.css">
 </head>
 <body>
     <header class="header">
         <div class="main-container flex items-between block">
             <div class="logo">
-                <img src="../images/about/Logo-Subsection.png" alt="logo">
+                <img src="../images/publications/Logo-Subsection.png" alt="logo">
             </div>
             <div>
                 <div class="flex al-center adress">
@@ -35,8 +36,8 @@
                     </div>
                 </div>
                 <nav class="nav">
-                    <img class="hide" src="../images/about/Logo-Subsection.png" alt="logo">
-                    <img class="hide" src="../images/about/svg/Logo-Mobile.svg" alt="logo">
+                    <img class="hide" src="../images/publications/Logo-Subsection.png" alt="logo">
+                    <img class="hide" src="../images/publications/svg/Logo-Subsection Mobile.svg" alt="logo">
                     <div class="burger">
                         <span></span>
                         <span></span>
@@ -45,9 +46,9 @@
                     </div>
                     <ul class="menu flex justify-end">
                         <li><a class="../about">о нас</a></li>
-                        <li><a class="hover-link">послуги</a></li>
+                        <li><a href="../services/">послуги</a></li>
                         <li><a href="../team">команда</a></li>
-                        <li><a href="#">публікації</a></li>
+                        <li><a class="hover-link">публікації</a></li>
                         <li><a href="../contact">контакти</a></li>
                     </ul>
                 </nav>
@@ -55,14 +56,14 @@
         </div>
     </header>
     <main>
-        <div class="gray-background last-bloks">
+        <div class="gray-background last-bloks border-top">
             <div class="main-container gray-bottom public-indent">
-                <div class="text-center">
-                    <span>новини</span>
-                    <span>компанія</span> 
+                <div class="flex sub-nav text-center al-center">
+                    <p class="news-active">новини</p>
+                    <p>компанія</p>
                 </div>
-                <div class="masonry relative">
-                    <div class="news-box white-bg general-pd bricks">
+                <div class="masonry relative public-content">
+                    <div class="news-box white-bg general-pd bricks order-min-2">
                         <p class="news-title min-pd-bottom">Валютний контроль помер, хай живе валютний контроль!</p>
                         <p class="date medium-pd-bottom">14 червня</p>
                         <p class="medium-pd-top hignest-limit">
@@ -71,17 +72,18 @@
                             Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
                         </p>
                     </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks">
                         <img src="../images/publications/melenial.png" alt="melenial">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Заповіт міленіала</p>
                             <p class="date medium-pd-bottom">19 серпня</p>
-                            <p class="medium-pd-top none">Що і як передаватимуть у спадщину сучасні влогери, 
+                            <p class="medium-pd-top">Що і як передаватимуть у спадщину сучасні влогери, 
                                 опініон лідери і криптомільйонери Типовий спадок українського 
-                                покоління Х виглядає так: квартира у…</p>
+                                покоління Х виглядає так: квартира у…
+                            </p>
                         </div>  
                     </div>
-                    <div class="news-box white-bg general-pd bricks">
+                    <div class="news-box white-bg general-pd bricks media-none">
                         <p class="news-title min-pd-bottom">Валютний контроль помер, хай живе валютний контроль!</p>
                         <p class="date medium-pd-bottom">14 червня</p>
                         <p class="medium-pd-top hignest-limit">
@@ -90,27 +92,52 @@
                             Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
                         </p>
                     </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks media-none">
                         <img src="../images/publications/melenial.png" alt="melenial">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Заповіт міленіала</p>
                             <p class="date medium-pd-bottom">19 серпня</p>
-                            <p class="medium-pd-top none">Що і як передаватимуть у спадщину сучасні влогери, 
+                            <p class="medium-pd-top">Що і як передаватимуть у спадщину сучасні влогери, 
                                 опініон лідери і криптомільйонери Типовий спадок українського 
-                                покоління Х виглядає так: квартира у…</p>
+                                покоління Х виглядає так: квартира у…
+                            </p>
                         </div>  
                     </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks order-min-1">
                         <img src="../images/publications/associate.png" alt="associate">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Equity associate</p>
                             <p class="date medium-pd-bottom">22 квітня</p>
-                            <p class="medium-pd-top none">На проектах я джун. При цьому я співвласник 
+                            <p class="medium-pd-top">На проектах я джун. При цьому я співвласник 
+                                юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, 
+                                що якщо буду…
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="news-box white-bg bricks">
+                        <img src="../images/publications/law.png" alt="law">
+                        <div class="general-pd">
+                            <p class="news-title min-pd-bottom">Закон про мови: як зробити свій 
+                                сайт відповідним
+                            </p>
+                            <p class="date medium-pd-bottom">19 серпня</p>
+                            <p class="medium-pd-top min-limit">Наталія Кирик, керівник контент студії Wordfactory.ua 
+                                перше, це красиво! Це аргумент номер один на користь україномовного сайту. 
+                                По-друге, це ефективно. У…
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="news-box white-bg bricks media-none">
+                        <img src="../images/publications/associate.png" alt="associate">
+                        <div class="general-pd">
+                            <p class="news-title min-pd-bottom">Equity associate</p>
+                            <p class="date medium-pd-bottom">22 квітня</p>
+                            <p class="medium-pd-top">На проектах я джун. При цьому я співвласник 
                                 юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, 
                                 що якщо буду…</p>
                         </div>  
                     </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks media-none">
                         <img src="../images/publications/law.png" alt="law">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Закон про мови: як зробити свій 
@@ -121,28 +148,7 @@
                                 По-друге, це ефективно. У…</p>
                         </div>  
                     </div>
-                    <div class="news-box white-bg bricks order-1">
-                        <img src="../images/publications/associate.png" alt="associate">
-                        <div class="general-pd">
-                            <p class="news-title min-pd-bottom">Equity associate</p>
-                            <p class="date medium-pd-bottom">22 квітня</p>
-                            <p class="medium-pd-top none">На проектах я джун. При цьому я співвласник 
-                                юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, 
-                                що якщо буду…</p>
-                        </div>  
-                    </div>
-                    <div class="news-box white-bg bricks order-1">
-                        <img src="../images/publications/law.png" alt="law">
-                        <div class="general-pd">
-                            <p class="news-title min-pd-bottom">Закон про мови: як зробити свій 
-                                сайт відповідним</p>
-                            <p class="date medium-pd-bottom">19 серпня</p>
-                            <p class="medium-pd-top min-limit">Наталія Кирик, керівник контент студії Wordfactory.ua 
-                                перше, це красиво! Це аргумент номер один на користь україномовного сайту. 
-                                По-друге, це ефективно. У…</p>
-                        </div>  
-                    </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks order-plus-1">
                         <img src="../images/publications/fine-google.png" alt="Fine for google">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Штраф для «Корпорації добра»: що буде 
@@ -150,10 +156,11 @@
                             <p class="date medium-pd-bottom">29 вересня</p>
                             <p class="medium-pd-top min-limit">І чому стягнення у 50 млн євро може стати 
                                 доленосним прецедентом За матеріалами Mind.ua 21 січня 
-                                Національна комісія із захисту даних.</p>
+                                Національна комісія із захисту даних.
+                            </p>
                         </div>  
                     </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks">
                         <img src="../images/publications/compensation.png" alt="Fine for google">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Компенсація витрат на навчання дитини 
@@ -164,7 +171,7 @@
                                 які отримують офіційну…</p>
                         </div>  
                     </div>
-                    <div class="news-box white-bg bricks order-1">
+                    <div class="news-box white-bg bricks media-none">
                         <img src="../images/publications/fine-google.png" alt="Fine for google">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Штраф для «Корпорації добра»: що буде 
@@ -175,7 +182,7 @@
                                 Національна комісія із захисту даних.</p>
                         </div>
                     </div>
-                    <div class="news-box white-bg order-1">
+                    <div class="news-box white-bg media-none">
                         <img src="../images/publications/compensation.png" alt="Fine for google">
                         <div class="general-pd">
                             <p class="news-title min-pd-bottom">Компенсація витрат на навчання дитини 
@@ -213,8 +220,6 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/slick.min.js"></script>
-    <script src="../js/sub-slider.js"></script>
-    <script src="../js/main-js.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
