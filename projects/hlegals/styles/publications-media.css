@@ -182,3 +182,8 @@
         font-weight: 500;
     }
 }
+@media screen and (max-width: 460px) {
+    .last-bloks .main-container {
+        max-width: 335px;
+    }
+}
