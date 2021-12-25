@@ -188,7 +188,7 @@
     max-width: 827px;
     padding: 40px 0 0 40px;
 }
-.active-link {
+.focus-link {
     color: var(--blue-color);
     font-size: 14px;
     font-weight: 700;
@@ -198,7 +198,7 @@
     align-items: center;
     text-transform: uppercase;
 }
-.active-link::after {
+.focus-link::after {
     content: "";
     display: block;
     position: relative;
@@ -432,7 +432,7 @@
 .separate-bottom-indent {
     margin-bottom: 20px;
 }
-.hover-link {
+.active-link {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
     font-weight: 500;
