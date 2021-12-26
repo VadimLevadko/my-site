@@ -1,0 +1,48 @@
+.form-block {
+    padding: 20px;
+}
+input, textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 26px;
+}
+textarea {
+    border: none;
+    resize: none;
+    height: 180px;
+}
+iframe {
+    width: 100%;
+    min-height: 600px;
+}
+.form-title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: var(--gray-color);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.form *:nth-child(n+1) {
+    margin-top: 20px;
+}
+.submit {
+    display: inline-block;
+    background-color: var(--blue-color);
+    color: #fff;
+    border-radius: 12px;
+    padding: 16px 50px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    display: flex;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 17px
+}
+.gray-background {
+    border-radius: 12px;
+}

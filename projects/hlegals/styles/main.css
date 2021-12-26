@@ -437,6 +437,10 @@
     border-bottom: 2px solid #F0145A;
     font-weight: 500;
 }
+.service-links .active-link {
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+}
 /* ---------------------------------Either-Styles-End---------------------------------------------------- */
 /* ---------------------------------Slider-Styles-------------------------------------------------------- */
 .slider-item {

@@ -28,6 +28,10 @@
 .blue-bg {
     background: #323264;
 }
+.active-link {
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+}
 .btn {
     background-color: var(--blue-color);
     max-width: 250px;
