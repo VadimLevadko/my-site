@@ -48,11 +48,11 @@
     font-size: 21px;
     line-height: 26px;
 }
-.adress-block {
+.address-block {
     max-width: 414px;
     width: 100%;
 }
-.adress-block a {
+.address-block a {
     display: block;
     max-width: 50%;
 }
@@ -60,6 +60,6 @@
     max-width: 527px;
     width: 100%;
 }
-.adress-title {
+.address-title {
     max-width: 50%;
 }

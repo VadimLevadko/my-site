@@ -130,13 +130,13 @@ button {
 .header {
     padding-top: 50px;
 }
-.adress {
+.address {
     margin-bottom: 18px;
 }
-.adress div:nth-child(2) {
+.address div:nth-child(2) {
     margin-left: 20px;
 }
-.adress a + a:not(:last-child) {
+.address a + a:not(:last-child) {
     padding: 0 20px;
 }
 .nav {

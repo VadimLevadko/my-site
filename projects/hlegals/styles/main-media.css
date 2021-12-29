@@ -154,6 +154,7 @@
     .main-container {
         max-width: 850px;
     }
+    
     .masonry {
         column-gap: 8em;
         margin: 0 auto;
@@ -176,6 +177,12 @@
     .title-indent {
         margin-bottom: 26px;
     }
+    .separate-none {
+        display: none;
+    }
+    .separate-logo img {
+        display: initial;
+    }
 }
 @media screen and (max-width: 860px) {
     .main-container, .services-container, .intro-container {
@@ -184,7 +191,7 @@
     .masonry {
         column-gap: 5em;
     }
-    .adress {
+    .address {
         margin-bottom: 14px;
     }
     .nav {
@@ -201,13 +208,13 @@
     button {
         font-size: 10px;
     }
-    .adress div:nth-child(2) {
+    .address div:nth-child(2) {
         margin-left: 10px;
     }
-    .nav-adress {
+    .nav-address {
         font-size: 14px;
     }
-    .adress a + a:not(:last-child) {
+    .address a + a:not(:last-child) {
         padding: 0 10px;
     }
     .tab-title {
@@ -513,7 +520,7 @@
     .logo {
         display: none;
     }
-    .nav-adress a:nth-child(3), .nav-adress a:nth-child(1) {
+    .nav-address a:nth-child(3), .nav-address a:nth-child(1) {
         display: none;
     }
     .after-dots .phone::after {
@@ -522,7 +529,7 @@
     .header div.flex {
         display: block;
     }
-    .adress {
+    .address {
         display: flex !important;
         justify-content: space-between;
     }

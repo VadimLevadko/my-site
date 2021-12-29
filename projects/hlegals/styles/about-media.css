@@ -41,10 +41,10 @@
     .menu {
         font-size: 16px;
     }
-    .adress {
+    .address {
         font-size: 14px;
     }
-    .adress a + a:not(:last-child) {
+    .address a + a:not(:last-child) {
         padding: 0 10px;
     }
     .main-container {
@@ -122,13 +122,13 @@
     .burger span:last-child {
         top: 26px;
     }
-    .nav-adress a:not(:nth-child(2)) {
+    .nav-address a:not(:nth-child(2)) {
         display: none;
     }
     .block {
         display: block;
     }
-    .nav, .adress {
+    .nav, .address {
         justify-content: space-between;
     }
     .phone {

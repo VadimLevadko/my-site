@@ -11,7 +11,7 @@
     .flex-column {
         flex-direction: column;
     }
-    .adress-block {
+    .address-block {
         margin-bottom: 40px;
     }
     .burger {
@@ -82,10 +82,10 @@
     .burger span:last-child {
         top: 26px;
     }
-    .nav-adress a:not(:nth-child(2)) {
+    .nav-address a:not(:nth-child(2)) {
         display: none;
     }
-    .adress a + a:not(:last-child) {
+    .address a + a:not(:last-child) {
         padding: 0;
     }
     .phone::before, .after-dots .phone::after {
@@ -144,7 +144,7 @@
     .nav img:nth-child(2) {
         display: initial;
     }
-    .adress, .nav {
+    .address, .nav {
         justify-content: space-between;
     }
 }
@@ -168,15 +168,15 @@
     .input-email {
         margin-top: 10px !important;
     }
-    .adress-block {
+    .address-block {
         padding: 20px;
     }
-    .adress-block a {
+    .address-block a {
         max-width: 60%;
     }
 }
 @media screen and (max-width: 320px) {
-    .adress-block a {
+    .address-block a {
         max-width: 75%;
     }
 }

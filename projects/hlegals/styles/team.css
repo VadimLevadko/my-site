@@ -5,13 +5,13 @@ body {
 .menu {
     color: var(--blue-color);
 }
-.nav-adress, .translate-button button {
+.nav-address, .translate-button button {
     color: var(--gray-color);
 }
 .translate-button button:first-child {
     color: #fff;
 }
-.nav-adress {
+.nav-address {
     font-size: 16px;
 }
 .phone::before, .phone::after {
@@ -50,6 +50,6 @@ body {
     height: 6px;
     margin-right: 10px;
 }
-.adress, .translate-button button {
+.address, .translate-button button {
     color: var(--gray-color);
 }

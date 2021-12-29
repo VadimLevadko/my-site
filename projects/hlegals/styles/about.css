@@ -18,7 +18,7 @@ body {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
 }
-.adress, .translate-button button {
+.address, .translate-button button {
     color: var(--gray-color);   
 }
 .translate-button .active-trans-btn {
@@ -141,7 +141,7 @@ body {
 .phone {
     color: var(--dark-blue);
 }
-.map-adress p:first-child {
+.map-address p:first-child {
     color: var(--dark-blue);
 }
 .slider .flex {
