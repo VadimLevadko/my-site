@@ -57,6 +57,9 @@ button {
     display: flex;
     align-items: center;
 }
+.al-flex-start {
+    align-items: flex-start;
+}
 .items-between {
     justify-content: space-between;
     align-items: center;
@@ -86,7 +89,32 @@ button {
     font-weight: 700;
     line-height: 18px;
 }
-
+.before::before, .after::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo span {
+    font-size: 38px;
+    line-height: 45px;
+    color: var(--dark-blue);
+}
+.logo::before {
+    background-image: url("../images/svg/Logo-Min.svg");
+    width: 155px;
+    height: 62px;
+    margin-right: 5px;
+}
+.logo::after {
+    background-image: url("../images/svg/Symbol-Slash.svg");
+    width: 41px;
+    height: 46px;
+    margin-left: 2px;
+}
 .after-dots .phone::after {
     content: "";
     display: block;
@@ -146,15 +174,6 @@ button {
 }
 .nav ul li + li {
     margin-left: 15px;
-}
-.before::before, .after::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 0;
-    height: 0;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .footer-pd-bottom {
     padding-bottom: 11px;

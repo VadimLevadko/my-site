@@ -38,6 +38,9 @@
         font-size: 18px;
         line-height: 26px;
     }
+    .phone::before {
+        display: none;
+    }
     .menu {
         font-size: 16px;
     }
@@ -94,6 +97,9 @@
     .header .menu_item {
         padding: 25px 15px;
     }
+    .nav {
+        align-items: center;
+    }
     .nav ul li + li {
         margin-left: 0;
     }
@@ -137,14 +143,14 @@
     .after-dots .phone::after {
         display: none;
     }
-    .nav img:first-child {
-        display: initial;
-    }
     .logo {
         display: none;
     }
     .media-none {
         display: none;
+    }
+    .nav .logo:first-child {
+        display: flex;
     }
 }
 @media screen and (max-width: 860px) {
@@ -157,8 +163,25 @@
     .main-container {
         max-width: 720px;
     }
-    .nav img:first-child {
+    .nav .logo:first-child {
         display: none;
+    }
+    .nav .logo:nth-child(2) {
+        display: flex;
+    }
+    .nav .logo span {
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .logo::before {
+        background-image: url("../images/svg/Logo-Min-media.svg");
+        width: 77px;
+        height: 31px;
+    }
+    .logo::after {
+        background-image: url("../images/svg/Symbol-Slash-media.svg");
+        width: 21px;
+        height: 23px;
     }
     .hide {
         display: initial;
@@ -236,7 +259,7 @@
     .header {
         padding-top: 20px;
     }
-    .nav img:first-child {
+    .nav .logo:first-child {
         display: none;
     }
     .average-container {
