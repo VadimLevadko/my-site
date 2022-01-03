@@ -81,7 +81,7 @@
 .services-comments ul li::marker {
     width: 6px;
     height: 6px;
-    color: #F0145A;
+    color: var(--hover-link);
 }
 .successful .main-container {
     margin-top: 80px;

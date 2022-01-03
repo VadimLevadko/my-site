@@ -46,3 +46,6 @@ iframe {
 .gray-background {
     border-radius: 12px;
 }
+.form .submit {
+    cursor: pointer;
+}

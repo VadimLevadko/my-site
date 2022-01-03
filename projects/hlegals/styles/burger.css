@@ -1,31 +1,37 @@
 .burger {
     display: none;
-    position: relative;
-    min-width: 30px;
-    min-height: 40px;
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #ededf7;
+    border-radius: 12px;
+    cursor: pointer;
 }
 .burger span {
-    position: absolute;
-    width: 46px;
+    display: flex;
+    width: 18px;
     height: 2px;
-    background: #272726;
-    left: 0;
+    background: var(--dark-blue);
     transition: all 0.2s linear;
 }
 .burger.open span {
-    background-color: #FFF;
+    background-color: var(--orange-color);
 }
-.burger span:first-child {
-    top: 7px;
+.burger span + span:not(:nth-child(3)) {
+    margin-top: 6px
 }
-.burger span:nth-child(2), .burger span:nth-child(3) {
-    top: 24px;
-}  
-.burger span:last-child {
-    top: 43px;
+.burger span:nth-child(3) {
+    margin-top: -2px;
 }
 .burger.open span:first-child {
-    top: -5px;
+    margin-top: -5px;
+    opacity: 0;
+}
+.burger.open span:last-child {
+    margin-bottom: -5px;
     opacity: 0;
 }
 .burger.open span:nth-child(2) {
@@ -34,7 +40,3 @@
 .burger.open span:nth-child(3) {
     transform: rotate(-45deg);
 }  
-.burger.open span:last-child {
-    top: 55px;
-    opacity: 0;
-}

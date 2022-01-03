@@ -13,10 +13,6 @@ body {
     font-size: 16px;
     line-height: 19px;
 }
-.active-link {
-    color: #F0145A;
-    border-bottom: 2px solid #F0145A;
-}
 .address, .translate-button button {
     color: var(--gray-color);   
 }
@@ -55,7 +51,7 @@ body {
     margin-right: 42px;
 }
 .red-color {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: linear-gradient(90.13deg, var(--hover-link) 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     color: transparent;
 }

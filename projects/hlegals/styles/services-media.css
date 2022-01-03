@@ -6,3 +6,24 @@
         justify-content: space-between;
     }
 }
+@media screen and (max-width: 700px) {
+    .burger-nav .menu li {
+        max-width: 335px;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #EDEDF7;
+        border-radius: 12px;
+        color: #24A3FF;
+    }
+    .burger-nav .menu li + li {
+        margin-top: 10px;
+    }
+    .service-links .active-link {
+        border-bottom: none;
+        color: var(--hover-link);
+    }
+}

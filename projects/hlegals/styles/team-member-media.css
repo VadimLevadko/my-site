@@ -17,11 +17,7 @@
         margin-bottom: 20px;
     }
     .burger {
-        display: initial;
-    }
-    .burger {
-        display: block;
-        z-index: 5;
+        display: flex;
     }
     .header .menu {
         display: none;
@@ -35,6 +31,24 @@
         justify-content: center;
         background-color: rgba(15, 15, 15, 0.85);
         color: #FFF;
+    }
+    .burger-nav .menu li {
+        max-width: 335px;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #EDEDF7;
+        border-radius: 12px;
+        color: #24A3FF;
+    }
+    .burger-nav .menu li + li {
+        margin-top: 10px;
+    }
+    .active-link {
+        border-bottom: none;
     }
     .header .burger.open + .menu {
         display: flex;

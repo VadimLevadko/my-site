@@ -30,3 +30,9 @@
         padding-bottom: 20px;
     }
 }
+@media screen and (max-width: 414px) {
+    .popup .main-title {
+       font-size: 22px;
+       line-height: 25px;
+    }
+}

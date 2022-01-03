@@ -61,7 +61,7 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    color: #F0145A;
+    color: var(--hover-link);
     width: 30px;
     height: 26px;
 }

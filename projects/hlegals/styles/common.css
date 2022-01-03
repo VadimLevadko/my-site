@@ -8,6 +8,8 @@
     --gray-color: #B3B3BA;
     --dark-blue: #323264;
     --light-blue: #46466E;
+    --orange-color: #EC6F5D;
+    --hover-link: #F0145A;
 }
 body {
     font-family: "TT-Norms";
@@ -19,6 +21,10 @@ img {
 a {
     color: inherit;
     text-decoration: none;
+    transition: all 0.2s linear;
+}
+a:hover {
+    color: var(--hover-link);
 }
 ul {
     list-style: none;
@@ -32,7 +38,7 @@ button {
     letter-spacing: 0.1em;
 }
 .active-trans-btn {
-    background: #F0145A;
+    background: var(--hover-link);
     border-radius: 8px;
     padding: 5px 6px;
     color: #FFF;
@@ -68,7 +74,7 @@ button {
     align-items: center;
 }
 .main-title {
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: linear-gradient(90.13deg, var(--hover-link) 0.84%, #EF8080 99.96%);
     color: transparent;
     -webkit-background-clip: text;
     font-weight: 700;
@@ -175,6 +181,9 @@ button {
 .nav ul li + li {
     margin-left: 15px;
 }
+.nav ul {
+    font-weight: 500;
+}
 .footer-pd-bottom {
     padding-bottom: 11px;
 }
@@ -206,7 +215,7 @@ button {
     border-radius: 50%;
 }
 .active-link {
-    color: #F0145A;
-    border-bottom: 2px solid #F0145A;
+    color: var(--hover-link);
+    border-bottom: 2px solid var(--hover-link);
     font-weight: 500;
 }
