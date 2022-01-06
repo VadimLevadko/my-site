@@ -60,6 +60,18 @@
     max-width: 50%;
     width: 100%;
     padding: 7px 0 8px 0;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.sub-nav p:not(.news-active):hover {
+    background-color: #F5F5FA;
+    border-radius: 10px;
+}
+.sub-nav p:first-child {
+    margin-right: 1px;
+}
+.sub-nav p:nth-child(2) {
+    margin-left: 1px;
 }
 .news-active {
     background-color: #FFF;
@@ -67,4 +79,7 @@
 }
 .border-top {
     border-radius: 12px 12px 0 0;
+}
+a.btn-public-more {
+    color: #FFF;
 }
