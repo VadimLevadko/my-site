@@ -43,8 +43,9 @@ button {
     padding: 5px 6px;
     color: #FFF;
 }
-.translate-button button {
+.translate-button button:not(.active-trans-btn) {
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 .translate-button button:not(.active-trans-btn):hover {
     background-color: #EDEDF7;

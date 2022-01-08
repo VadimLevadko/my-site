@@ -43,7 +43,7 @@ iframe {
     font-size: 14px;
     line-height: 17px
 }
-.gray-background {
+.popup .gray-background {
     border-radius: 12px;
 }
 .form .submit {

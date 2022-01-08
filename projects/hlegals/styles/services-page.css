@@ -2,7 +2,8 @@
     color: #FFF;
 }
 .cover-bg {
-    background: url("../images/services-page/cover.png") no-repeat top/100%;
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0.1) 0%, #323264 100%), 
+    url("../images/services-page/cover.png") no-repeat top/100%;
 }
 .intro-container {
     max-width: 861px;
