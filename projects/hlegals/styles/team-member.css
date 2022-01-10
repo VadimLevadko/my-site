@@ -2,7 +2,7 @@
     color: var(--gray-color);
 }
 .menu {
-    color: var(--blue-color);
+    color: var(--active-regular);
 }
 .phone::before, .phone::after {
     background-image: url("../images/svg/point.svg");
@@ -28,7 +28,7 @@
     border-bottom: 4px solid #E6E6F0;
 }
 .about-nav li + li {
-    color: var(--blue-color);
+    color: var(--active-regular);
     padding-left: 26px;
 }
 .about-nav li:first-child {
@@ -57,7 +57,7 @@
 .inf-title {
     font-size: 14px;
     line-height: 16px;
-    color: var(--dark-blue);
+    color: var(--main-title);
     font-weight: 700;
     text-transform: uppercase;
 }

@@ -3,7 +3,7 @@ body {
     line-height: 22px;
 }
 .menu {
-    color: var(--blue-color);
+    color: var(--active-regular);
 }
 .nav-address, .translate-button button {
     color: var(--gray-color);
@@ -27,7 +27,7 @@ body {
     font-size: 16px;
 }
 .staff-title {
-    color: var(--dark-blue);
+    color: var(--main-title);
 }
 .min-md-indent {
     margin-top: 20px;

@@ -32,7 +32,7 @@
 .close-popup span {
     width: 18px;
     height: 2px;
-    background-color: #EC6F5D;
+    background-color: var(--burger-cross);
     position: absolute;
 }
 .close-popup span:first-child {

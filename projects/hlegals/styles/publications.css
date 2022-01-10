@@ -6,8 +6,15 @@
     font-size: 18px;
     line-height: 21px;
 }
+.news-title {
+    display: inline-block;
+    cursor: pointer;
+}
 .translate-button button:not(:first-child), .address {
     color: var(--gray-color);
+}
+.translate-button button:not(.active-trans-btn):hover {
+    background-color: #EDEDF7;
 }
 .active-link {
     border-bottom: 2px solid var(--hover-link);
@@ -51,7 +58,7 @@
     flex-direction: row;
     border-radius: 12px;
     margin-bottom: 40px;
-    color: var(--dark-blue);
+    color: var(--main-title);
     font-size: 18px;
     line-height: 21px;
     font-weight: 500;

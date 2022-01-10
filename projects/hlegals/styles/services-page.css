@@ -34,7 +34,7 @@
     border-bottom: 2px solid #FFF;
 }
 .btn {
-    background-color: var(--blue-color);
+    background-color: var(--active-regular);
     max-width: 250px;
     min-height: 50px;
     border-radius: 12px;

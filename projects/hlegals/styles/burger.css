@@ -14,11 +14,11 @@
     display: flex;
     width: 18px;
     height: 2px;
-    background: var(--dark-blue);
+    background: var(--main-title);
     transition: all 0.2s linear;
 }
 .burger.open span {
-    background-color: var(--orange-color);
+    background-color: var(--burger-cross);
 }
 .burger span + span:not(:nth-child(3)) {
     margin-top: 6px

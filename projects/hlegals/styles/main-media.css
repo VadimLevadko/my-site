@@ -2,6 +2,12 @@
     .trust-me img {
         max-width: 360px;
     }
+    .background-blue-top {
+        background: linear-gradient(42.01deg, #323264 67.33%, #323264 51.39%, #7A425E 87.53%);
+    }
+    .background-blue-bottom {
+        background: linear-gradient(228.57deg, #323264 61.93%, #323264 57.17%, #643E72 87.46%);
+    }
 }
 @media screen and (max-width: 1439px) {
     .trust-me {
@@ -36,6 +42,9 @@
     }
     .better-box {
         max-width: 315px;
+    }
+    .dd::before {
+        bottom: -0.8%;
     }
 }
 @media screen and (max-width: 1250px) {
@@ -188,6 +197,9 @@
     .main-container, .services-container, .intro-container {
         max-width: 700px;
     }
+    .dd::before {
+        bottom: -0.7%;
+    }
     .masonry {
         column-gap: 5em;
     }
@@ -338,6 +350,13 @@
         margin: 0 auto;
         padding: 0 20px;
     }
+    .dd::after {
+        width: 96%;
+    }
+    .dd::before {
+        width: 91%;
+        bottom: -0.7%;
+    }
     .better-header {
         max-width: 366px;
         margin: 0 auto;
@@ -443,7 +462,7 @@
         content: "";
         width: 16px;
         height: 16px;
-        background: var(--blue-color);
+        background: var(--active-regular);
         border-radius: 50%;
     }
     .slick-dots li button {
@@ -543,7 +562,7 @@
         justify-content: space-between;
     }
     .translate-button button, .phone {
-        color: #B3B3BA;
+        color: var(--gray-color);
     }
     .phone {
         font-size: 16px;
@@ -563,11 +582,21 @@
     .title-indent {
         margin-bottom: 20px;
     }
+    .footer .phone {
+        color: var(--light-alt);
+    }
 }
 @media screen and (max-width: 375px) {
     .slider-content {
         max-width: 335px;
         margin: 0 auto;
+    }
+    .dd::after {
+        bottom: -10px;
+        width: 92%;
+    }
+    .dd::before {
+        width: 85%;
     }
     .main-container, .services-container, .intro-container {
         max-width: 360px;

@@ -4,12 +4,14 @@
     padding: 0;
 }
 :root {
-    --blue-color: #24A3FF;
-    --gray-color: #B3B3BA;
-    --dark-blue: #323264;
-    --light-blue: #46466E;
-    --orange-color: #EC6F5D;
+    --main-title: #323264;
+    --light-alt: #46466E;
     --hover-link: #F0145A;
+    --active-regular: #24A3FF;
+    --active-hover: #0085FF;
+    --active-active: #006CCF;
+    --gray-color: #B3B3BA;;
+    --burger-cross: #EC6F5D;
 }
 body {
     font-family: "TT-Norms";
@@ -23,11 +25,14 @@ a {
     text-decoration: none;
     transition: all 0.2s linear;
 }
-a:not(.btn, .btn-more, .btn-public-more):hover {
+a:not(.active-link, .btn, .btn-more, .btn-public-more, .services):hover {
     color: var(--hover-link);
 }
 ul {
     list-style: none;
+}
+.translate-button button {
+    font-weight: 700;
 }
 button {
     background-color: transparent;
@@ -116,7 +121,7 @@ button {
 .logo span {
     font-size: 38px;
     line-height: 45px;
-    color: var(--dark-blue);
+    color: var(--main-title);
 }
 .logo::before {
     background-image: url("../images/svg/Logo-Min.svg");
@@ -204,7 +209,7 @@ button {
 }
 .dark-point {
     font-weight: 700;
-    color: var(--blue-color);
+    color: var(--active-regular);
     line-height: 18px;
     display: flex;
     align-items: center;
@@ -220,7 +225,7 @@ button {
     content: "";
     width: 16px;
     height: 16px;
-    background: var(--blue-color);
+    background: var(--active-regular);
     border-radius: 50%;
 }
 .active-link {
@@ -232,8 +237,11 @@ button {
     transition: all 0.2s linear;
 }
 .btn:hover, .btn-more:hover, .btn-public-more:hover, .submit:hover {
-    background: #0085FF;
+    background: var(--active-hover);
 }
 .btn:focus, .btn-more:focus, .btn-public-more:focus, .submit:focus {
-    background: #006CCF;
+    background: var(--active-active);
+}
+.footer .phone {
+    color: var(--light-alt);
 }

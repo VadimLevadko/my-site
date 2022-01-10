@@ -2,10 +2,13 @@
     color: var(--gray-color);
 }
 .menu {
-    color: var(--blue-color);
+    color: var(--active-regular);
 }
 .translate-button button:not(:first-child) {
     color: var(--gray-color);
+}
+.translate-button button:not(.active-trans-btn):hover {
+    background-color: #EDEDF7;
 }
 .post-container {
     max-width: 866px;
@@ -29,7 +32,7 @@
 .post-title {
     font-size: 32px;
     line-height: 38px;
-    color: var(--dark-blue);
+    color: var(--main-title);
     font-weight: 500;
 }
 .date {
@@ -49,10 +52,10 @@
     font-weight: 500;
 }
 .light-blue {
-    color: var(--light-blue);
+    color: var(--light-alt);
 }
 .dark-blue {
-    color: var(--dark-blue);
+    color: var(--main-title);
 }
 .violation {
     max-width: 826px;
@@ -83,7 +86,7 @@
 .icon-wrapp {
     margin-top: 20px;
 }
-.icon-wrapp div {
+.icon-wrapp a {
     width: 42px;
     height: 42px;
     border-radius: 12px;
@@ -93,7 +96,7 @@
     justify-content: center;
     background-color: #F5F5FA;
 }
-.icon-wrapp div + div {
+.icon-wrapp a + a {
     margin-left: 10px;
 }
 .masonry {

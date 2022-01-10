@@ -32,7 +32,7 @@ iframe {
 }
 .submit {
     display: inline-block;
-    background-color: var(--blue-color);
+    background-color: var(--active-regular);
     color: #fff;
     border-radius: 12px;
     padding: 16px 50px;

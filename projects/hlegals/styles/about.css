@@ -90,7 +90,7 @@ body {
     margin-left: 40px;
 }
 .achievement {
-    color: var(--dark-blue);
+    color: var(--main-title);
     font-size: 14px;
     line-height: 17px;
     font-weight: 700;
@@ -134,10 +134,10 @@ body {
     margin-right: 10px;
 }
 .phone {
-    color: var(--dark-blue);
+    color: var(--gray-color);
 }
 .map-address p:first-child {
-    color: var(--dark-blue);
+    color: var(--main-title);
 }
 .slider .flex {
     display: flex !important;
