@@ -90,7 +90,7 @@ body {
     margin-left: 40px;
 }
 .achievement {
-    color: var(--main-title);
+    color: var(--section-title);
     font-size: 14px;
     line-height: 17px;
     font-weight: 700;
@@ -137,7 +137,7 @@ body {
     color: var(--gray-color);
 }
 .map-address p:first-child {
-    color: var(--main-title);
+    color: var(--section-title);
 }
 .slider .flex {
     display: flex !important;

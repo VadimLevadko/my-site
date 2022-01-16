@@ -14,7 +14,7 @@
     display: flex;
     width: 18px;
     height: 2px;
-    background: var(--main-title);
+    background: var(--section-title);
     transition: all 0.2s linear;
 }
 .burger.open span {

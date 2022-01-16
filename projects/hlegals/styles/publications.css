@@ -58,7 +58,7 @@
     flex-direction: row;
     border-radius: 12px;
     margin-bottom: 40px;
-    color: var(--main-title);
+    color: var(--section-title);
     font-size: 18px;
     line-height: 21px;
     font-weight: 500;

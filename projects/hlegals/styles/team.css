@@ -27,7 +27,7 @@ body {
     font-size: 16px;
 }
 .staff-title {
-    color: var(--main-title);
+    color: var(--section-title);
 }
 .min-md-indent {
     margin-top: 20px;

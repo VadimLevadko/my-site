@@ -2,10 +2,10 @@
     .trust-me img {
         max-width: 360px;
     }
-    .background-blue-top {
+    .bg-blue-top {
         background: linear-gradient(42.01deg, #323264 67.33%, #323264 51.39%, #7A425E 87.53%);
     }
-    .background-blue-bottom {
+    .bg-blue-bottom {
         background: linear-gradient(228.57deg, #323264 61.93%, #323264 57.17%, #643E72 87.46%);
     }
 }
@@ -86,7 +86,7 @@
     .main-container {
         max-width: 950px;
     }
-    .main-title {
+    .section-title {
         font-size: 31px;
         line-height: 33px;
     }
@@ -139,7 +139,7 @@
     }
 }
 @media screen and (max-width: 960px) {
-    .main-title {
+    .section-title {
         font-size: 22px;
         line-height: 30px;
     }
@@ -362,7 +362,7 @@
         margin: 0 auto;
         margin-bottom: 20px;
     }
-    .main-title {
+    .section-title {
         font-size: 32px;
         line-height: 38px;
         max-width: 335px;
@@ -388,7 +388,7 @@
     .team-inside-container {
         margin: 0 auto;
     }
-    .team .main-title {
+    .team .section-title {
         line-height: 37px;
         max-width: 304px;
     }
@@ -582,9 +582,6 @@
     .title-indent {
         margin-bottom: 20px;
     }
-    .footer .phone {
-        color: var(--light-alt);
-    }
 }
 @media screen and (max-width: 375px) {
     .slider-content {
@@ -674,7 +671,7 @@
     .news-box {
         max-width: 100%;
     }
-    .main-title {
+    .section-title {
         font-size: 29px;
         line-height: 36px;
         max-width: 320px;

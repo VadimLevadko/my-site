@@ -1,16 +1,18 @@
 /* ------------------------------------Main-Styles------------------------------------------------------- */
-.background-blue {
+.bg-blue {
     background: #323264;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .bg-setting {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
 }
-.background-blue-top {
+.bg-blue-top {
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 }
-.background-blue-bottom {
+.bg-blue-bottom {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -209,6 +211,7 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    width: fit-content;
 }
 .focus-link::after {
     content: "";
@@ -437,7 +440,7 @@
 .separate-succesful {
     margin-top: 60px;
 }
-.separate-background-blue {
+.separate-bg-blue {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 .separate-bottom-indent {

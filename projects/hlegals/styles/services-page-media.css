@@ -35,7 +35,7 @@
     }
 }
 @media screen and (max-width: 414px) {
-    .popup .main-title {
+    .popup .section-title {
        font-size: 22px;
        line-height: 25px;
     }

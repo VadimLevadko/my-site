@@ -31,7 +31,7 @@
     max-width: 50%;
 }
 .dark-blue {
-    color: var(--main-title);
+    color: var(--section-title);
 }
 .blue {
     color: var(--active-regular);
@@ -61,7 +61,7 @@
 .address-block img {
     margin-right: 10px;
 }
-.main-title {
+.section-title {
     font-size: 32px;
     line-height: 38px;
 }

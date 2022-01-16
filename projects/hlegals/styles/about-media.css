@@ -10,7 +10,7 @@
     }
 }
 @media screen and (max-width: 1060px) {
-    .main-title {
+    .section-title {
         font-size: 36px;
     }
     .md-right {
@@ -56,7 +56,7 @@
     .average-container {
         max-width: 720px;
     }
-    .main-title {
+    .section-title {
         font-size: 26px;
         line-height: 34px;
     }
@@ -292,7 +292,7 @@
     .average-container .md-right {
         margin-right: 0;
     }
-    .main-title, .quality {
+    .section-title, .quality {
         font-size: 32px;
         line-height: 37px;
         max-width: 335px;
