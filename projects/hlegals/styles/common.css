@@ -67,6 +67,10 @@ button {
 .flex {
     display: flex;
 }
+.bottom-rd {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
 .text-center {
     text-align: center;
 }
@@ -120,6 +124,26 @@ button {
     height: 0;
     background-repeat: no-repeat;
     background-position: center;
+}
+.box-shadow {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-shadow::before {
+    background-color: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+    width: 96%;
+    height: 10px;
+}
+.box-shadow::after {
+    background-color: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+    width: 94%;
+    height: 10px;
 }
 .logo span {
     font-size: 38px;

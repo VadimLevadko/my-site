@@ -7,7 +7,6 @@
 .bg-setting {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 }
 .bg-blue-top {
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
@@ -333,9 +332,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-.trust-me img {
-    max-width: 337px;
-}
 /* ---------------------------------End-Trust-Styles----------------------------------------------------- */
 /* ---------------------------------News-Styles---------------------------------------------------------- */
 .news-box {
@@ -498,23 +494,11 @@
     background-color: #7cc8ff;
 }
 /* ---------------------------------End-Slider-Styles---------------------------------------------------- */
-.dd::after {
-    width: 98%;
-    height: 10px;
-    position: absolute;
-    bottom: -10px;
-    background: #CACADB;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 0px 0px 12px 12px;
+.trust-me div {
+    max-width: 25%;
+    width: 100%;
+    min-height: 120px;
+    background-color: gray;
+    justify-content: center;
 }
-.dd::before {
-    width: 96%;
-    height: 10px;
-    position: absolute;
-    bottom: -0.9%;
-    background: #E7E7F2;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 0px 0px 12px 12px;
-}
+/* тест */
