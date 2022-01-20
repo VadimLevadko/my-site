@@ -1,3 +1,22 @@
+@media screen and (max-width: 1200px) {
+    .nav .hide:first-child {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .address {
+        justify-content: end;
+    }
+    .block {
+        display: block;
+    }
+}
 @media screen and (max-width: 960px) {
     .intro-setting .text-center {
         text-align: start;
@@ -10,12 +29,21 @@
         align-items: center;
     }
 }
+@media screen and (max-width: 860px) {
+    .nav .hide:first-child {
+        display: none;
+    }
+    .nav .hide:nth-child(2) {
+        display: block;
+    }
+    .header .address {
+        justify-content: space-between;
+    }
+}
 @media screen and (max-width: 700px) {
     .intro-container {
         padding: 40px 20px;
     }
-}
-@media screen and (max-width: 700px) {
     .active-link {
         color: var(--hover-link);
         border-bottom: none;

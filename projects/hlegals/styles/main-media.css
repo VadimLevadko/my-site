@@ -77,8 +77,26 @@
         min-height: 718px;
         height: initial;
     }
+    .masonry .bricks:nth-child(4), .bricks:nth-child(6) {
+        display: none;
+    }
     .trans-bg {
-        max-width: 838px;
+        display: none;
+    }
+    .br-bottom-gray {
+        border-bottom: 4px solid #E6E6F0;
+    }
+    .masonry__last-block .news-limite {
+        display: none;
+    }
+    .masonry__last-block .date {
+        border-bottom: none;
+    }
+    .btn-more {
+        position: initial;
+        max-width: 250px;
+        width: 100%;
+        margin-bottom: 40px;
     }
     .main-container {
         max-width: 950px;
@@ -149,6 +167,9 @@
     .man-name {
         font-size: 16px;
         line-height: 19px;
+    }
+    .clients__item {
+        max-width: 33.33%;
     }
     .speciality {
         font-size: 14px;
@@ -226,6 +247,16 @@
         font-size: 22px;
         max-width: 410px;
         line-height: 28px;
+    }
+    .clients__item {
+        max-width: 50%;
+        min-height: 90px;
+    }
+    .clients__item .clients-mobile {
+        display: initial;
+    }
+    .clients__item img:first-child {
+        display: none;
     }
     .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
         font-size: 28px;
