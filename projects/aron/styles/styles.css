@@ -1,0 +1,152 @@
+/* -----------------------------------------Main Styles------------------------------------------ */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "SourceSans", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
+:root {
+    --main-bg: #212721;
+    --gradient-color: #FFEA00;
+    --text-color: #D6D1CA;
+    --button-bg: #4A524A;
+    --footer-color: #3A423A;
+    --footer-contact-follow: #212721;
+    --copyright-color: #7C7C7C;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.main-bg {
+    background-color: var(--main-bg);
+}
+.flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.al-items-center {
+    align-items: center;
+}
+.al-items-end {
+    align-items: end;
+}
+.letter-spacing-min {
+    letter-spacing: 0.1em;
+}
+.border-bottom {
+    border-bottom: 1px solid var(--button-bg);
+}
+.box-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fz-22 {
+    font-size: 22px;
+}
+.relative {
+    position: relative;
+}
+.before::before, .after::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.medium-mg-right {
+    margin-right: 60px;
+}
+/* -----------------------------------------End Main Styles--------------------------------------- */
+/* -----------------------------------------Header Styles----------------------------------------- */
+.logo {
+    margin-right: 15px;
+}
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.header {
+    font-size: 13px;
+    border-bottom: 1px solid #D6D1CA1F;
+
+}
+.enquire {
+    background-color: #D6D1CA8C;
+    color: transparent;
+    -webkit-background-clip: text;
+    border-left: 1px solid #4A524A;
+    padding-left: 15px;
+    margin-right: 5px;
+}
+.counter-box {
+    background-color: var(--gradient-color);
+    width: 22px;
+    height: 22px;
+    color: #000;
+    margin-left: 8px;
+    margin-right: 17px;
+}
+.burger .burger-item {
+    width: 26px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+.burger .burger-item + .burger-item {
+    margin-top: 7px;
+}
+/* -----------------------------------------End Header Styles------------------------------------- */
+/* -----------------------------------------Digital Styles---------------------------------------- */
+.digital-container {
+    max-width: 1299px;
+    margin: 0 auto;
+}
+.digital-title {
+    font-size: 173px;
+    line-height: 172px;
+}
+.digital-comment {
+    padding-top: 85px;
+    max-width: 643px;
+}
+.innovative {
+    margin-left: 160px;
+}
+.digital-indent .digital-item + .digital-item {
+    margin-top: 70px;
+}
+.yellow-box {
+    max-width: 100px;
+    min-height: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gradient-color);
+}
+.scroll-down {
+    background: url("../images/down-scroll.png") no-repeat;
+    max-width: 127px;
+    width: 100%;
+    height: 127px;
+}
+.studio-mg-left {
+    margin-left: 18px;
+}
+/* -----------------------------------------End DIgital Styles------------------------------------ */
