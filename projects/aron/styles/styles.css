@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+}
 html {
     font-family: "SourceSans", sans-serif;
     font-weight: 400;
@@ -22,11 +25,22 @@ a {
     text-decoration: none;
     color: inherit;
 }
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
 .main-bg {
     background-color: var(--main-bg);
 }
 .flex {
     display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
 }
 .justify-content-between {
     justify-content: space-between;
@@ -34,17 +48,29 @@ a {
 .justify-content-end {
     justify-content: end;
 }
+.justify-content-center {
+    justify-content: center;
+}
 .uppercase {
     text-transform: uppercase;
 }
 .al-items-center {
     align-items: center;
 }
+.al-items-start {
+    align-items: flex-start;
+}
 .al-items-end {
     align-items: end;
 }
-.letter-spacing-min {
-    letter-spacing: 0.1em;
+.al-items-baseline {
+    align-items: baseline;
+}
+.text-center {
+    text-align: center;
+}
+.letter-spacing {
+    letter-spacing: 1px;
 }
 .border-bottom {
     border-bottom: 1px solid var(--button-bg);
@@ -55,8 +81,29 @@ a {
     justify-content: center;
     flex-direction: column;
 }
+.lh-50 {
+    line-height: 50px;
+}
+.lh-24 {
+    line-height: 24px;
+}
+.lh-20 {
+    line-height: 20px;
+}
+.fz-50 {
+    font-size: 50px;
+}
 .fz-22 {
     font-size: 22px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.fz-18 {
+    font-size: 18px;
+}
+.fz-14 {
+    font-size: 14px;
 }
 .relative {
     position: relative;
@@ -73,6 +120,23 @@ a {
 }
 .medium-mg-right {
     margin-right: 60px;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.italic {
+    font-style: italic;
+}
+.bg-title {
+    font-size: 101px;
+    line-height: 74px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: calc(50% - 74px/2 - 20.46px);
+    color: var(--gradient-color);
 }
 /* -----------------------------------------End Main Styles--------------------------------------- */
 /* -----------------------------------------Header Styles----------------------------------------- */
@@ -113,11 +177,23 @@ a {
 .burger .burger-item + .burger-item {
     margin-top: 7px;
 }
+.btn {
+    display: inline-block;
+    padding: 14px 23px 16px 23px;
+    border-radius: 4px;
+}
+.btn-bright-bg {
+    background-color: var(--button-bg);
+}
+.btn-dark-bg {
+    background-color: var(--main-bg);
+}
 /* -----------------------------------------End Header Styles------------------------------------- */
 /* -----------------------------------------Digital Styles---------------------------------------- */
 .digital-container {
     max-width: 1299px;
     margin: 0 auto;
+    margin-bottom: 110px;
 }
 .digital-title {
     font-size: 173px;
@@ -150,3 +226,185 @@ a {
     margin-left: 18px;
 }
 /* -----------------------------------------End DIgital Styles------------------------------------ */
+/* -----------------------------------------We Do Styles------------------------------------------ */
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.what-we-do .bg-title {
+    left: calc(50% - 589px/2 + 0.5px);
+}
+.what-indent {
+    margin-bottom: 186px;
+}
+/* .bg-title::before {
+    content: "What we do";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+.dd {
+    max-width: 550px;
+    width: 100%;
+}
+.bg {
+    background-image: url("../images/apartaments.png");
+    width: 503px;
+    height: 675px;
+}
+
+
+
+.section-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+.design-comment {
+    color: #D6D1CACC;
+}
+.what-we-do .section-title {
+    max-width: 488px;
+    margin-bottom: 70px;
+}
+.dignity-wrapper {
+    max-width: 550px;
+}
+.dignity-item {
+    max-width: 250px;
+    width: 100%;
+}
+.dignity-item p:last-child {
+    font-size: 18px;
+}
+.dignity-box-ident {
+    margin-bottom: 50px;
+}
+.dignity-titile {
+    font-style: 19px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+}
+.dignity-icon {
+    margin-right: 20px;
+}
+.strategy-wrap {
+    max-width: 166px;
+}
+.ecommorce-wrap {
+    max-width: 161px;
+}
+.design-wrap {
+    max-width: 180px;
+}
+.design-wrap p:last-child {
+    font-size: 17px;
+}
+.concept-wrap {
+    max-width: 181px;
+}
+/* -----------------------------------------End We Do Styles-------------------------------------- */
+/* -----------------------------------------Work Styles------------------------------------------- */
+.work-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.work-indent {
+    margin-bottom: 72px;
+}
+.work-header-indent {
+    margin-bottom: 110px;
+}
+.work-item {
+    font-size: 86px;
+    line-height: 104px;
+}
+.work-item-wrapper {
+    margin-bottom: 170px;
+}
+.build-title {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 757px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+}
+.build__span {
+    font-size: 72px;
+}
+.work__img-ident {
+    margin-bottom: 50px;
+}
+.work-box-link .work-link + .work-link {
+    margin-left: 30px;
+}
+.work-bg-colors {
+    position: absolute;
+    top: calc(50% - 375px/2 - 43.16px);
+    left: calc(50% - 279px/2 + 399.5px);
+}
+/* -----------------------------------------End Work Styles--------------------------------------- */
+/* -----------------------------------------Brands Styles----------------------------------------- */
+.brands .section-title {
+    max-width: 502px;
+    margin-bottom: 90px;
+}
+.brands .bg-title {
+    left: calc(50% - 560px/2);
+}
+.brands-indent {
+    margin-bottom: 85px;
+}
+.brands-item-wrapper {
+    max-width: 495px;
+    margin-bottom: 54px;
+}
+.brands-item {
+    max-width: 33.33%;
+    width: 100%;
+}
+.brands-item-wrapper .brands-item:nth-child(-n+3) {
+    margin-bottom: 50px;
+}
+/* -----------------------------------------End Brands Styles------------------------------------- */
+/* -----------------------------------------Think Styles------------------------------------------ */
+.next-wrapper {
+    padding-right: 108px;
+}
+.next-wrapper .next-arrow + .next-arrow {
+    margin-left: 10px;
+}
+.next-arrow {
+    padding: 17px 16px 16px 17px;
+    border: 1px solid var(--text-color);
+}
+.think-bottom-indent {
+    margin-bottom: 136px;
+}
+.reviews-wrapper .reviews-item:last-child {
+    margin-left: 40px;
+}
+.reviews-item {
+    max-width: 460px;
+    width: 100%;
+    padding: 31px 47px;
+    border: 1px solid #6F776F70;
+}
+.reviews-comment {
+    max-width: 355px;
+}
+.reviews-bottom-start {
+    margin-bottom: 30px;
+}
+.reviews-bottom-text {
+    margin-bottom: 36px;
+}
+.user-right-indent {
+    margin-right: 15px;
+}
+.user-position {
+    font-size: 17px;
+    color: #6F776F;
+    margin-top: 5px;
+}
+/* -----------------------------------------End Think Styles-------------------------------------- */
