@@ -11,6 +11,7 @@ html {
     font-family: "SourceSans", sans-serif;
     font-weight: 400;
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 :root {
     --main-bg: #212721;
@@ -138,6 +139,9 @@ ul {
     top: calc(50% - 74px/2 - 20.46px);
     color: var(--gradient-color);
 }
+.section-bg-bottom-indent {
+    padding-bottom: 80px;
+}
 /* -----------------------------------------End Main Styles--------------------------------------- */
 /* -----------------------------------------Header Styles----------------------------------------- */
 .logo {
@@ -185,9 +189,6 @@ ul {
 .btn-bright-bg {
     background-color: var(--button-bg);
 }
-.btn-dark-bg {
-    background-color: var(--main-bg);
-}
 /* -----------------------------------------End Header Styles------------------------------------- */
 /* -----------------------------------------Digital Styles---------------------------------------- */
 .digital-container {
@@ -233,6 +234,7 @@ ul {
 }
 .what-we-do .bg-title {
     left: calc(50% - 589px/2 + 0.5px);
+    min-width: 598px;
 }
 .what-indent {
     margin-bottom: 186px;
@@ -243,7 +245,7 @@ ul {
     width: 100%;
     height: 100%;
 } */
-.dd {
+.box-bg {
     max-width: 550px;
     width: 100%;
 }
@@ -371,6 +373,9 @@ ul {
 .next-wrapper {
     padding-right: 108px;
 }
+.think-section-indent {
+    margin-bottom: 80px;
+}
 .next-wrapper .next-arrow + .next-arrow {
     margin-left: 10px;
 }
@@ -408,3 +413,102 @@ ul {
     margin-top: 5px;
 }
 /* -----------------------------------------End Think Styles-------------------------------------- */
+/* -----------------------------------------Vision Styles----------------------------------------- */
+.vision-wrapper {
+    max-width: 526px;
+}
+.our-vision .section-title {
+    max-width: 526px;
+    margin-bottom: 40px;
+}
+.vision-comment {
+    font-size: 24px;
+    line-height: 30px;
+    color: #D6D1CAB2;
+    max-width: 452px;
+    margin-bottom: 52px;
+}
+.our-vision .btn-bright-bg {
+    background-color: var(--text-color);
+    color: #212721;
+}
+.our-vision .bg-title {
+    left: calc(50% - 549px/2);
+}
+.vision-border-bottom {
+    border-bottom: 1px solid #D6D1CA1F;
+    padding-bottom: 100px;
+}
+/* -----------------------------------------End Vision Styles------------------------------------- */
+/* -----------------------------------------Footer Styles----------------------------------------- */
+.footer-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 110px;
+    padding-bottom: 66px;
+}
+.footer-title {
+    font-size: 80px;
+    line-height: 80px;
+    color: var(--main-bg);
+    margin-bottom: 68px;
+}
+.call-color {
+    color: #212721;
+}
+.footer-button-wrapper a + a {
+    margin-left: 30px;
+}
+.footer-border-bottom {
+    border-bottom: 1px solid #4A524A66;
+}
+.footer-header {
+    margin-bottom: 106px;
+}
+.menu {
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--footer-color);
+}
+.menu .menu-item + .menu-item {
+    margin-top: 8px;
+}
+.footer-sub-title {
+    color: var(--footer-color);
+    font-size: 15px;
+}
+.address-wrapper {
+    margin-bottom: 50px;
+}
+.footer-address {
+    color: #7C7C7C;
+    max-width: 264px;
+}
+.footer-min-top {
+    margin-top: 20px;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.footer-link-color {
+    color: #212721;
+}
+.contact-menu .contact-item + .contact-item {
+    margin-top: 16px;
+}
+.follow-buttom-indent {
+    margin-bottom: 88px;
+}
+.guide-wrapper {
+    margin-bottom: 30px;
+}
+.guide-wrapper .guide-item + .guide-item {
+    margin-top: 16px;
+}
+.copyright {
+    font-size: 15px;
+    color: #696969;
+    max-width: 313px;
+}
+/* -----------------------------------------End Footer Styles------------------------------------- */
