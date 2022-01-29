@@ -7,18 +7,19 @@
     <title>Aron</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
     <div class="main-bg section-bg-bottom-indent">
         <header class="header">
             <div class="header-container">
-                <div class="flex justify-content-between">
-                    <div class="flex al-items-center">
+                <div class="flex justify-content-between header-wrapper">
+                    <div class="flex al-items-center header-contact">
                         <img class="logo" src="images/Logo.png" alt="Logo">
                         <span class="enquire uppercase letter-spacing">Enquire Us:</span>
                         <a class="uppercase letter-spacing border-bottom" href="mailto:Hello@aron.com">Hello@aron.com</a>
                     </div>
-                    <div class="flex">
+                    <div class="flex header-burger">
                         <img src="images/svg/package.svg" alt="package">
                         <p class="counter-box box-center">0</p>
                         <div class="burger box-center">
@@ -33,19 +34,19 @@
             <div class="digital-container digitial-cont-indent">
                 <div class="digital-indent">
                     <div class="flex digital-item">
-                        <h1 class="digital-title uppercase medium-mg-right">digital</h1>
+                        <h1 class="h1 digital-title uppercase medium-mg-right">digital</h1>
                         <p class="digital-comment fz-22 uppercase">
                             We are an award-winning branding <img src="images/svg/element-and.svg" alt="and"> 
                             web studio committed to excellence since forever.
                         </p>
                     </div>
                     <div class="innovative digital-item flex al-items-end">
-                        <p class="digital-title uppercase medium-mg-right">innovative</p>
+                        <h2 class="h2 digital-title uppercase medium-mg-right fw-400">innovative</h2>
                         <div class="yellow-box box-center">
                             <img src="images/svg/pause.svg" alt="pause">
                         </div>
                     </div>
-                    <div class="justify-content-end digital-item flex al-items-end">
+                    <div class="justify-content-end digital-item flex al-items-end studio-wrapper">
                         <div class="scroll-down box-center">
                             <a href="#footer"><img src="images/svg/arrow-down.svg" alt="arrow"></a>
                         </div>
@@ -56,13 +57,15 @@
         </section>
         <section class="what-we-do">
             <div class="info-container what-indent">
-                <div class="flex justify-content-between al-items-center">
-                    <div class="relative flex justify-content-center">
-                        <p class="bg-title uppercase before after">what we do</p>
-                        <img src="images/apartaments.png" alt="">
+                <div class="flex justify-content-between al-items-center section-content-wrapper">
+                    <div class="relative flex justify-content-center bg-wrapper">
+                        <p class="bg-title uppercase first-letter relative bg-letter">what we 
+                            <span class="last-letter relative">do</span>
+                        </p>
+                        <img src="images/apartaments.png" alt="apartments">
                     </div>
                     <div>
-                        <p class="section-title fw-700">Aron creates <span class="italic fw-400">innovation</span> by design, not by chance.</p>
+                        <p class="section-title fw-700 uppercase">Aron creates <span class="italic fw-400">innovation</span> by design, not by chance.</p>
                         <div class="dignity-wrapper flex wrap justify-content-between">
                             <div class="dignity-item dignity-box-ident flex al-items-start">
                                 <img class="dignity-icon" src="images/svg/flash.svg" alt="flash">
@@ -129,7 +132,7 @@
         </section>
         <section class="brands">
             <div class="info-container brands-indent">
-                <div class="flex al-items-center justify-content-between">
+                <div class="flex al-items-center justify-content-between section-content-wrapper">
                     <div>
                         <p class="section-title uppercase">We worked with the world’s biggest brands.</p>
                         <div class="flex wrap brands-item-wrapper al-items-center">
@@ -140,11 +143,13 @@
                             <div class="brands-item flex justify-content-center"><img src="images/svg/webflow.svg" alt="webflow"></div>
                             <div class="brands-item flex justify-content-center"><img src="images/svg/brun.svg" alt="brun"></div> 
                         </div>
-                        <a class="btn btn-bright-bg" href="#">Enquire Us</a>
+                        <div><a class="btn btn-bright-bg" href="#">Enquire Us</a></div>
                     </div>
-                    <div class="box-bg">
-                        <div class="relative flex justify-content-center">
-                            <p class="bg-title uppercase before after">Our client</p>
+                    <div class="box-bg order_-1">
+                        <div class="relative flex justify-content-center bg-phone">
+                            <p class="bg-title uppercase first-letter">Our 
+                                <span class="relative last-letter">client</span>
+                            </p>
                             <img src="images/our-client.png" alt="our-client">
                         </div>
                     </div>
@@ -198,10 +203,12 @@
         <section class="our-vision">
             <div class="vision-border-bottom">
                 <div class="info-container">
-                    <div class="flex justify-content-between al-items-center">
+                    <div class="flex justify-content-between al-items-center section-content-wrapper">
                         <div class="box-bg">
-                            <div class="relative flex justify-content-center">
-                                <p class="bg-title uppercase before after">Our vision</p>
+                            <div class="relative flex justify-content-center bg-phone">
+                                <p class="bg-title uppercase first-letter">Our 
+                                    <span class="relative last-letter">vision</span>
+                                </p>
                                 <img src="images/our-vision.png" alt="our-vision">
                             </div>
                         </div>
@@ -228,7 +235,7 @@
                         <a class="footer-border-bottom uppercase fz-14 letter-spacing call-color" href="tel:+1317711105">make a call</a>
                     </div>
                 </div>
-                <div class="flex justify-content-between">
+                <div class="flex justify-content-between footer-wrapper">
                     <nav class="nav">
                         <ul class="menu letter-spacing uppercase">
                             <li class="menu-item"><a href="#">Home</a></li>

@@ -1,0 +1,276 @@
+@media screen and (max-width: 1330px) {
+    .header-container, .digital-container {
+        max-width: 1200px;
+    }
+    .info-container {
+        max-width: 1100px;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .header-container, .digital-container, .info-container {
+        max-width: 1000px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-container, .work-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .section-title {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .section-content-wrapper {
+        flex-direction: column;
+    }
+    .what-we-do .bg-wrapper {
+        margin-bottom: 60px;
+    }
+    .work-indent {
+        margin-bottom: 140px;
+    }
+    .work-bg-colors {
+        display: none;
+    }
+    .order_-1 {
+        order: -1;
+    }
+    .box-bg {
+        margin-bottom: 60px;
+    }
+    .brands .btn {
+        display: block;
+        max-width: 126px;
+        margin: 0 auto;
+    }
+    .vision-comment {
+        text-align: center;
+    }
+    .our-vision .btn {
+        display: block;
+        max-width: 144px;
+        margin: 0 auto;
+    }
+    .innovative {
+        margin-left: 80px;
+    }
+    .digital-title {
+        font-size: 140px;
+        line-height: 148px;
+    }
+    .digital-comment {
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .yellow-box {
+        display: none;
+    }
+    .digital-comment {
+        font-size: 16px;
+    }
+    .reviews-wrapper {
+        flex-direction: column;
+    }
+    .reviews-item {
+        margin: 0 auto;
+    }
+    .reviews-wrapper .reviews-item:last-child {
+        margin-left: auto;
+        margin-top: 40px;
+    }
+    .think-bottom-indent {
+        margin-bottom: 100px;
+    }
+    .think-section-indent {
+        margin-bottom: 160px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-address {
+        margin: 0 auto;
+    }
+    .copyright {
+        margin: 0 auto;
+    }
+    .nav, .contact-wrapper {
+        margin-bottom: 40px;
+    }
+    .footer-sub-title {
+        margin-bottom: 20px;
+    }
+    .footer-title {
+        font-size: 70px;
+    }
+    .digital-comment {
+        display: none;
+    }
+    .h1, .h2 {
+        margin: 0 auto;
+    }
+    .innovative {
+        margin-left: initial;
+    }
+    .studio-wrapper {
+        flex-direction: column-reverse;
+    }
+    .studio-wrapper .digital-title {
+        padding-bottom: 40px;
+    }
+    .studio-wrapper .digital-title, .scroll-down {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 740px) {
+    .digital-title {
+        font-size: 100px;
+        line-height: 90px;
+    }
+    .digital-container {
+        margin-top: 40px;
+    }
+    .work-item {
+        font-size: 60px;
+        line-height: 96px;
+    }
+    .our-work .fz-50 {
+        font-size: 40px;
+    }
+    .build__span {
+        font-size: 56px;
+    }
+    .build-title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .footer-title {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .bg-wrapper, .bg-phone {
+        flex-direction: column;
+        text-align: center;
+    }
+    .what-we-do .bg-title {
+        min-width: initial;
+    }
+    .bg-title {
+        font-size: 72px;
+        line-height: 74px;
+        margin-bottom: 20px;
+        position: initial;
+    }
+    .what-we-do .last-letter::before, 
+    .brands .last-letter::before, 
+    .our-vision .last-letter::before {
+        width: 100%;
+    }
+    .what-we-do .first-letter::before, 
+    .brands .first-letter::before, 
+    .our-vision .first-letter::before {
+        display: none;
+    }
+    .footer-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .dignity-wrapper {
+        flex-direction: column;
+    }
+    .dignity-item {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .dignity-icon {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .strategy-wrap, .ecommorce-wrap, 
+    .design-wrap, .concept-wrap {
+        margin: 0 auto;
+    }
+    .dignity-wrapper .dignity-item + .dignity-item {
+        margin-top: 40px;
+    }
+    .digital-title {
+        font-size: 80px;
+        line-height: 70px;
+    }
+    .work-item {
+        font-size: 50px;
+        line-height: 86px;
+    }
+    .What-they-think .section-title {
+        text-align: start;
+    }
+    .What-they-think .al-items-baseline {
+        align-items: center;
+    }
+    .next-wrapper {
+        display: flex;
+    }
+}
+@media screen and (max-width: 470px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+    .header-contact {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .header-burger {
+        justify-content: center;
+    }
+    .work-item {
+        font-size: 38px;
+        line-height: 72px;
+    }
+    .work-header-indent {
+        align-items: baseline;
+    }
+    .Our-work .fz-50 {
+        font-size: 30px;
+    }
+    .reviews-item {
+        max-width: 360px;
+        padding: 20px;
+    }
+    .bg-title {
+        font-size: 60px;
+    }
+    .section-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .think-bottom-indent {
+        flex-direction: column;
+    }
+    .next-wrapper {
+        padding-right: 0;
+    }
+    .digital-title {
+        font-size: 66px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .bg-title {
+        font-size: 45px;
+    }
+    .build-title {
+        font-size: 32px;
+        line-height: 52px;
+    }
+    .build__span {
+        font-size: 31px;
+    }
+}
