@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aron</title>
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/media.css">
 </head>
@@ -125,7 +127,7 @@
                     </div>
                     <div class="work-box-link">
                         <a class="work-link btn btn-bright-bg" href="#">View on Webflow</a>
-                        <a class="work-link fz-14 lh-20 uppercase border-bottom letter-spacing" href="#">contact Us</a>
+                        <a class="work-link fz-14 lh-20 uppercase border-bottom letter-spacing open-popup" href="#">contact Us</a>
                     </div>
                 </div>
             </div>
@@ -231,7 +233,7 @@
                 <div class="footer-header text-center">
                     <p class="footer-title uppercase">Ready to talk <br> FEEL FREE TO WRITE US.</p>
                     <div class="footer-button-wrapper lh-20">
-                        <a class="btn btn-bright-bg" href="#">Contact Us</a>
+                        <a class="btn btn-bright-bg open-popup" href="#">Contact Us</a>
                         <a class="footer-border-bottom uppercase fz-14 letter-spacing call-color" href="tel:+1317711105">make a call</a>
                     </div>
                 </div>
@@ -275,5 +277,40 @@
                 </div>
             </div>
         </footer>
+        <div class="popup-bg">
+            <div class="popup">
+                <div class="relative flex al-items-center justify-content-between popup-title-bottom">
+                    <p class="popup-title uppercase fw-700">Contact us</p>
+                    <div class="close-popup">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="#">
+                        <p class="popup-bottom-indent">
+                            <input class="popup-item" type="text" placeholder="Enter your name" required>
+                        </p>
+                        <p class="popup-bottom-indent">
+                            <textarea class="popup-item" name="" id="" cols="30" rows="10" placeholder="your massage"></textarea>
+                        </p>
+                        <p class="popup-bottom-indent popup-sub-title uppercase">How do you answer?</p>
+                        <p class="popup-bottom-indent">
+                            <input class="popup-item" type="email" placeholder="Your email">
+                        </p>
+                        <p class="popup-bottom-indent">
+                            <input class="popup-item" type="tel" placeholder="Or your phone">
+                        </p>
+                        <p class="popup-buttom-wraper flex justify-content-center">
+                            <input class="btn popup-btn fw-700 uppercase popup-item" type="submit" value="Submit">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>

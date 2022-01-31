@@ -153,6 +153,9 @@
         font-size: 50px;
         line-height: 70px;
     }
+    .popup {
+        max-width: 500px;
+    }
 }
 @media screen and (max-width: 580px) {
     .bg-wrapper, .bg-phone {
@@ -218,6 +221,9 @@
     .next-wrapper {
         display: flex;
     }
+    .popup {
+        max-width: 400px;
+    }
 }
 @media screen and (max-width: 470px) {
     .header-wrapper {
@@ -261,6 +267,9 @@
         font-size: 66px;
         line-height: 50px;
     }
+    .popup {
+        max-width: 350px;
+    }
 }
 @media screen and (max-width: 375px) {
     .bg-title {
@@ -272,5 +281,8 @@
     }
     .build__span {
         font-size: 31px;
+    }
+    .popup {
+        max-width: 320px;
     }
 }

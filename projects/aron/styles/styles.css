@@ -498,6 +498,94 @@ ul {
     max-width: 313px;
 }
 /* -----------------------------------------End Footer Styles------------------------------------- */
+/* -----------------------------------------Slick Styles------------------------------------------ */
+.slick-slide {
+    display: flex !important;
+    justify-content: end;
+    width: fit-content !important;
+}
+.slick-track {
+    display: flex;
+    justify-content: flex-end;
+}
+/* -----------------------------------------End Slick Styles-------------------------------------- */
+/* -----------------------------------------Popup Styles------------------------------------------ */
+.popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #F5F5FA;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+}
+.close-popup {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.close-popup span {
+    width: 30px;
+    height: 2px;
+    background-color: var(--main-bg);
+    display: block;
+}
+.close-popup span + span {
+    margin-top: -2px;
+}
+.close-popup span:first-child {
+    transform: rotate(-45deg);
+}
+.close-popup span:last-child {
+    transform: rotate(45deg);
+}
+.popup-title {
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--footer-color);
+}
+.popup-title-bottom {
+    margin-bottom: 16px;
+}
+.popup-bottom-indent {
+    margin-bottom: 10px;
+}
+.popup .popup-item {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--main-bg);
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none;
+}
+.popup-sub-title {
+    color: var(--main-bg);
+    font-size: 24px;
+}
+.popup-buttom-wraper {
+    margin-top: 40px;
+}
+.popup-btn {
+    max-width: 120px;
+    color: var(--main-bg);
+    background: var(--text-color);
+    cursor: pointer;
+}
+/* -----------------------------------------End Popup Styles-------------------------------------- */
 .what-we-do .first-letter::before {
     content: "W";
     color: var(--text-color);
