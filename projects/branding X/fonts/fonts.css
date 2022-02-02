@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url("Urbanist-Regular.woff2") format("woff2"),
+    url("Urbanist-Regular.woff") format("woff");
+  font-weight: 400;
+}

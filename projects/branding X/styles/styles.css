@@ -1,0 +1,27 @@
+:root {
+  --first-box: #ff7549;
+  --second-box: #233b99;
+  --title-color: #181a3f;
+  --comment-color: #555671;
+  --other-bg: #f0efec;
+}
+html {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
