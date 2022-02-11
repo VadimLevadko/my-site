@@ -8,13 +8,14 @@
     <title>Branding X</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 
 <body>
     <header class="header">
         <div class="section-border">
             <div class="section-container header_indent">
-                <div class="flex justify-between al-items-center">
+                <div class="flex justify-between al-items-center header-wrapper">
                     <div><img src="images/logo.png" alt="logo"></div>
                     <div class="flex">
                         <p>cart ( 0 )</p>
@@ -58,7 +59,7 @@
     </section>
     <section class="branding-agency">
         <div class="section-container branding__indent section-border">
-            <div class="flex justify-between al-items-center branding__title-bottom">
+            <div class="flex justify-between al-items-center branding__title-bottom media-title">
                 <p class="section-title fz-40 letter-spacing">We’re more than just a branding agency.</p>
                 <a class="btn btn-transparent fz-20 uppercase" href="#">Browse All services</a>
             </div>
@@ -115,38 +116,39 @@
         </div>
     </section>
     <section class="back-agency">
-        <div>
-            <div class="section-container">
-                <div class="flex justify-between al-items-center">
-                    <p class="section-title fz-40 letter-spacing uppercase">Our agency started back in 2002</p>
-                    <a class="btn btn-transparent uppercase fz-20" href="#">More About Us</a>
+        <div class="section-container">
+            <div class="flex justify-between al-items-center">
+                <p class="section-title fz-40 letter-spacing uppercase">Our agency started back in 2002</p>
+                <a class="btn btn-transparent uppercase fz-20" href="#">More About Us</a>
+            </div>
+            <div class="masonry">
+                <p class="back-agency__comment lh-30 fz-20 bricks">
+                    Pellentesque sit amet porttitor eget dolor morbi non turpis egestas maecenas pharetra convallis
+                    posuere netus et malesuada fames ac fames ac turpis egestas sed tempus urna sit amet facilisis
+                    magna
+                    etiam tempor orci non tellus orci ac auctor augue.
+                </p>
+                <div class="bricks"><img src="images/some-person.png" alt="Some Person"></div>
+                <div class="bricks masonry__item"></div>
+                <div class="bricks">
+                    <div class="masonry__item brick-orange"></div>
                 </div>
-                <div>
-                    <p class="back-agency__comment lh-30 fz-20">
-                        Pellentesque sit amet porttitor eget dolor morbi non turpis egestas maecenas pharetra convallis
-                        posuere netus et malesuada fames ac fames ac turpis egestas sed tempus urna sit amet facilisis
-                        magna
-                        etiam tempor orci non tellus orci ac auctor augue.
-                    </p>
-                    <div class="some-box"></div>
-                    <img src="images/meeting.png" alt="meeting">
-                    <img src="images/some-person.png" alt="Some Person">
-                    <div class="some-box"></div>
-                    <div class="some-box"></div>
-                    <div class="some-box"></div>
-                    <p>
-                        Pellentesque sit amet porttitor eget dolor morbi non turpis egestas maecenas pharetra convallis
-                        posuere netus et malesuada fames ac fames ac turpis egestas sed tempus urna sit amet facilisis
-                        magna
-                        etiam tempor orci non tellus orci ac auctor augue.
-                    </p>
-                </div>
+                <div class="some-box bricks brick-blue masonry__item"></div>
+                <div class="some-box bricks brick-orange masonry__item"></div>
+                <div class="bricks"><img src="images/meeting.png" alt="meeting"></div>
+                <div class="some-box bricks brick-blue masonry__item"></div>
+                <p class="bricks">
+                    Pellentesque sit amet porttitor eget dolor morbi non turpis egestas maecenas pharetra convallis
+                    posuere netus et malesuada fames ac fames ac turpis egestas sed tempus urna sit amet facilisis
+                    magna
+                    etiam tempor orci non tellus orci ac auctor augue.
+                </p>
             </div>
         </div>
     </section>
     <section class="portfolio">
         <div class="section-container">
-            <div class="flex justify-between al-items-center portfolio__title-bottom">
+            <div class="flex justify-between al-items-center portfolio__title-bottom media-title">
                 <p class="section-title fz-40 letter-spacing uppercase">See our latest portfolio projects</p>
                 <a class="btn btn-transparent fz-20 uppercase" href="#">Browse more</a>
             </div>
@@ -211,10 +213,10 @@
         </div>
     </section>
     <section class="touch-today">
-        <div class="bg-gray">
+        <div class="bg-gray relative">
             <div class="figure-container">
                 <div class="flex justify-between al-items-center">
-                    <div>
+                    <div class="touch__header">
                         <p class="section-title uppercase fz-40 touch__title-indent">
                             Have a project? Get in touch today
                         </p>
@@ -239,7 +241,7 @@
                     maecenas doloro accumsan pharetra massa massa ultricie.
                 </p>
             </div>
-            <div class="flex al-items-center justify-between">
+            <div class="flex al-items-center justify-between our-idea__content">
                 <div class="our-idea__item">
                     <img src="images/project-idea.png" alt="Project Idea">
                     <p class="our-idea__subtitle">Project Idea</p>
@@ -272,12 +274,12 @@
         </div>
     </section>
     <section class="articles">
-        <div class="section-container">
-            <div class="flex al-items-center justify-between articles__bottom">
+        <div class="section-container section-border">
+            <div class="flex al-items-center justify-between articles__bottom media-title">
                 <p class="section-title fz-40 letter-spacing">Articles & resources</p>
                 <a class="btn btn-transparent fz-20 uppercase" href="#">Browse more posts</a>
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between wrap articles__content">
                 <div class="articles__item">
                     <img src="images/marketing.png" alt="marketing">
                     <div class="articles__date">
@@ -323,7 +325,7 @@
     <section class="work-together">
         <div class="bg-gray">
             <div class="section-container flex flex-column al-items-center justify-center">
-                <div class="work-together__content flex justify-between al-items-center">
+                <div class="work-together__content flex justify-between al-items-center media-title">
                     <p class=" work-together__title uppercase">Let’s work together</p>
                     <div class="flex flex-column work-together__connection">
                         <div class="flex">
@@ -342,7 +344,7 @@
     <section class="footer-nav">
         <div class="section-border">
             <div class="section-container">
-                <div class="flex justify-between">
+                <div class="flex justify-between footer-nav__wrapper">
                     <div>
                         <img src="images/logo.png" alt="logo">
                         <div class="flex flex-column nav-link__wrapper">
@@ -359,7 +361,7 @@
                     <div class="center-block">
                         <nav class="nav">
                             <p class="section-title fz-20 footer-nav__title-bottom">Pages</p>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between menu-wrapper">
                                 <ul class="menu uppercase">
                                     <li class="menu-link"><a href="#">Home</a></li>
                                     <li class="menu-link"><a href="#">About</a></li>
@@ -395,7 +397,7 @@
     <footer class="footer">
         <div class="bg-gray">
             <div class="section-container">
-                <div class="flex justify-between al-items-center">
+                <div class="flex justify-between al-items-center copyright-wrapper">
                     <p class="lh-30 copyright">
                         Copyright &copy; Branding X | Designed by BRIX Templates - Powered byWebflow
                     </p>
