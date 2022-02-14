@@ -39,11 +39,11 @@ ul {
   flex-wrap: wrap;
 }
 .section-container {
-  max-width: 1280px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .figure-container {
-  padding-left: calc((100vw - 1280px) / 2);
+  padding-left: calc((100vw - 1220px) / 2);
 }
 .fz-54 {
   font-size: 54px;
@@ -68,12 +68,19 @@ ul {
 .justify-center {
   justify-content: center;
 }
+.justify-end {
+  justify-content: end;
+}
 .al-items-center {
   align-items: center;
+}
+.al-self-end {
+  align-self: flex-end;
 }
 .section-title {
   color: var(--title-color);
   text-transform: uppercase;
+  font-weight: 400;
 }
 .box-center {
   display: flex;
@@ -92,6 +99,7 @@ ul {
   padding: 17px 56px;
   letter-spacing: 1.6px;
   line-height: 22px;
+  transition: all 0.4s linear;
 }
 .btn-orange {
   background-color: var(--first-box);
@@ -102,6 +110,14 @@ ul {
   background-color: transparent;
   border: 2px solid var(--title-color);
   color: var(--title-color);
+}
+.btn-orange:hover {
+  border-radius: 12px;
+}
+.btn-transparent:hover {
+  background-color: #555671;
+  color: #fff;
+  border-radius: 12px;
 }
 .slash {
   color: var(--first-box);
@@ -301,22 +317,56 @@ ul {
 .back-agency .section-title {
   max-width: 476px;
 }
+.back-agency__bottom {
+  margin-bottom: 80px;
+}
+.back-agency__circle::before {
+  max-width: 166px;
+  min-height: 166px;
+  top: calc(50% - 83px);
+  left: calc(50% - 83px);
+}
+.back-agency .cut-circle::before {
+  display: none;
+}
+.back-agency__cut-circle::after {
+  bottom: 0;
+  right: -50%;
+  background: #cddceb;
+  z-index: -1;
+}
+.back-agency .pale-blue-circle::after {
+  background: #ffffffb8;
+}
 .back-agency__comment {
   max-width: 418px;
   width: 100%;
   color: var(--comment-color);
 }
-
-.masonry {
-  column-count: 3;
-  min-height: 1px;
+.back-agency__container-indent {
+  padding: 242px 0;
 }
-.bricks {
-  display: block;
+.back-agency__comment:last-child {
+  padding-top: 66px;
+}
+.semi-square-blue::before {
+  max-width: 260px;
+  border-right: 260px solid transparent;
+  border-bottom: 260px solid var(--second-box);
+}
+.masonry {
+  display: grid;
+  grid-template-columns: 468px 260px 492px;
+  grid-template-rows: 260px;
+  grid-template-rows: 260px 468px;
 }
 .masonry__item {
   width: 260px;
   height: 260px;
+}
+.masonry__item-min {
+  width: 236px;
+  height: 236px;
 }
 .brick-orange {
   background-color: var(--first-box);
@@ -476,6 +526,7 @@ ul {
   letter-spacing: 3px;
   max-width: 375px;
   color: var(--title-color);
+  font-weight: 400;
 }
 .work-together__connection {
   font-size: 32px;
