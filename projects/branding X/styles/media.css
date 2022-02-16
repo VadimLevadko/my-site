@@ -45,6 +45,31 @@
     margin: 0 auto;
     margin-top: 50px;
   }
+  .back-agency .masonry__item,
+  .masonry__item-min {
+    display: none;
+  }
+  .order-1 {
+    order: -1;
+  }
+  .masonry {
+    display: flex;
+    flex-direction: column;
+  }
+  .back-agency__img-wrapper {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .back-agency__comment:first-child {
+    margin-bottom: 60px;
+  }
+  .back-agency__comment {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .back-agency__comment:last-child {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .section-container {
@@ -307,5 +332,15 @@
   .branding-agency .btn {
     padding: 17px 26px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fz-40 {
+    font-size: 28px;
+    line-height: 48px;
+  }
+  .section-container {
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
   }
 }
