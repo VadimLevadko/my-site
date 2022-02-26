@@ -112,12 +112,12 @@ ul {
   color: var(--title-color);
 }
 .btn-orange:hover {
-  border-radius: 12px;
+  background-color: transparent;
+  color: black;
 }
 .btn-transparent:hover {
   background-color: #555671;
   color: #fff;
-  border-radius: 12px;
 }
 .slash {
   color: var(--first-box);
@@ -577,5 +577,11 @@ ul {
 }
 .networks-item + .networks-item {
   margin-left: 28px;
+}
+.networks-wrapper .networks-item {
+  transition: all 0.3s linear;
+}
+.networks-wrapper .networks-item:hover {
+  transform: rotate(10deg);
 }
 /* ----------------------------End Footer Styles-------------------------------- */
