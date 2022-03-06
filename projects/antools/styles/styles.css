@@ -1,0 +1,114 @@
+:root {
+  --white-90: #ffffffe5;
+  --orange-btn-color: #fdf5ff;
+  --orange-btn-bg: #ff6e30;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* ---------------------------------Main Styles---------------------------------------- */
+.main-bg {
+  background-color: #1e252b;
+}
+.fz-18 {
+  font-size: 18px;
+}
+.lh-30 {
+  line-height: 30px;
+}
+.section-container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.al-items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.white-btn {
+  color: #ffffffc7;
+}
+.orange-btn {
+  color: var(--orange-btn-color);
+  padding: 12px 28px;
+  background-color: var(--orange-btn-bg);
+  border-radius: 8px;
+}
+.margin-bottom-title {
+  margin-bottom: 30px;
+}
+/* ---------------------------------End Main Styles------------------------------------ */
+/* ---------------------------------Header Styles-------------------------------------- */
+.header {
+  padding: 26px 0;
+}
+.logo {
+  font-weight: 600;
+  color: var(--white-90);
+}
+.logo-indent {
+  margin-right: 12px;
+}
+.nav {
+  max-width: 430px;
+  width: 100%;
+}
+.menu {
+  color: #9a9d9f;
+}
+.header .btn-wrapper .btn + .btn {
+  margin-left: 40px;
+}
+/* ---------------------------------End Header Styles---------------------------------- */
+.awesome-container {
+  padding-left: calc((100vw - 1220px) / 2);
+  margin-top: 90px;
+}
+.awesome__title {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 500;
+  color: var(--white-90);
+  max-width: 600px;
+}
+.awesome_buttom {
+  color: var(--orange-btn-bg);
+}
+.awesome__comment {
+  max-width: 486px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.awesome__comment-bottom {
+  margin-bottom: 60px;
+}
+.form {
+  margin-bottom: 110px;
+}
+.social-media-item + .social-media-item {
+  margin-left: 30px;
+}
