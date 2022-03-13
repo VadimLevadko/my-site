@@ -1,7 +1,9 @@
 /* ----------------------------------------------------------------------------- */
 :root {
   --first-box: #ff7549;
+  --first-color: 255, 117, 73;
   --second-box: #233b99;
+  --second-color: 35, 59, 153;
   --title-color: #181a3f;
   --comment-color: #555671;
   --other-bg: #f0efec;
@@ -102,7 +104,7 @@ ul {
   transition: all 0.4s linear;
 }
 .btn-orange {
-  background-color: var(--first-box);
+  background-color: rgb(var(--first-color));
   border: 2px solid var(--first-box);
   color: #fff;
 }
@@ -112,12 +114,12 @@ ul {
   color: var(--title-color);
 }
 .btn-orange:hover {
-  background-color: transparent;
-  color: black;
+  background-color: rgba(var(--first-color), 90%);
+  box-shadow: 0 0 35px rgba(var(--first-color), 50%);
 }
 .btn-transparent:hover {
-  background-color: #555671;
-  color: #fff;
+  background-color: rgba(var(--second-color), 20%);
+  box-shadow: 0 0 35px rgba(var(--second-color), 20%);
 }
 .slash {
   color: var(--first-box);
@@ -585,3 +587,11 @@ ul {
   transform: rotate(10deg);
 }
 /* ----------------------------End Footer Styles-------------------------------- */
+
+.social svg path {
+  transition: all 0.2s linear;
+}
+
+.facebook:hover svg path {
+  fill: red;
+}
