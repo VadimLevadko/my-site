@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/slick.css">
     <link rel="stylesheet" href="./styles/slick-theme.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/media.css">
 </head>
 
 <body>
@@ -37,13 +38,13 @@
             </div>
         </header>
         <section class="awesome">
-            <div class="awesome-container">
-                <div class="flex justify-between">
-                    <div>
+            <div class="awesome-container md-center">
+                <div class="flex awesome__wrapper justify-between">
+                    <div class="awesome__box-wrapper md-center">
                         <h1 class="awesome__title margin-bottom-title">Awesome tools for Designer & Developer<span
                                 class="awesome_buttom">.</span>
                         </h1>
-                        <p class="awesome__comment fz-18 lh-30 awesome__comment-bottom">
+                        <p class="awesome__comment fz-18 lh-30 awesome__comment-bottom md-center">
                             Antool is a web collection of information on paid or free Design and Development tools
                         </p>
                         <form>
@@ -68,7 +69,7 @@
                             <a class="social-media-item" href="#"><img src="images/svg/twitter.svg" alt="twitter"></a>
                         </div>
                     </div>
-                    <div>
+                    <div class="md-none">
                         <img src="images/system-menu.png" alt="console">
                     </div>
                 </div>
@@ -82,7 +83,7 @@
                         Tools for the best Designers and Developers most popularly used in the world
                     </p>
                 </div>
-                <div class="tools-wrapper flex justify-between wrap">
+                <div class="tools-wrapper flex justify-between wrap md-center">
                     <div class="tools__item transition-item relative">
                         <div class="tools__inside-wrapper">
                             <div class="flex al-items-center">
@@ -330,9 +331,9 @@
             </div>
         </section>
         <section class="trust">
-            <div class="section-container">
-                <div class="trust-bg">
-                    <div class="trust__content-wrapper relative overflow-hidden">
+            <div class="section-container relative">
+                <div class="trust-bg trust-br">
+                    <div class="trust__content-wrapper relative overflow-hidden trust-br">
                         <div class="elipsise"></div>
                         <div class="trust__container">
                             <p class="tools__title text-center trust__title-bottom white-78 fw-500">
@@ -525,7 +526,7 @@
             </div>
         </section>
         <section class="slider">
-            <div class="section-container">
+            <div class="section-container relative">
                 <div class="slider-items flex justify-center al-items-center">
                     <div class="slider-item">
                         <div class="slider__person relative">
@@ -585,6 +586,18 @@
                         </div>
                     </div>
                 </div>
+                <button class="slick-prev slick-arrow arrow-back">
+                    <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 26L2 14L14 2" stroke="white" stroke-opacity="0.28" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="slick-next slick-arrow arrow-next">
+                    <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 26L2 14L14 2" stroke="white" stroke-opacity="0.28" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </section>
         <section class="contributor">
