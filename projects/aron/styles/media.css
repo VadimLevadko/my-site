@@ -6,6 +6,12 @@
   .info-container {
     max-width: 1100px;
   }
+  .reviews-item {
+    padding: 30px 26px;
+  }
+  .slick-track {
+    margin-left: 30px;
+}
 }
 @media screen and (max-width: 1240px) {
   .header-container,
@@ -14,6 +20,9 @@
     max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .think-bottom-indent {
+    justify-content: center;
   }
   .footer-container,
   .work-container {
@@ -67,6 +76,9 @@
     font-size: 18px;
   }
   .slider-items {
+    display: none;
+  }
+  .next-wrapper {
     display: none;
   }
   .What-they-think .none {
@@ -243,7 +255,7 @@
     align-items: center;
   }
   .next-wrapper {
-    display: flex;
+    display: none;
   }
   .popup {
     max-width: 400px;
