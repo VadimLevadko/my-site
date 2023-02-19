@@ -1,0 +1,341 @@
+@media screen and (max-width: 1380px) {
+    .container {
+        max-width: 1180px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .local-content {
+        max-width: 47%;
+    }
+    .local img {
+        max-width: 53%;
+    }
+    .h1-title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+}
+@media screen and (max-width: 1080px) {
+    .local-content, .control-content {
+        max-width: 55%;
+    }
+    .local img, .control img {
+        max-width: 45%;
+    }
+    .h1-title {
+        font-size: 58px;
+        line-height: 62px;
+        font-weight: 600;
+    }
+    .control-content:nth-child(2n + 2) {
+        padding-left: 50px;
+    }
+    .control-item:nth-child(3) .control-comment {
+        max-width: 474px;
+    }
+    .book-page .justify-between {
+        justify-content: space-around;
+    }
+    .book-wrapper {
+        column-gap: 0;
+    }
+    .boost-item {
+        max-width: 33.333%;
+    }
+    .most-loved-title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-left: 40px;
+    }
+    .ml-review-wrapper img:first-child {
+        max-width: 52%;
+    }
+    .ml-review-wrapper img:last-child {
+        max-width: 39%;
+    }
+    .ml-img-item + .ml-img-item {
+        margin-left: 20px;
+    }
+    .ml-review-wrapper {
+        justify-content: space-between;
+    }
+    .lh-75 {
+        line-height: 70px;
+    }
+    .fs-65 {
+        font-size: 60px;
+    }
+    .il-title  {
+        margin-bottom: 20px;
+    }
+    .integrate-lokalise img {
+        max-width: 80%;
+    }
+    .pfooter-title-wrapper {
+        max-width: 25%;
+    }
+    .boost-item:last-child .boost-comment {
+        font-size: 18px;
+    }
+    .boost-wrapper, .prev-footer-item-wrapper {
+        gap: 20px;
+    }
+    .prev-footer-item-wrapper {
+        min-width: 1px;
+        max-width: 75%;
+        
+    }
+}
+@media screen and (max-width: 960px) {
+    .local-content, .local img,
+    .control-item .h2-title,
+    .boost .h2-title, .rev-adm-wrapper,
+    .revolut-wrapper {
+        margin: 0 auto;
+    }
+    .boost .container,
+    .revolut .container,
+    .local-wrapper, .most-loved .container,
+    .control-item {
+        text-align: center;
+    }
+    .control-item, .boost .boost-wrapper,
+    .most-loved .most-content-wrapper,
+    .most-loved .container {
+        flex-direction: column;
+    } 
+
+
+    .container {
+        flex-wrap: wrap;
+    }
+    .local img {
+        order: -1;
+        margin-bottom: 50px;
+        max-width: 60%;
+    }
+    .local-content {
+        max-width: 100%;
+    }
+    .local-comment {
+        margin: 40px auto;
+    }
+    .control-item .control-comment {
+        margin: 30px auto;
+    }
+    .control-item:nth-child(2n) img {
+        margin-bottom: 40px;
+    }
+    .control-item:first-child img,
+    .control-item:nth-child(3) img {
+        order: -1;
+        margin-bottom: 40px;
+    }
+    .boost .h2-title {
+        max-width: 590px;
+        margin-bottom: 50px;
+    }
+    .boost-item + .boost-item {
+        margin-top: 90px;
+    }
+    .rev-adm-wrapper {
+        order: -1;
+        margin-bottom: 40px;
+    }
+    .most-loved .most-content-wrapper {
+        margin-bottom: 40px;
+    }
+    .ml-review-wrapper {
+        border-left: none;
+        min-height: initial;
+    }
+    .prev-footer-item-wrapper {
+        min-width: inherit;
+        max-width: 850px;
+        padding-left: 10px;
+        flex-wrap: wrap;
+    }
+    .prev-footer-item {
+        min-width: 40%;
+    }
+    .ml-img-item:first-child {
+        padding-left: 0;
+    }
+    .navigation-wrapper .container, .nav {
+        flex-direction: column
+    }
+    .nav-item-wrapper {
+        max-width: 592px;
+        margin-left: initial;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .pfooter-title-wrapper {
+        max-width: 100%;
+    }
+    .boost-item {
+        max-width: 100%;
+    }
+    .control-content:nth-child(2n + 2) {
+        padding-left: 0;
+    }
+    .local img, .control img {
+        max-width: 100%;
+    }
+    .local-content, .control-content {
+        max-width: 100%;
+    }
+    .prev-footer .block {
+        margin: 0 auto;
+    }
+    .prev-footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pfooter-comment {
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+    .prev-footer-item-wrapper {
+        padding-left: 0;
+    }
+    .pfooter-title-wrapper {
+        margin-bottom: 70px;
+    }
+    .companies-wrapper {
+        flex-direction: column;
+    }
+    .companies-item + .companies-item {
+        margin-top: 30px;
+    }
+    .h1-title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .h2-title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .control .lh-30 {
+        line-height: 28px;
+    }
+    .control .fs-20 {
+        font-size: 18px;
+    }
+    .prev-footer-item:nth-child(3),
+    .prev-footer-item:last-child {
+        margin-top: 30px;
+    }
+    .most-loved-title {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 810px) {
+    .book-wrapper {
+        flex-direction: column;
+    }
+    .book-item:nth-child(-n + 3) {
+        margin-bottom: inherit;
+    }
+    .book-item + .book-item {
+        margin-top: 50px;
+    }
+    .lh-40 {
+        line-height: 35px;
+    }
+    .fs-25 {
+        font-size: 20px;
+    }
+    .fs-30 {
+        font-size: 25px;
+    }
+    .lh-75 {
+        line-height: 55px;
+    }
+    .fs-65 {
+        font-size: 45px;
+    }
+    .lm-comment {
+        padding-top: 26px;
+        padding-bottom: 34px;
+    }
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-comment {
+        max-width: 290px;
+        margin: 20px 0;
+    }
+    .footer .flex {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 510px) {
+    .nav-item + .nav-item {
+        padding-left: 20px;
+    }
+    .h1-title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .lh-35 {
+        line-height: 28px;
+    }
+    .fs-25 {
+        font-size: 16px;
+    }
+    .h2-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .lh-30 {
+        line-height: 26px;
+    }
+    .fs-20 {
+        font-size: 16px;
+    }
+    .fs-30 {
+        font-size: 18px;
+    }
+    .lh-40 {
+        line-height: 28px;
+    }
+    .most-loved-title {
+        font-size: 26px;
+        line-height: 36px;
+        max-width: 460px;
+    }
+    .fs-65 {
+        font-size: 35px;
+    }
+    .lh-75 {
+        line-height: 45px;
+    }
+    .nav-item-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-item + .nav-item {
+        padding-left: 0;
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .prev-footer-item-wrapper {
+        flex-direction: column;
+    }
+    .prev-footer-item + .prev-footer-item {
+        margin-top: 50px;
+    }
+    .ml-review-wrapper {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .ml-img-item + .ml-img-item {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
