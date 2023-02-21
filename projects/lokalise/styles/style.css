@@ -12,15 +12,13 @@
     font-family: 'Graphik-LC-T';
     box-sizing: border-box;
 }
-
+/* -----------------------------------Main Start----------------------------------- */
 img {
     max-width: 100%;
 }
-
 .fw-600 {
     font-weight: 600;
 }
-
 .fs-12 {
     font-size: 12px;
 }
@@ -60,7 +58,9 @@ img {
 .lh-75 {
     line-height: 75px;
 }
-
+.none {
+    display: none;
+}
 .block {
     display: block;
 }
@@ -73,71 +73,11 @@ img {
 .mr-center {
     margin: 0 auto;
 }
-.h1-title {
-    font-size: 65px;
-    line-height: 70px;
-    font-weight: 600;
-}
-.h2-title {
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 60px;
-}
-
-.container {
-    max-width: 1290px;
-    margin: 0 auto;
-}
-a {
-    text-decoration: none;
-    color: initial;
-}
-ul {
-    list-style: none;
-}
-
-.flex {
-    display: flex;
-}
-.wrap {
-    flex-wrap: wrap;
-}
-.text-center {
-    text-align: center;
-}
-.al-items-center {
-    align-items: center;
-}
-.justify-between {
-    justify-content: space-between;
-}
-.pd-l-r40 {
-    padding: 0 40px;
-}
-
-.navigation-wrapper {
-    padding-top: 31px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #CCCCCC;
-}
-.nav-item {
-    font-size: 15px;
-    line-height: 20px;
-}
-.nav-item + .nav-item {
-    padding-left: 52px;
-}
-.nav-item-wrapper {
-    max-width: 592px;
-    margin-left: 50px;
-}
-
 .btn {
     display: inline-block;
     font-weight: 600;
     font-size: 16px;
 }
-
 .min-btn {
     line-height: 45px;
     min-width: 120px;
@@ -162,7 +102,72 @@ ul {
 .btn + .btn {
     margin-left: 10px;
 }
-
+.h1-title {
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 600;
+}
+.h2-title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+ul {
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+.light-orange-bg {
+    background-color: var(--light-orange-bg);
+}
+.light-blue-bg {
+    background-color: var(--light-blue-bg);
+}
+.gray-bg {
+    background-color: var(--gray-bg);
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center;
+}
+.al-items-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.pd-l-r40 {
+    padding: 0 40px;
+}
+/* -----------------------------------Main End----------------------------------- */
+/* --------------------------------- Navigation Start --------------------------- */
+.navigation-wrapper {
+    padding-top: 31px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.nav-item {
+    font-size: 15px;
+    line-height: 20px;
+}
+.nav-item-wrapper {
+    max-width: 592px;
+    margin-left: 50px;
+    gap: 52px;
+}
+/* --------------------------------- Navigation End ------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .local-wrapper {
     padding-top: 114px;
     padding-bottom: 136px;
@@ -174,11 +179,8 @@ ul {
     margin: 50px 0;
     max-width: 472px;
 }
-
-
-.light-orange-bg {
-    background-color: var(--light-orange-bg);
-}
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .companies-wrapper {
     max-width: 1290px;
     margin: 0 auto;
@@ -191,12 +193,12 @@ ul {
     padding: 104px 0;
 }
 
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .control .container {
     padding-top: 90px;
     padding-bottom: 150px;
 }
-
 .control-content:first-child .h2-title {
     max-width: 494px;
 }
@@ -218,7 +220,8 @@ ul {
 .control-item + .control-item {
     margin-top: 150px;
 }
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .book-page .container {
     padding-top: 120px;
     padding-bottom: 150px;
@@ -246,7 +249,8 @@ ul {
     column-gap: 110px;
 }
 
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .boost-btn {
     text-decoration-line: underline;
 }
@@ -280,11 +284,8 @@ ul {
 .boost .h2-title {
     margin-bottom: 85px;
 }
-
-.light-blue-bg {
-    background-color: var(--light-blue-bg);
-}
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .revolut-wrapper {
     max-width: 886px;
 }
@@ -296,11 +297,8 @@ ul {
     padding-top: 52px;
     padding-bottom: 104px;
 }
-
-.gray-bg {
-    background-color: var(--gray-bg);
-}
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .most-loved .container {
     padding-top: 80px;
     padding-bottom: 84px;
@@ -321,7 +319,8 @@ ul {
     border-left: 1px solid #000;
     min-height: 168px;
 }
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .integrate-lokalise .container {
     padding-top: 165px;
     padding-bottom: 162px;
@@ -336,8 +335,8 @@ ul {
 .integrate-lokalise .btn {
     margin-top: 32px;
 }
-
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------Localization Start------------------------------------------------------------------ */
 .localization-made .container {
     padding-top: 120px;
     padding-bottom: 160px;
@@ -349,8 +348,8 @@ ul {
     padding-top: 30px;
     padding-bottom: 54px;
 }
-
-
+/* ---------------------------------------------Localization End------------------------------------------------------------------ */
+/* -------------------------------------------------Prev Footer Start--------------------------------------------------------------- */
 .prev-footer .container {
     padding-top: 92px;
     padding-bottom: 95px;
@@ -386,4 +385,70 @@ ul {
     max-width: 290px;
     margin-left: 14px;
 }
-
+/* ---------------------------------------------------Prev Footer End--------------------------------------------------------------- */
+/* -----------------------------------------------------Burger Classes Start-------------------------------------------------------- */
+.menu {
+    margin-left: 30px;
+}
+.menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+}
+.menu-icon span {
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: calc(50% - 13px);
+    transition: all 0.2s linear;
+}
+.menu-icon span:first-child {
+    top: 20%;
+}
+.menu-icon span:nth-child(2) {
+    top: calc(50% - 1px);
+}
+.menu-icon span:last-child {
+    bottom: 20%;
+}
+#menu-toggle {
+    opacity: 0;
+    position: absolute;
+}
+#menu-toggle:checked ~ .menu-icon span {
+    top: calc(50% - 1px);
+    background-color: #fff;
+}
+#menu-toggle:checked ~ .menu-icon span:first-child {
+    transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked ~ .menu-icon span:last-child {
+    transform: rotate(-45deg);
+}
+.menu-items {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 26px;
+    row-gap: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.menu-items a {
+    color: #FFF;
+}
+#menu-toggle:checked ~ .menu-items {
+    display: flex;
+}
+/* -----------------------------------------------------Burger Classes End---------------------------------------------------------- */
