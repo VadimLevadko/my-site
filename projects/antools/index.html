@@ -17,15 +17,29 @@
     <div class="main-bg">
         <header class="header">
             <div class="section-container">
-                <div class="flex justify-between al-items-center">
+                <div class="flex justify-between al-items-center header-content">
                     <div class="logo flex al-items-center">
                         <img class="logo-indent" src="images/logo.png" alt="logo">
                         <p>antools.</p>
+                        <nav class="menu none">
+                            <input type="checkbox" id="menu-toggle">
+                            <label for="menu-toggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <ul class="menu-items">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">My Collections</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <nav class="nav">
                         <ul class="menu flex justify-between">
                             <li class="menu-item"><a href="#">Home</a></li>
-                            <li class="menu-item"><a href="#">Categories</a></li>
+                            <li class="menu-item flex al-items-center"><a href="#">Categories</a></li>
                             <li class="menu-item"><a href="#">My Collections</a></li>
                             <li class="menu-item"><a href="#">Blog</a></li>
                         </ul>
@@ -38,13 +52,13 @@
             </div>
         </header>
         <section class="awesome">
-            <div class="awesome-container md-center">
-                <div class="flex awesome__wrapper justify-between">
-                    <div class="awesome__box-wrapper md-center">
+            <div class="awesome-container">
+                <div class="flex awesome__wrapper justify-between md-center">
+                    <div class="awesome__box-wrapper">
                         <h1 class="awesome__title margin-bottom-title">Awesome tools for Designer & Developer<span
                                 class="awesome_buttom">.</span>
                         </h1>
-                        <p class="awesome__comment fz-18 lh-30 awesome__comment-bottom md-center">
+                        <p class="awesome__comment fz-18 lh-30 awesome__comment-bottom">
                             Antool is a web collection of information on paid or free Design and Development tools
                         </p>
                         <form>
@@ -69,7 +83,7 @@
                             <a class="social-media-item" href="#"><img src="images/svg/twitter.svg" alt="twitter"></a>
                         </div>
                     </div>
-                    <div class="md-none">
+                    <div class="awesome-img-wrapper">
                         <img src="images/system-menu.png" alt="console">
                     </div>
                 </div>
@@ -339,8 +353,8 @@
                             <p class="tools__title text-center trust__title-bottom white-78 fw-500">
                                 Trusted more than 150+ brand
                             </p>
-                            <div class="flex al-items-center justify-between">
-                                <a href="#"><img class="test transition-item grayscale" src="images/microsoft1.png"
+                            <div class="flex al-items-center justify-between popular__img-wrapper">
+                                <a href="#"><img class="microsoft transition-item grayscale" src="images/microsoft1.png"
                                         alt="microsoft"></a>
                                 <a href="#">
                                     <img class="google transition-item grayscale" src="images/Google_2015_logo.svg.png"
@@ -359,11 +373,11 @@
         </section>
         <section class="newcomer">
             <div class="section-container">
-                <div class="flex justify-between">
+                <div class="flex justify-between newcomer-content">
                     <div class="newcomer__header">
                         <p class="section-title fw-500 margin-bottom-title">Newcomer Tools</p>
                         <p class="newcomer__comment fz-18 lh-30 fw-500 white-55">
-                            Wow! see the latest update of the most recommended tools
+                            Wow! see the lamicrosoft update of the most recommended tools
                             from reliable designers and developers
                         </p>
                         <a class="btn orange-btn fz-18" href="#">Explore more</a>
@@ -620,7 +634,7 @@
         </section>
         <footer class="footer">
             <div class="footer-indent section-container">
-                <div class="footer-nav flex">
+                <div class="footer-nav flex justify-between">
                     <div class="logo-item">
                         <div class="logo flex al-items-center">
                             <img class="logo-indent" src="images/logo.png" alt="logo">
@@ -632,30 +646,32 @@
                             free Design and Development tools
                         </p>
                     </div>
-                    <div class="footer-nav__item">
-                        <p class="fz-20 lh-30 fw-500 white-90 footer-subtitle__bottom">Contact Us</p>
-                        <ul class="white-55 lh-24 fw-500 footer-subtitle__bottom">
-                            <li class="footer-menu-item"><a href="tel:+621987463">+621987463</a></li>
-                            <li class="footer-menu-item"><a href="#">M Building, No.10 A</a></li>
-                            <li class="footer-menu-item">
-                                <a href="mailto:antools@awesome.com">antools@awesome.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-nav__item">
-                        <p class="fz-20 lh-30 fw-500 white-90 footer-subtitle__bottom">Categories</p>
-                        <ul class="white-55 lh-24 fw-500 footer-subtitle__bottom">
-                            <li class="footer-menu-item"><a href="#">Design</a></li>
-                            <li class="footer-menu-item"><a href="#">Development</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-nav__item">
-                        <p class="fz-20 lh-30 fw-500 white-90 footer-subtitle__bottom">Company Info</p>
-                        <ul class="white-55 lh-24 fw-500 footer-subtitle__bottom">
-                            <li class="footer-menu-item"><a href="#">About Us</a></li>
-                            <li class="footer-menu-item"><a href="#">Our Partners</a></li>
-                            <li class="footer-menu-item"><a href="#">Blog</a></li>
-                        </ul>
+                    <div class="footer-nav-item-wrapper flex">
+                        <div class="footer-nav__item">
+                            <p class="fz-20 lh-30 fw-500 white-90 footer-subtitle__bottom">Contact Us</p>
+                            <ul class="white-55 lh-24 fw-500 footer-subtitle__bottom">
+                                <li class="footer-menu-item"><a href="tel:+621987463">+621987463</a></li>
+                                <li class="footer-menu-item"><a href="#">M Building, No.10 A</a></li>
+                                <li class="footer-menu-item">
+                                    <a href="mailto:antools@awesome.com">antools@awesome.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__item">
+                            <p class="fz-20 lh-30 fw-500 white-90 footer-subtitle__bottom">Categories</p>
+                            <ul class="white-55 lh-24 fw-500 footer-subtitle__bottom">
+                                <li class="footer-menu-item"><a href="#">Design</a></li>
+                                <li class="footer-menu-item"><a href="#">Development</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav__item">
+                            <p class="fz-20 lh-30 fw-500 white-90 footer-subtitle__bottom">Company Info</p>
+                            <ul class="white-55 lh-24 fw-500 footer-subtitle__bottom">
+                                <li class="footer-menu-item"><a href="#">About Us</a></li>
+                                <li class="footer-menu-item"><a href="#">Our Partners</a></li>
+                                <li class="footer-menu-item"><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
