@@ -14,6 +14,9 @@
         font-size: 60px;
         line-height: 65px;
     }
+    .revolut-wrapper {
+        max-width: 65%;
+    }
 
 }
 @media screen and (max-width: 1080px) {
@@ -86,7 +89,6 @@
         gap: 20px;
     }
     .prev-footer-item-wrapper {
-        min-width: 1px;
         max-width: 75%;
         
     }
@@ -106,9 +108,26 @@
     }
     .control-item, .boost .boost-wrapper,
     .most-loved .most-content-wrapper,
-    .most-loved .container {
+    .most-loved .container,
+    .revolut .container {
         flex-direction: column;
-    } 
+    }
+    .revolut-wrapper {
+        max-width: 80%;
+    }
+    .ml-review-wrapper img:first-child,
+    .ml-review-wrapper img:last-child {
+        max-width: 100%;
+    }
+    .ml-img-item + .ml-img-item {
+        margin-left: 70px;
+    }
+    .prev-footer-item-wrapper {
+        justify-content: space-around;
+    }
+    .boost-comment {
+        max-width: 400px;
+    }
     .nav  .none {
         display: block;
     }
@@ -131,6 +150,7 @@
     }
     .local-comment {
         margin: 40px auto;
+        max-width: 640px;
     }
     .control-item .control-comment {
         margin: 30px auto;
@@ -274,6 +294,12 @@
         max-width: 290px;
         margin: 20px 0;
     }
+    .book-item-comment {
+        max-width: 290px;
+    }
+    .lm-title {
+        max-width: 530px;
+    }
     .footer .flex {
         flex-direction: column;
     }
@@ -327,6 +353,26 @@
         padding-left: 0;
         margin: 10px 0;
     }
+    .integrate-lokalise .container,
+    .localization-made .container,
+    .boost .container,
+    .book-page .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .control-item + .control-item {
+        margin-top: 90px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .local-description {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .control-item:nth-child(2) .control-comment {
+        max-width: 300px;
+    }
 }
 @media screen and (max-width: 400px) {
     .prev-footer-item-wrapper {
@@ -342,5 +388,14 @@
     .ml-img-item + .ml-img-item {
         margin-left: 0;
         margin-top: 30px;
+    }
+    .integrate-lokalise img {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .local .btn + .btn {
+        margin-left: 0;
+        margin-top: 20px;
     }
 }

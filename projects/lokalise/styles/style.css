@@ -369,7 +369,8 @@ ul {
     margin-bottom: 16px;
 }
 .prev-footer-item-wrapper {
-    min-width: 850px;
+    max-width: 800px;
+    width: 100%;
 }
 .footer-item + .footer-item {
     margin-top: 15px;
