@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFMOTO</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" type="images/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="header-bg">
+            <div class="container">
+                <div class="header-top-indent flex justify-between">
+                    <div class="flex al-items-center header-logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <nav class="nav flex justify-between">
+                        <nav class="menu none">
+                            <input type="checkbox" id="menu-toggle">
+                            <label for="menu-toggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <div class="burger-bg">
+                                <img class="burger-logo" src="./images/logo.png" alt="logo">
+                                <ul class="menu-items uppercase">
+                                    <li class="menu-item flex al-items-center justify-between"><a class="fw-500" href="#">Маршруты</a>
+                                        <ul class="burger-arrow relative">
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item flex al-items-center justify-between"><a class="fw-500" href="#">Галерея</a>
+                                        <ul class="burger-arrow relative">
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item flex al-items-center justify-between"><a class="fw-500" href="#">Вопрос-Ответ</a>
+                                        <ul class="burger-arrow relative">
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item flex al-items-center justify-between"><a class="fw-500" href="#">Контакты</a>
+                                        <ul class="burger-arrow relative">
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="flex flex-column burger-call-me al-items-end">
+                                    <a class="phone flex al-items-center fw-600 fs-20" href="tel:+380980421806">+380 980 421 806</a>
+                                    <a class="btn btn-gray fw-600" href="tel:+380980421806">Перезвоните мне</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <ul class="nav-menu flex justify-between">
+                            <li class="item-nav uppercase"><a class="fw-600" href="#">Маршруты</a></li>
+                            <li class="item-nav uppercase"><a class="fw-600" href="#">Галерея</a></li>
+                            <li class="item-nav uppercase"><a class="fw-600" href="#">Вопрос-Ответ</a></li>
+                            <li class="item-nav uppercase"><a class="fw-600" href="#">Контакты</a></li>
+                            <li class="item-nav uppercase color-cyan"><a class="fw-600" href="#">Забронировать</a></li>
+                        </ul>
+                        <div class="flex flex-column al-items-end call-back">
+                            <a class="phone flex al-items-center fw-600 fs-20" href="tel:+380980421806">+380 980 421 806</a>
+                            <a class="btn btn-gray fw-600" href="tel:+380980421806">Перезвоните мне</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header-main">
+                    <h1 class="main-title">Экскурсии на квадроциклах в Геленджике</h1>
+                    <p class="fs-24 fw-500 comment-main-title">приезжайте за новыми ощущениями и эмоциями!</p>
+                    <a class="btn btn-cyan header-btn fs-16 fw-600 flex al-items-center justify-center" href="#">Подобрать маршрут</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="fascinating-excursions">
+        <div class="flex justify-between fascinating-top-bottom container wrap">
+            <div class="fascinating-item">
+                <div class="excursions-img-wrapper relative">
+                    <img class="excursions-img" src="./images/svg/tree.svg" alt="tree">
+                </div>
+                <h2 class="fs-18 fw-600 fascinating-title-indent">Увлекательные экскурсии</h2>
+                <p class="fascinating-comment">Маршруты от лесных дорожек до полного бездорожья!</p>
+            </div>
+            <div class="fascinating-item">
+                <div class="excursions-img-wrapper relative">
+                    <img class="excursions-img relative" src="./images/svg/bike.svg" alt="bike">
+                </div>
+                <h2 class="fs-18 fw-600 fascinating-title-indent">Надежная техника</h2>
+                <p class="fascinating-comment">18 квадроциклов всех японских брендов</p>
+            </div>
+            <div class="fascinating-item">
+                <div class="excursions-img-wrapper relative">
+                    <img class="excursions-img relative" src="./images/svg/helmet.svg" alt="helmet">
+                </div>
+                <h2 class="fs-18 fw-600 fascinating-title-indent">Экипировка бесплатно</h2>
+                <p class="fascinating-comment">Необходимая экипировка выдается бесплатно</p>
+            </div>
+            <div class="fascinating-item">
+                <div class="excursions-img-wrapper relative">
+                    <img class="excursions-img relative" src="./images/svg/instructor.svg" alt="instructor">
+                </div>
+                <h2 class="fs-18 fw-600 fascinating-title-indent">Опытные инструктора</h2>
+                <p class="fascinating-comment">Обеспечат полную безопасность Вашего отдыха</p>
+            </div>
+        </div>
+    </section>
+    <section class="our-route">
+        <div class="route-bg">
+            <div class="limit-size block-center">
+                <h2 class="section-title text-center">Наши маршруты</h2>
+                <div class="route-item flex justify-between al-items-center route-item-container routre-right">
+                    <div class="route-item-wrapper">
+                        <h3 class="our-route-title relative fw-600">БАЗОВЫЙ</h3>
+                        <p class="fw-700 fs-24 route-praice-top-bottom">от 2000 &#8372;</p>
+                        <ul class="time-route uppercase flex flex-column">
+                            <li class="time-route-item flex al-items-center">Время в пути: <strong class="lowercase">1,5 - 2 часа</strong></li>
+                            <li class="time-route-item flex al-items-center">Расстояние: <strong class="lowercase">20 - 25 км</strong></li>
+                            <li class="time-route-item flex al-items-center">Сложность: <strong class="lowercase">5***</strong></li>
+                        </ul>
+                        <h4 class="fs-18 fw-600 uppercase h4-route-title flex">маршрут</h4>
+                        <p class="route-list">
+                            Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - 
+                            -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - -Форсаж
+                        </p>
+                        <div class="route-buttons-wrapper flex">
+                            <a class="btn btn-transparent flex al-items-center justify-center fw-600">Подробнее</a>
+                            <a class="btn btn-cyan flex al-items-center justify-center bookable-open fw-600">Забронировать</a>
+                        </div>
+                    </div>
+                    <div class="route-img-wrapper flex justify-between al-items-center">
+                        <img class="route-main-img" src="./images/slider1-1.png" alt="slider1-1">
+                        <img src="./images/slider1-2.png" alt="slider1-2">
+                        <img src="./images/slider3-2.png" alt="slider1-3">
+                    </div>
+                </div>
+                <div class="route-item flex justify-between al-items-center route-item-container routre-left">
+                    <div class="route-img-wrapper flex justify-end al-items-center">
+                        <img src="./images/slider1-2.png" alt="slider2-3">
+                        <img src="./images/slider2-2.png" alt="slider2-2">
+                        <img class="left-img route-main-img" src="./images/slider2-1.png" alt="slider2-1">
+                    </div>
+                    <div class="route-item-wrapper route-item-left-indent">
+                        <h3 class="our-route-title relative fw-600">РАСШИРЕННЫЙ</h3>
+                        <p class="fw-700 fs-24 route-praice-top-bottom">от 8000 &#8372;</p>
+                        <ul class="time-route uppercase flex flex-column">
+                            <li class="time-route-item flex al-items-center">Время в пути: <strong class="lowercase">6 - 8 часов</strong></li>
+                            <li class="time-route-item flex al-items-center">Расстояние: <strong class="lowercase">60 - 70 км</strong></li>
+                            <li class="time-route-item flex al-items-center">Сложность: <strong class="lowercase">5***</strong></li>
+                        </ul>
+                        <h4 class="fs-18 fw-600 uppercase h4-route-title flex">маршрут</h4>
+                        <p class="route-list">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - -Форсаж</p>
+                        <div class="route-buttons-wrapper flex">
+                            <a class="btn btn-transparent flex al-items-center justify-center fw-600">Подробнее</a>
+                            <a class="btn btn-cyan flex al-items-center justify-center bookable-open fw-600">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="route-item flex justify-between al-items-center route-item-container routre-right">
+                    <div class="route-item-wrapper">
+                        <h3 class="our-route-title relative fw-600">Experience</h3>
+                        <p class="fw-700 fs-24 route-praice-top-bottom">от 4000 &#8372;</p>
+                        <ul class="time-route uppercase flex flex-column">
+                            <li class="time-route-item flex al-items-center">Время в пути: <strong class="lowercase">4 часа</strong></li>
+                            <li class="time-route-item flex al-items-center">Расстояние: <strong class="lowercase">40 - 50 км</strong></li>
+                            <li class="time-route-item flex al-items-center">Сложность: <strong class="lowercase">5***</strong></li>
+                        </ul>
+                        <h4 class="fs-18 fw-600 uppercase h4-route-title flex">маршрут</h4>
+                        <p class="route-list">Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио – - Форсаж</p>
+                        <div class="route-buttons-wrapper flex">
+                            <a class="btn btn-transparent flex al-items-center justify-center fw-600">Подробнее</a>
+                            <a class="btn btn-cyan flex al-items-center justify-center bookable-open fw-600">Забронировать</a>
+                        </div>
+                    </div>
+                    <div class="route-img-wrapper flex justify-between al-items-center">
+                        <img class="route-main-img" src="./images/slider3-1.png" alt="slider3-1">
+                        <img src="./images/slider3-2.png" alt="slider3-2">
+                        <img src="./images/slider2-2.png" alt="slider2-2">
+                    </div>
+                </div>
+                <div class="our-route-bookable-bg flex al-items-center justify-center none">
+                    <div class="our-route-bookable-wrapper flex al-items-center justify-center relative">
+                        <div class="close flex al-items-center justify-center">
+                            <ul class="close-wrapper">
+                                <li class="close-line"></li>
+                                <li class="close-line"></li>
+                            </ul>
+                        </div>
+                        <div class="relative">
+                            <h4 class="fs-24 fw-600">Оставить заявку</h4>
+                            <label class="flex flex-column fw-500 reservation-contact reservation-icon user-icon our-route-bookable-indent relative">Как к Вам обращаться?
+                                <input class="form-contact reservation-item" type="text">
+                            </label>
+                            <label class="flex flex-column fw-500 reservation-contact reservation-icon reservation-phone relative">Телефон или WhatsApp
+                                <input class="form-contact reservation-item" type="text">
+                            </label>
+                            <input class="btn btn-cyan flex al-items-center justify-center fw-600" type="submit" value="Забронировать">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choosing">
+            <div class="choosing-bg">
+                <div class="container text-center">
+                    <h2 class="section-title">Затрудняетесь выбрать маршрут?</h2>
+                    <p class="fs-18 fw-500 choosing-comment-top-bottom">Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию</p>
+                    <a href="#" class="btn btn-cyan flex al-items-center justify-center fw-600 block-center">Начать тест</a>
+                </div>
+            </div>
+    </section>
+    <section class="photo">
+            <div class="photo-top-bottom">
+                <h2 class="section-title text-center">Фото</h2>
+                <div class="flex al-items-center justify-center photo-wrapper">
+                    <img src="./images/photo-slider-1.png" alt="photo-slider-1">
+                    <img src="./images/photo-slider-2.png" alt="photo-slider-2">
+                    <img src="./images/photo-slider-3.png" alt="photo-slider-3">
+                </div>
+            </div>
+    </section>
+    <section class="our-team">
+            <div class="limit-size block-center">
+                <div class="our-team-bg relative">
+                    <h2 class="section-title text-center">Наша команда</h2>
+                    <div class="team-wrapper flex justify-center al-items-center wrap">
+                        <div class="team-item">
+                            <img src="./images/uliana.png" alt="Uliana">
+                            <div class="team-inside-pd">
+                                <h5 class="fs-24 fw-700 team-name">Юлиана</h5>
+                                <p class="fs-18 team-role">руководитель</p>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <img src="./images/maksim.png" alt="Maksin">
+                            <div class="team-inside-pd">
+                                <h5 class="fs-24 fw-700 team-name">Максим</h5>
+                                <p class="fs-18 team-role">старший инструктор</p>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <img src="./images/kristina.png" alt="Kristina">
+                            <div class="team-inside-pd">
+                                <h5 class="fs-24 fw-700 team-name">Кристина</h5>
+                                <p class="fs-18 team-role">администратор</p>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <img src="./images/uriy.png" alt="Uriy">
+                            <div class="team-inside-pd">
+                                <h5 class="fs-24 fw-700 team-name">Юрий</h5>
+                                <p class="fs-18 team-role">старший механик</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="services">
+            <div class="services-bg">
+                <h2 class="section-title block-center text-center">Условия предоставления услуг</h2>
+                <div class="services-wrapper flex al-items-center wrap container justify-center">
+                    <div class="services-item">
+                        <p class="services-check services-comment flex">При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</p>
+                    </div>
+                    <div class="services-item">
+                        <div class="services-check flex">
+                            <p class="services-comment">К управлению <strong>НЕ ДОПУСКАЮТСЯ</strong> лица младше 16 лет и лица в алкогольном опьянении!</p>
+                        </div>
+                    </div>
+                    <div class="services-item">
+                        <div class="services-check flex">
+                            <p class="services-comment">Распивать спиртные напитки во время проката, аренды <strong>ЗАПРЕЩЕНО!</strong> (После? На ваше усмотрение)</p>
+                        </div>
+                    </div>
+                    <div class="services-item">
+                        <p class="services-check services-comment flex">Управление осуществляйте в меру своих сил и возможностей. Не переоценивайте себя! Это опасно!!!</p>
+                    </div>
+                    <div class="services-item">
+                        <p class="services-check services-comment flex">Перед каждым катанием опытный инструктор научит Вас основам управления и будет сопровождать на протяжении всего маршрута.</p>
+                    </div>
+                    <div class="services-item">
+                        <p class="services-check services-comment flex">При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="deals">
+            <div class="deal-top-bottom container">
+                <h2 class="section-title text-center">Спецпредложения</h2>
+                <div class="deals-wrapper flex justify-between wrap">
+                    <div class="deals-item flex">
+                        <img src="./images/special-offer-1.png" alt="special-offer-1">
+                        <div class="deals-content relative">
+                            <h4 class="deal-title color-cyan">Скидка 10%</h4>
+                            <p class="fs-24 fw-700 color-cyan">на День Рождение</p>
+                            <p class="fs-18 deals-comment">в честь Дня Рождения - дарим имениннику скидку 10%</p>
+                        </div>
+                    </div>
+                    <div class="deals-item flex">
+                        <img src="./images/special-offer-2.png" alt="special-offer-2">
+                        <div class="deals-content relative">
+                            <h4 class="deal-title color-cyan">Скидка 10%</h4>
+                            <p class="fs-18 deals-comment">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
+                            <a class="btn btn-transparent flex al-items-center justify-center fw-600" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="gift">
+            <div class="gift-bg">
+                <div class="container justify-center al-items-center">
+                    <h2 class="section-title text-center">Подарочный сертификат</h2>
+                    <h4 class="fs-20 fw-500 text-center color-cyan gift-sub-title block-center">Хотите сделать оригинальный подарок? <br> Подарите незабываемые эмоции - лучший подарок!</h4>
+                    <div class="gift-wrapper flex al-items-center justify-between">
+                        <div class="gift-content-wrapper">
+                            <p class="fs-18 gift-comment">
+                                Хотите удивить своих близких оригинальным подарком? Подарочный сертификат 
+                                на экскурсию на квадроциклах станет не просто интересным подарком, 
+                                но и реальной возможностью приблизить Ваших друзей и близких к новому увлечению.
+                            </p>
+                            <a class="btn btn-transparent flex al-items-center justify-center fw-600" href="#" class="btn">Подберем сертификат для вас</a>
+                        </div>
+                        <div class="gift-cart relative">
+                            <img class="surprise-bow" src="./images/surprise-bow.png" alt="surprise-bow">
+                            <div class="gift-cart-wrapper">
+                                <h3 class="gift-title">СЕРТИФИКАТ</h3>
+                                <div class="flex justify-between al-items-end">
+                                    <p class="fs-24 fw-700 gift-title-route white-color">Катание <br> на квадроциклах</p>
+                                    <img src="./images/logo.png" alt="logo">
+                                </div>
+                                <p class="white-color">Маршрут: Лесная прогулка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="questions">
+            <div class="limit-size block-center relative">
+                <img class="baggi" src="./images/baggi.png" alt="baggi">
+                <div class="container">
+                    <h2 class="section-title text-center">Вопросы-ответы</h2>
+                    <div class="questions-wrapper flex al-items-center justify-between">
+                        <div class="questions-content-wrapper flex flex-column">
+                            <div class="questions-item anwanser-border-active">
+                                <div class="questions-menu flex al-items-center justify-between">
+                                    <h6 class="fw-600">Актуальный вопрос?</h6>
+                                    <ul class="open-anwanser open-anwanser-active">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <p class="questions-anwanser">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="questions-item">
+                                <div class="questions-menu flex al-items-center justify-between">
+                                    <h6 class="fw-600">Актуальный вопрос?</h6>
+                                    <ul class="open-anwanser">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <p class="questions-anwanser hidden">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="questions-item">
+                                <div class="questions-menu flex al-items-center justify-between">
+                                    <h6 class="fw-600">Актуальный вопрос?</h6>
+                                    <ul class="open-anwanser">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <p class="questions-anwanser hidden">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="questions-item">
+                                <div class="questions-menu flex al-items-center justify-between">
+                                    <h6 class="fw-600">Актуальный вопрос?</h6>
+                                    <ul class=" open-anwanser">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <p class="questions-anwanser hidden">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="chat-wrapper text-center">
+                            <img src="./images/gridicons_chat.png" alt="gridicons_chat">
+                            <h6 class="fs-24 fw-600">Есть вопросы?</h6>
+                            <p class="chat-comment">Не стесняйтесь обращаться к нам, <br> если у вас есть какие-либо вопросы, предложения или идеи для сотрудничества</p>
+                            <a class="btn btn-cyan flex al-items-center justify-center fw-600 block-center" href="#" class="btn">Задать вопрос</a>
+                        </div>
+                        <img class="moto-spring" src="./images/moto-spring.png" alt="spring">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="more-services">
+            <div class="container">
+                <h2 class="section-title text-center">Дополнительные услуги</h2>
+                <div class="more-services-wrapper flex al-items-center wrap justify-center">
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-1.png" alt="more-services-1">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Эвакуация, ремонт квадроциклов</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-2.png" alt="more-services-2">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Фото, видеосъемка</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-3.png" alt="more-services-3">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Транспортировка техники</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-4.png" alt="more-services-4">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Заправка, чекап, мойка</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-5.png" alt="more-services-5">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Корпоративы, тимбилдинги</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-6.png" alt="more-services-6">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Выездной кейтеринг</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-7.png" alt="more-services-7">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Индивидуальные маршруты</p>
+                    </div>
+                    <div class="more-services-item">
+                        <img class="more-services-img" src="./images/more-services-8.png" alt="more-services-8">
+                        <p class="fs-18 fw-600 more-item-comment color-cyan">Услуги гида</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="contacts">
+            <div class="limit-size block-center">
+                <div class="contact-container">
+                    <div class="flex justify-between contact-wrapper">
+                        <div class="contact-item">
+                            <h2 class="section-title">Контакты</h2>
+                            <img class="none" src="./images/map.png" alt="map">
+                            <div class="flex al-items-baseline">
+                                <ul class="contact-box flex wrap">
+                                    <li class="contact-box-item fs-18 flex al-items-center contact-home-icon">Город Геленджик</li>
+                                    <li class="contact-box-item fs-18 flex al-items-center contact-email-icon">experience@group.ua</li>
+                                </ul>
+                                <ul class="contact-box flex wrap">
+                                    <li class="contact-box-item fs-18 flex al-items-center contact-phone-icon">+380 980 421 806</li>
+                                    <li class="contact-box-item fs-18 flex contact-clock-icon">Пн - Пт: 9:00 - 18:00 <br> Сб: 9:00 - 17:00 <br> Вс - выходной</li>
+                                </ul>
+                            </div>
+                            <div class="contact-write-me">
+                                <h4 class="fs-24 fw-600 contanct-write-top-bottom">Написать нам:</h4>
+                                <div class="contact-write-img-wrapper flex">
+                                    <a href="#"><img src="./images/svg/whatsap.svg" alt="whatsap"></a>
+                                    <a href="#"><img src="./images/svg/instagram.svg" alt="instagram"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="contacts-map" src="./images/map.png" alt="map">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+            <div class="container border-footer">
+                <div class="footer-wrapper flex al-items-center justify-between">
+                    <img src="./images/logo-footer.png" alt="logo">
+                    <ul class="footer-nav flex al-items-center justify-between">
+                        <li class="footer-nav-item"><a class="fw-600 uppercase" href="#">Маршруты</a></li>
+                        <li class="footer-nav-item"><a class="fw-600 uppercase" href="#">Галерея</a></li>
+                        <li class="footer-nav-item"><a class="fw-600 uppercase" href="#">Вопрос-Ответ</a></li>
+                        <li class="footer-nav-item"><a class="fw-600 uppercase" href="#">Контакты</a></li>
+                        <li class="footer-nav-item"><a class="fw-600 uppercase" href="#">Условия</a></li>
+                        <li class="footer-nav-item"><a class="fw-600 uppercase" href="#">Спецпредложения</a></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <section class="copyright">
+            <h6 class="text-center copyright-text">&copy; CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике</h6>
+    </section>
+    <section class="absolute-page">
+        <div class="absolute-bg none">
+            <div class="absolute-wrapper relative">
+                <div class="close flex al-items-center justify-center">
+                    <ul class="close-wrapper">
+                        <li class="close-line"></li>
+                        <li class="close-line"></li>
+                    </ul>
+                </div>
+                <img class="absolute-logo none" src="./images/logo-footer.png" alt="logo">
+                <div class="absolute-scroll">
+                    <div class="route-item absolute-rio flex justify-between al-items-center route-item-container routre-right">
+                        <div class="absolute-route">
+                            <h3 class="our-route-title relative fw-600">Экскурсия “РИО”</h3>
+                            <ul class="time-route uppercase flex flex-column">
+                                <li class="time-route-item flex al-items-center">Время в пути: <strong class="lowercase">1,5 - 2 часа</strong></li>
+                                <li class="time-route-item flex al-items-center">Расстояние: <strong class="lowercase">20 - 25 км</strong></li>
+                                <li class="time-route-item flex al-items-center">Сложность: <strong class="lowercase">5***</strong></li>
+                            </ul>
+                            <h4 class="fs-18 fw-600 uppercase h4-route-title flex">маршрут</h4>
+                            <p class="route-list">
+                                Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - 
+                                -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) - -Форсаж
+                            </p>
+                            <a class="btn btn-transparent flex al-items-center justify-center fw-600" href="#">Схема маршрута</a>
+                        </div>
+                        <div class="route-img-wrapper flex justify-between al-items-center">
+                            <img class="route-main-img" src="./images/slider1-1.png" alt="slider1-1">
+                            <img src="./images/slider1-2.png" alt="slider1-2">
+                            <img src="./images/slider3-2.png" alt="slider1-3">
+                        </div>
+                    </div>
+                    <div class="absolute-container absolute-route-top-bottom">
+                        <h4 class="fs-24 fw-600">Что посмотрим на маршруте:</h4>
+                        <p class="absolute-comment fs-16 absolute-route-part-1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue lacus lacus 
+                            facilisis orci nibh diam. Nisi, a et sit commodo. Pretium 
+                            sed consectetur risus elementum, habitasse turpis massa. 
+                        </p>
+                        <p class="absolute-comment fs-16">
+                            In sit mi aenean volutpat. Quis lectus nunc nam euismod ultrices aenean. 
+                            Vitae venenatis ut praesent neque sed quam mauris elementum. 
+                            Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis sit. 
+                            Gravida et faucibus id tortor augue interdum quam sit diam. 
+                            Laoreet nulla at et arcu pellentesque massa placerat elit. 
+                            Adipiscing in nullam ipsum est. In sit mi aenean volutpat. 
+                            Quis lectus nunc nam euismod ultrices aenean. 
+                            Vitae venenatis ut praesent neque sed quam mauris elementum. 
+                            Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis sit. 
+                        </p>
+                    </div>
+                    <div class="absolute-container absolute-price-content">
+                        <h4 class="absolute-price-title fs-24 fw-600">Стоимость экскурсии за 1 квадроцикл:</h4>
+                        <div class="absolute-price-wrapper flex wrap">
+                            <div class="absolute-price-item text-center">
+                                <div class="relative">
+                                    <img src="./images/price-route-1.png" alt="price-route-1">
+                                    <div class="absolute-price-circle"></div>
+                                </div>
+                                <p class="name-bike">UFORCE 1000 EPS (U10 EPS)</p>
+                                <p class="fs-20 fw-700 color-cyan">2000 &#8372;</p>
+                            </div>
+                            <div class="absolute-price-item text-center">
+                                <div class="relative">
+                                    <div class="absolute-price-circle"></div>
+                                    <img src="./images/price-route-2.png" alt="price-route-2">
+                                </div>
+                                <p class="name-bike">UFORCE 1000 EPS (U10 EPS)</p>
+                                <p class="fs-20 fw-700 color-cyan">3000 &#8372;</p>
+                            </div>
+                            <div class="absolute-price-item text-center">
+                                <div class="relative">
+                                    <div class="absolute-price-circle"></div>
+                                    <img src="./images/price-route-3.png" alt="price-route-3">
+                                </div>
+                                <p class="name-bike">UFORCE 1000 EPS (U10 EPS)</p>
+                                <p class="fs-20 fw-700 color-cyan">3500 &#8372;</p>
+                            </div>
+                            <div class="absolute-price-item text-center">
+                                <div class="relative">
+                                    <div class="absolute-price-circle"></div>
+                                    <img src="./images/price-route-4.png" alt="price-route-4">
+                                </div>
+                                <p class="name-bike">UFORCE 1000 EPS (U10 EPS)</p>
+                                <p class="fs-20 fw-700 color-cyan">4000 &#8372;</p>
+                            </div>
+                            <div class="absolute-price-item text-center">
+                                <div class="relative">
+                                    <div class="absolute-price-circle"></div>
+                                    <img src="./images/price-route-5.png" alt="price-route-5">
+                                </div>
+                                <p class="name-bike">UFORCE 1000 EPS (U10 EPS)</p>
+                                <p class="fs-20 fw-700 color-cyan">4500 &#8372;</p>
+                            </div>
+                            <div class="absolute-price-item text-center">
+                                <div class="relative">
+                                    <div class="absolute-price-circle"></div>
+                                    <img src="./images/price-route-1.png" alt="price-route-1">
+                                </div>
+                                <p class="name-bike">UFORCE 1000 EPS (U10 EPS)</p>
+                                <p class="fs-20 fw-700 color-cyan">2000 &#8372;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reservation-bg">
+                        <div class="absolute-container">
+                            <h4 class="fs-24 fw-600 absolute-title">Бронирование онлайн</h4>
+                            <form class="form" action="#">
+                                <div class="form-contact-wrapper flex wrap">
+                                    <label class="flex flex-column fw-500">Желаемая дата
+                                        <input class="reservation-icon calendar reservation-item" type="date">
+                                    </label>
+                                    <div class="flex flex-column">
+                                        <p class="fw-500">Количество человек</p>
+                                        <div class="flex al-items-center reservation-item counter-wrapper justify-center">
+                                            <div class="plus fs-24 fw-500 operation-wrapper flex al-items-center justify-center">+</div>
+                                            <p class="result-counter fs-18 fw-500 operation-wrapper flex al-items-center justify-center">3</p>
+                                            <div class="minus fs-24 fw-500 operation-wrapper flex al-items-center justify-center">-</div>
+                                        </div>
+                                    </div>
+                                    <label class="flex flex-column fw-500 reservation-contact reservation-icon reservation-phone relative">Телефон или WhatsApp
+                                        <input class="form-contact reservation-item" type="text">
+                                    </label>
+                                    <label class="flex flex-column fw-500 reservation-contact reservation-icon user-icon relative">Как к Вам обращаться?
+                                        <input class="form-contact reservation-item" type="text">
+                                    </label>
+                                </div>
+                                <input class="btn btn-cyan flex al-items-center justify-center fw-600" type="submit" value="Забронировать">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
