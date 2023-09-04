@@ -11,7 +11,7 @@
     margin: 0;
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 img {
     max-width: 100%;
@@ -606,7 +606,6 @@ strong {
 }
 .open-anwanser li:first-child,
 .open-anwanser li:last-child {
-    transition: 0.3s all linear;
     width: 12px;
     height: 2px;
     background-color: black;
@@ -622,12 +621,16 @@ strong {
     left: 0;
     transform: rotate(-45deg);
 }
-
 .anwanser-border-active {
     border-color: var(--color-cyan);
 }
 .open-anwanser-active {
     width: 20px;
+    animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 .open-anwanser-active li:first-child,
 .open-anwanser-active li:last-child {
