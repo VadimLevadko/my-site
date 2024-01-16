@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Radius';
+    src: url('../fonts/raydis.woff2') format('woff2'),
+    url('../fonts/raydis.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Signika-num';
+    src: url('../fonts/Signika-num-Bold.woff2') format('woff2'),
+    url('../fonts/Signika-num-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Signika';
+    src: url('../fonts/Signika-Bold.woff2') format('woff2'),
+    url('../fonts/Signika-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Signika';
+    src: url('../fonts/Signika-SemiBold.woff2') format('woff2'),
+    url('../fonts/Signika-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Signika';
+    src: url('../fonts/Signika-Medium.woff2') format('woff2'),
+    url('../fonts/Signika-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Signika';
+    src: url('../fonts/Signika-Regular.woff2') format('woff2'),
+    url('../fonts/Signika-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Signika';
+    src: url('../fonts/Signika-Light.woff2') format('woff2'),
+    url('../fonts/Signika-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}

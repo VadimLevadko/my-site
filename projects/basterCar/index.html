@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <header class="header">
+            <div class="relative header-bg">
+                <div class="container">
+                    <div class="nav-indent flex al-items-center flex-between">
+                        <img class="header-logo" src="./img/svg/logo.svg" alt="logo">
+                        <nav class="nav flex flex-end al-items-center">
+                            <ul class="header-items-wrapper flex">
+                                <li class="header-item"><a href="#" class="fs-18">О компании</a></li>
+                                <li class="header-item"><a href="#" class="fs-18">Калькулятор</a></li>
+                                <li class="header-item"><a href="#" class="fs-18">Услуги</a></li>
+                            </ul>
+                            <div class="header-phone-block flex al-items-center">
+                                <div class="header-phone-wrapper">
+                                    <div class="flex flex-column row-gap-4">
+                                        <a class="fs-18" href="#">380 (98) 042 18 06</a>
+                                        <a class="fs-18" href="#">380 (98) 042 18 06</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-on-black-white flex al-items-center justify-center fs-18 fw-400 border-radius">Заказать звонок</a>
+                        </nav>
+                    </div>
+                    <div class="auto-from-usa">
+                        <div class="auto-main-wrapper flex flex-column">
+                            <div class="flex">
+                                <p class="h1-title border-text font-radius">авто</p>
+                                <p class="h1-title sald-color font-radius">мобили</p>
+                            </div>
+                            <p class="h1-title uppercase sald-color font-radius">напрямую из</p>
+                            <p class="from-usa-title border-text uppercase border-text font-radius">сша</p>
+                        </div>
+                        <div class="baster-car flex justify-between">
+                            <div class="baster-car-main relative">
+                                <div class="line baster-car-item">
+                                    <p class="p3-size baster-car-comment">
+                                        <span class="p1-size fw-600 baster-car-span">«Bastet car»</span> имеет большой опыт работы в сфере продажи автомобилей из США. 
+                                        Благодаря оптимальной схеме работы приобрела надежную деловую репутацию.
+                                    </p>
+                                </div>
+                                <ul class="baster-car-wrapper flex flex-column row-gap-4">
+                                    <li class="baster-car-item flex al-items-center">Полный цикл услуг без посредников</li>
+                                    <li class="baster-car-item flex al-items-center">Таможенная очистка</li>
+                                    <li class="baster-car-item flex al-items-center">Участие в аукционе</li>
+                                    <li class="baster-car-item flex al-items-center">Подбор и доставка</li>
+                                    <li class="baster-car-item flex al-items-center">Страхование</li>
+                                    <li class="baster-car-item flex al-items-center">Ремонт авто</li>
+                                </ul>
+                                <a href="#" class="btn flex al-items-center justify-center btn-white black-color border-radius">Получить предложения</a>
+                            </div>
+                            <div class="text-end">
+                                <div class="dodge-platform relative">
+                                    <img class="auto-car relative" src="./img/first-car.png" alt="car">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- <section class="popular-models">
+        <div class="models-top-bottom-padding">
+            <h2 class="h2-size fw-700 text-center font-radius">Самые популярные модели</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="border-radius swiper-slide">
+                        <div class="choose-auto-cost flex al-items-center justify-center none fadeIn">
+                            <div class="choose-auto-cost-bg flex al-items-center justify-center">
+                                <div class="choose-auto-cost-wrapper color-white">
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
+                                        <p class="p7-size">Стоимость тс</p>
+                                        <p class="p7-size fw-700">1 000 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Госпошлина</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Таможенное оформление</p>
+                                        <p class="p7-size fw-700">500 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории UA</p>
+                                        <p class="p7-size fw-700">300 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории США</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Страховка</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Сборы аукциона</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-total-cost flex al-items-center justify-between">
+                                        <p class="fw-700">Общая стоимость</p>
+                                        <p class="fw-700">3 000 000 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="models-item-padding models-img-top-indent mazda" src="./img/second-car-mini.png" alt="car">
+                            <div class="models-item-content mazda-content color-white">
+                                <div class=" models-content-bg models-item-padding models-content-top-bottom">
+                                    <p class="p2-size fw-700">Mazda CX5</p>
+                                    <p class="p4-size fw-400 price">3 000 000 &#36;</p>
+                                    <a class="btn-details dec-underline">Стоимость подробнее</a>
+                                    <p class="p7-size car-info">Модификация 5.7 АТ, мощность 375 л. с., расход в среднем 12,4 литра. Разгон до 100 км/ч за 6.1 секунду.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-radius swiper-slide">
+                        <div class="choose-auto-cost flex al-items-center justify-center none fadeIn">
+                            <div class="choose-auto-cost-bg flex al-items-center justify-center">
+                                <div class="choose-auto-cost-wrapper color-white">
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
+                                        <p class="p7-size">Стоимость тс</p>
+                                        <p class="p7-size fw-700">3 000 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Госпошлина</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Таможенное оформление</p>
+                                        <p class="p7-size fw-700">500 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории UA</p>
+                                        <p class="p7-size fw-700">300 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории США</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Страховка</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Сборы аукциона</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-total-cost flex al-items-center justify-between">
+                                        <p class="fw-700">Общая стоимость</p>
+                                        <p class="fw-700">5 000 000 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="models-item-padding models-img-top-indent" src="./img/first-car.png" alt="car">
+                            <div class="models-item-content color-white">
+                                <div class=" models-content-bg models-item-padding models-content-top-bottom">
+                                    <p class="p2-size fw-700">Dodge Challenger</p>
+                                    <p class="p4-size fw-400 price">5 000 000 &#36;</p>
+                                    <a class="btn-details dec-underline">Стоимость подробнее</a>
+                                    <p class="p7-size car-info">Модификация 5.7 АТ, мощность 375 л. с., расход в среднем 12,4 литра. Разгон до 100 км/ч за 6.1 секунду.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-radius swiper-slide">
+                        <div class="choose-auto-cost flex al-items-center justify-center none fadeIn">
+                            <div class="choose-auto-cost-bg flex al-items-center justify-center">
+                                <div class="choose-auto-cost-wrapper color-white">
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
+                                        <p class="p7-size">Стоимость тс</p>
+                                        <p class="p7-size fw-700">1 000 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Госпошлина</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Таможенное оформление</p>
+                                        <p class="p7-size fw-700">500 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории UA</p>
+                                        <p class="p7-size fw-700">300 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории США</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Страховка</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Сборы аукциона</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-total-cost flex al-items-center justify-between">
+                                        <p class="fw-700">Общая стоимость</p>
+                                        <p class="fw-700">3 000 000 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="models-item-padding models-img-top-indent mazda" src="./img/second-car-mini.png" alt="car">
+                            <div class="models-item-content mazda-content color-white">
+                                <div class=" models-content-bg models-item-padding models-content-top-bottom">
+                                    <p class="p2-size fw-700">Mazda CX5</p>
+                                    <p class="p4-size fw-400 price">3 000 000 &#36;</p>
+                                    <a class="btn-details dec-underline">Стоимость подробнее</a>
+                                    <p class="p7-size car-info">Модификация 5.7 АТ, мощность 375 л. с., расход в среднем 12,4 литра. Разгон до 100 км/ч за 6.1 секунду.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-radius swiper-slide">
+                        <div class="choose-auto-cost flex al-items-center justify-center none fadeIn">
+                            <div class="choose-auto-cost-bg flex al-items-center justify-center">
+                                <div class="choose-auto-cost-wrapper color-white">
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
+                                        <p class="p7-size">Стоимость тс</p>
+                                        <p class="p7-size fw-700">2 000 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Госпошлина</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Таможенное оформление</p>
+                                        <p class="p7-size fw-700">500 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории UA</p>
+                                        <p class="p7-size fw-700">300 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории США</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Страховка</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Сборы аукциона</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-total-cost flex al-items-center justify-between">
+                                        <p class="fw-700">Общая стоимость</p>
+                                        <p class="fw-700">4 000 000 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="models-item-padding" src="./img/last-car.png" alt="car">
+                            <div class="models-item-content color-white tesla-content">
+                                <div class=" models-content-bg models-item-padding models-content-top-bottom">
+                                    <p class="p2-size fw-700">Tesla</p>
+                                    <p class="p4-size fw-400 price">4 000 000 &#36;</p>
+                                    <a class="btn-details dec-underline">Стоимость подробнее</a>
+                                    <p class="p7-size car-info">Модификация 5.7 АТ, мощность 375 л. с., расход в среднем 12,4 литра. Разгон до 100 км/ч за 6.1 секунду.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-radius swiper-slide">
+                        <div class="choose-auto-cost flex al-items-center justify-center none fadeIn">
+                            <div class="choose-auto-cost-bg flex al-items-center justify-center">
+                                <div class="choose-auto-cost-wrapper color-white">
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
+                                        <p class="p7-size">Стоимость тс</p>
+                                        <p class="p7-size fw-700">3 000 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Госпошлина</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Таможенное оформление</p>
+                                        <p class="p7-size fw-700">500 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории UA</p>
+                                        <p class="p7-size fw-700">300 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Транспортировка по территории США</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Страховка</p>
+                                        <p class="p7-size fw-700">400 000 ₽</p>
+                                    </div>
+                                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                                        <p class="p7-size">Сборы аукциона</p>
+                                        <p class="p7-size fw-700">200 000 ₽</p>
+                                    </div>
+                                    <div class="choose-total-cost flex al-items-center justify-between">
+                                        <p class="fw-700">Общая стоимость</p>
+                                        <p class="fw-700">5 000 000 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="models-item-padding models-img-top-indent" src="./img/first-car.png" alt="car">
+                            <div class="models-item-content color-white">
+                                <div class=" models-content-bg models-item-padding models-content-top-bottom">
+                                    <p class="p2-size fw-700">Dodge Challenger</p>
+                                    <p class="p4-size fw-400 price">5 000 000 &#36;</p>
+                                    <a class="btn-details dec-underline">Стоимость подробнее</a>
+                                    <p class="p7-size car-info">Модификация 5.7 АТ, мощность 375 л. с., расход в среднем 12,4 литра. Разгон до 100 км/ч за 6.1 секунду.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="choose-auto">
+        <div class="relative test flex al-items-center">
+            <div class="container">
+                <p class="choose-title border-text font-radius">Bastet Car</p>
+                <div class="flex justify-between al-items-center color-white">
+                    <div class="mazda-platform relative">
+                        <img class="choose-mazda" src="./img/second-car.png" alt="car">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="h2-size fw-700 font-radius">Поможем вам с выбором автомобиля</h2>
+                        <p class="p4-size choose-comment">Специалист свяжется с вами в течение 15 минут </p>
+                        <form id="choose-auto-form" class="form flex flex-column al-items-center wrap">
+                            <input class="form-item" type="tel" placeholder="+380 (__)-__-__-___" required>
+                            <input class="form-item" type="number" placeholder="Максимальный бюджет, &#36;" required min="3000000" max="5000000" step="250000">
+                            <select class="form-item relative select" name="cars">
+                                <option value="Mazda CX5">Mazda CX5</option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="Dodge Challenger">Dodge Challenger</option>
+                            </select>
+                            <textarea class="form-item form-notes" placeholder="Примечания"></textarea>
+                        </form>
+                        <p class="form-warning p7-size">Нажимая на кнопку вы даёте согласие на 
+                            <span class="dec-underline p7-size">обработку ваших персональных данных</span>
+                        </p>
+                        <button form="choose-auto-form" type="submit" class="btn flex al-items-center justify-center btn-white black-color border-radius margin-center pointer">
+                            Получить предложения
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stages-of-purchase">
+        <div class="stage-container margin-center">
+            <h2 class="h2-size fw-700 font-radius text-center">Этапы покупки автомобиля из сша</h2>
+            <div class="stages-wrapper flex al-items-center justify-between">
+                <div class="stages-first-block stages-items-indent flex flex-column relative">
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">1</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/smartphone1.svg" alt="smartphone">
+                            <h4 class="p2-size fw-700">Выбор автомобиля</h4>
+                        </div>
+                        <p class="p5-size">Консультация от опытных специалистов по всем вопросам, связанным с выборором автомобиля</p>
+                    </div>
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">3</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/folder.svg" alt="folder">
+                            <h4 class="p2-size fw-700">История автомобиля</h4>
+                        </div>
+                        <p class="p5-size">Перед участием в аукционе мы проверяем всю историю данного автомобиля</p>
+                    </div>
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">5</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/diploma.svg" alt="diploma">
+                            <h4 class="p2-size fw-700">Заключение контракта</h4>
+                        </div>
+                        <p class="p5-size">В контракте определяется окончательная стоимость товара, этапы оплаты, права и обязанности сторон</p>
+                    </div>
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">7</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/key.svg" alt="key">
+                            <h4 class="p2-size fw-700">Страхование</h4>
+                        </div>
+                        <p class="p5-size">Осуществляется страхование груза ведущими местными страховыми компаниями</p>
+                    </div>
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">9</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/funnel.svg" alt="funnel">
+                            <h4 class="p2-size fw-700">Таможенная очистка</h4>
+                        </div>
+                        <p class="p5-size">Автомобиль выгружается из контейнера и проходит таможенное оформление с помощью нашей брокерской организации</p>
+                    </div>
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">11</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/home.svg" alt="home">
+                            <h4 class="p2-size fw-700">Экспорт в Украину</h4>
+                        </div>
+                        <p class="p5-size">Доставка в Украину и оформление всех сопутствующих документов для постановки на учёт</p>
+                    </div>                    
+                </div>
+                <div class="stages-second-block stages-items-indent flex flex-column">
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">2</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/database.svg" alt="database">
+                            <h4 class="p2-size fw-700">Депозитный платеж</h4>
+                        </div>
+                        <p class="p5-size">10% от стоимости запланированной аукционной ставки, но не менее 1000 $. Залог подлежит возмещению до покупки автомобиля</p>
+                    </div>                    
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">4</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/megaphone.svg" alt="megaphone">
+                            <h4 class="p2-size fw-700">Участие в аукционе</h4>
+                        </div>
+                        <p class="p5-size">Вы можете лично принять участие в аукционе онлайн или оффлайн и совершить покупку на запланированную вами сумму</p>
+                    </div>                    
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">6</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/route.svg" alt="route">
+                            <h4 class="p2-size fw-700">Доставка по Америке</h4>
+                        </div>
+                        <p class="p5-size">Транспортировка автомобиля с аукциона в порт, с предоставлением дополнительных фотографий автомобиля покупателю</p>
+                    </div>                    
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">8</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/smartphone1.svg" alt="smartphone">
+                            <h4 class="p2-size fw-700">Морская перевозка</h4>
+                        </div>
+                        <p class="p5-size">Автомобиль загружается в контейнер под соответствующим номером, с помощью которого покупатель отслеживает груз</p>
+                    </div>                    
+                    <div class="stages-item relative">
+                        <p class="stages-num fw-400 font-radius border-text">10</p>
+                        <div class="stages-item-header text-center">
+                            <img class="stages-item-img-margin-bottom" src="./img/svg/success.svg" alt="success">
+                            <h4 class="p2-size fw-700">Выдача автомобиля</h4>
+                        </div>
+                        <p class="p5-size">Растаможенный автомобиль продается вам на основании договора купли-продажи</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calc">
+        <div class="calc-bg flex al-items-center justify-center calc-img relative">
+            <div class="color-white calc-block">
+                <h2 class="h2-size fw-700 uppercase font-radius">Онлайн калькулятор</h2>
+                <div class="calc-wrapper">
+                    <p class="p4-size fw-700">С помощью нашего калькулятора Вы можете рассчитать стоимость вашего будущего автомобиля прямо сейчас.</p>
+                    <p class="calc-indent-mid">Если вы знаете, какой авто Вам нужен, просто заполните все поля и нажмите «Рассчитать».</p>
+                    <a href="#" class="btn flex al-items-center justify-center btn-white black-color border-radius pointer">Рассчитать стоимость</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="assortment-of-cars">
+            <div class="flex al-items-start justify-between">
+                <div class="assortment-car">
+                    <h2 class="h2-size fw-700 font-radius">Ассортимент автомобилей</h2>
+                    <div class="assortment-wrapper">
+                        <p class="p4-size assortment-item">Не важно какой суммой мы обладаем, мы всегда хотим совершить максимально выгодную покупку.</p>
+                        <p class="p4-size fw-700 assortment-item">Авто даже с незначительными повреждениями в США продаются с хорошим дисконтом. </p>
+                        <p class="p4-size assortment-item">Даже учитывая доставку, таможенную очистку и ремонт авто, выходит дешевле российского рынка на 
+                            <span class="fw-700 p4-size">20%, 30%, а то и 50%</span> !
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="border-text assortment-price fw-700 text-end price-indent-bottom">до 
+                        <span class="border-text font-radius assortment-price signika-num fw-700">1 500 000 &#36;</span>
+                    </p>
+                    <div class="platform relative">
+                        <p class="fw-700 arrow-line relative assortment-see-more">Посмотреть ещё</p>
+                        <img class="assortment-car-wrapper" src="./img/last-car.png" alt="car">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="for-buisness">
+                <h2 class="font-radius fw-700 h2-size buisness-title-bottom">ДЛЯ БИЗНЕСА</h2>
+                <div class="flex">
+                    <p class="border-text font-radius buisness-title">bastet</p>
+                    <div class="buisness-first-wrapper">
+                        <p class="p4-size">Самые выгодные покупки совершаются тогда, когда мы не привязываемся к конкретному авто, а просто играем выгодный лот.</p>
+                        <p class="buisness-first-item fw-700 p4-size buisness-item-mr-top">Порой авто в пути купить выгоднее, чем заказывать его с материка. </p>
+                    </div>
+                </div>
+                <div class="flex al-items-center">
+                    <p class="border-text font-radius buisness-title">car</p>
+                    <div class="buisness-second-wrapper">
+                        <p class="p4-size">
+                            <b class="p4-size fw-700">Мы привлекаем инвесторов</b>, чтобы у наших клиентов была возможность 
+                            <b class="p4-size fw-700">выгодно</b> и в кратчайшие сроки приобрести авто, которое уже направляется сюда.
+                        </p>
+                        <a href="#" class="btn flex al-items-center justify-center btn-sald color-white border-radius pointer buisness-item-mr-top">Услуги для бизнеса</a>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <div class="footer-bg relative">
+        <div class="container">
+            <section class="pre-footer">
+                <div class="pre-footer-wrapper color-white">
+                    <div class="pre-header flex justify-between al-items-end ">
+                        <img src="./img/svg/logo.svg" alt="logo">
+                        <div class="flex al-items-center pre-header-icons-gap">
+                            <a href="#"><img src="./img/svg/instagram.svg" alt="instagram"></a>
+                            <a href="#"><img src="./img/svg/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img src="./img/svg/whatsapp.svg" alt="whatsapp"></a>
+                            <a href="#"><img src="./img/svg/telegram.svg" alt="telegram"></a>
+                            <a href="#"><img src="./img/svg/vk.svg" alt="vk"></a>
+                        </div>
+                    </div>
+                    <div class="flex al-items-end">
+                        <div class="flex pre-footer-menu">
+                            <ul class="flex flex-column pre-item-indent">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Калькулятор</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                            </ul>
+                            <div class="flex flex-column pre-item-indent">
+                                <div class="pre-item-before pre-item-phone relative flex al-items-center">
+                                    <div class="flex flex-column">
+                                        <a href="#" class="header-phone-item">380 (98) 042 18 06</a>
+                                        <a href="#">380 (98) 042 18 06</a>
+                                    </div>
+                                </div>
+                                <p class="pre-item-before pre-item-pin flex al-items-center relative">г. Киев,  ул. Киевская, д. 36/1</p>
+                                <p class="pre-item-before pre-item-email flex al-items-center relative">carrrop@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="get-consultation-wrapper">
+                            <p class="p2-size get-consultation-margin-bottom">Получить консультацию</p>
+                            <form class="flex al-items-center">
+                                <input class="pre-email border-radius color-white" type="email" placeholder="E-mail">
+                                <input class="pre-btn-submit btn btn-white black-color border-radius pointer" type="submit" placeholder="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer class="footer">
+                <div class="footer-wrapper color-white flex al-items-center justify-between">
+                    <p class="p6-size">Политика обработки персональных данных &copy; 2023 *Bastet car*</p>
+                    <div class="copi flex al-items-center justify-center">
+                        <img src="./img/svg/copi.svg" alt="copi">
+                    </div>
+                </div>
+        </footer>
+        </div>
+    </div>
+    <section class="flex al-items-center justify-center">
+        <div class="choose-auto-cost flex al-items-center justify-center">
+            <div class="choose-auto-cost-bg flex al-items-center justify-center">
+                <div class="choose-auto-cost-wrapper color-white">
+                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
+                        <p class="p7-size">Стоимость тс</p>
+                        <p class="p7-size fw-700">3 000 000 ₽</p>
+                    </div>
+                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                        <p class="p7-size">Госпошлина</p>
+                        <p class="p7-size fw-700">200 000 ₽</p>
+                    </div>
+                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                        <p class="p7-size">Таможенное оформление</p>
+                        <p class="p7-size fw-700">500 000 ₽</p>
+                    </div>
+                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                        <p class="p7-size">Транспортировка по территории UA</p>
+                        <p class="p7-size fw-700">300 000 ₽</p>
+                    </div>
+                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                        <p class="p7-size">Транспортировка по территории США</p>
+                        <p class="p7-size fw-700">400 000 ₽</p>
+                    </div>
+                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                        <p class="p7-size">Страховка</p>
+                        <p class="p7-size fw-700">400 000 ₽</p>
+                    </div>
+                    <div class="choose-auto-cost-item flex al-items-center justify-between">
+                        <p class="p7-size">Сборы аукциона</p>
+                        <p class="p7-size fw-700">200 000 ₽</p>
+                    </div>
+                    <div class="choose-total-cost flex al-items-center justify-between">
+                        <p class="fw-700">Общая стоимость</p>
+                        <p class="fw-700">5 000 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

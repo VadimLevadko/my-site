@@ -1,0 +1,71 @@
+@media screen and (min-width: 2000px) {
+    .footer-bg::after {
+        max-width: 1100px;
+    }
+}
+@media screen and (max-width: 1460px) {
+    .container, .stage-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .calc-img::before {
+        max-width: 35%;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .buisness-title {
+        font-size: 145px;
+        line-height: 166px;
+    }
+    .buisness-item-mr-top {
+        margin-top: 12px;
+    }
+    .buisness-first-wrapper {
+        max-width: 473px;
+        margin-left: 40px;
+    }
+    .buisness-second-wrapper {
+        margin-left: 90px;
+    }
+    .assortment-car-wrapper {
+        padding-right: 0;
+    }
+    .platform::before {
+        left: 0;
+        bottom: -12px;
+    }
+    .assortment-car {
+        margin-right: 50px;
+    }
+    .dodge-platform::before {
+        max-width: 86%;
+    }
+    .auto-car {
+        max-width: 79%;
+        margin-top: 0;
+    }
+    .nav-indent {
+        justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .header .btn-on-black-white {
+        margin-left: 36px;
+    }
+    .header-items-wrapper {
+        column-gap: 39px;
+    }
+    .header-phone-block {
+        margin-left: 40px;
+    }
+    .header-logo {
+        margin-right: 20px;
+    }
+    .auto-main-wrapper {
+        padding-left: 30px;
+    }
+    .get-consultation-wrapper {
+        margin-left: 50px;
+    }
+}
