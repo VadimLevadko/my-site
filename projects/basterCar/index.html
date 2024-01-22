@@ -15,6 +15,43 @@
                 <div class="container">
                     <div class="nav-indent flex al-items-center flex-between">
                         <img class="header-logo" src="./img/svg/logo.svg" alt="logo">
+                        <div class="menu none">
+                            <input type="checkbox" id="menu-toggle">
+                            <label for="menu-toggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <div class="menu-bg">
+                                <div class="menu-items relative">
+                                    <ul class="menu-nav-items flex flex-column">
+                                        <li><a href="#">О компании</a></li>
+                                        <li><a href="#">Калькулятор</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">Отзывы</a></li>
+                                    </ul>
+
+                                    <div class="menu-wrapper-part-2 color-white relative">
+                                        <div class="flex flex-column pre-item-indent">
+                                            <div class="pre-item-before pre-item-phone relative flex al-items-center">
+                                                <div class="flex flex-column">
+                                                    <a href="#" class="header-phone-item color-white">380 (98) 042 18 06</a>
+                                                    <a class="color-white" href="#">380 (98) 042 18 06</a>
+                                                </div>
+                                            </div>
+                                            <p class="pre-item-before pre-item-pin flex al-items-center relative">г. Киев,  ул. Киевская, д. 36/1</p>
+                                            <p class="pre-item-before pre-item-email flex al-items-center relative">carrrop@mail.com</p>
+                                            <div class="flex al-items-center justify-center pre-header-icons-gap menu-apps-links">
+                                                <a href="#"><img src="./img/svg/instagram.svg" alt="instagram"></a>
+                                                <a href="#"><img src="./img/svg/youtube.svg" alt="youtube"></a>
+                                                <a href="#"><img src="./img/svg/whatsapp.svg" alt="whatsapp"></a>
+                                                <a href="#"><img src="./img/svg/telegram.svg" alt="telegram"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <nav class="nav flex flex-end al-items-center">
                             <ul class="header-items-wrapper flex">
                                 <li class="header-item"><a href="#" class="fs-18">О компании</a></li>
@@ -34,23 +71,23 @@
                     </div>
                     <div class="auto-from-usa">
                         <div class="auto-main-wrapper flex flex-column">
-                            <div class="flex">
+                            <div class="flex first-letter-part">
                                 <p class="h1-title border-text font-radius">авто</p>
                                 <p class="h1-title sald-color font-radius">мобили</p>
                             </div>
-                            <p class="h1-title uppercase sald-color font-radius">напрямую из</p>
-                            <p class="from-usa-title border-text uppercase border-text font-radius">сша</p>
+                            <p class="h1-title uppercase sald-color font-radius second-letter-part">напрямую из</p>
+                            <p class="from-usa-title border-text uppercase border-text font-radius third-letter-part">сша</p>
                         </div>
                         <div class="baster-car flex justify-between">
-                            <div class="baster-car-main relative">
-                                <div class="line baster-car-item">
+                            <div class="baster-car-main">
+                                <div class="line baster-car-item relative hidden">
                                     <p class="p3-size baster-car-comment">
                                         <span class="p1-size fw-600 baster-car-span">«Bastet car»</span> имеет большой опыт работы в сфере продажи автомобилей из США. 
                                         Благодаря оптимальной схеме работы приобрела надежную деловую репутацию.
                                     </p>
+                                    <p class="baster-car-item flex al-items-center">Полный цикл услуг без посредников</p>
                                 </div>
                                 <ul class="baster-car-wrapper flex flex-column row-gap-4">
-                                    <li class="baster-car-item flex al-items-center">Полный цикл услуг без посредников</li>
                                     <li class="baster-car-item flex al-items-center">Таможенная очистка</li>
                                     <li class="baster-car-item flex al-items-center">Участие в аукционе</li>
                                     <li class="baster-car-item flex al-items-center">Подбор и доставка</li>
@@ -59,7 +96,7 @@
                                 </ul>
                                 <a href="#" class="btn flex al-items-center justify-center btn-white black-color border-radius">Получить предложения</a>
                             </div>
-                            <div class="text-end">
+                            <div class="text-end dodge-wrapper">
                                 <div class="dodge-platform relative">
                                     <img class="auto-car relative" src="./img/first-car.png" alt="car">
                                 </div>
@@ -69,7 +106,7 @@
                 </div>
             </div>
     </header>
-    <section class="popular-models">
+    <!-- <section class="popular-models">
         <div class="models-top-bottom-padding">
             <h2 class="h2-size fw-700 text-center font-radius">Самые популярные модели</h2>
             <div class="swiper-container">
@@ -332,16 +369,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="choose-auto">
-        <div class="relative test flex al-items-center">
+        <div class="relative test flex al-items-center choose-global-wrapper">
             <div class="container">
                 <p class="choose-title border-text font-radius">Bastet Car</p>
-                <div class="flex justify-between al-items-center color-white">
+                <div class="flex justify-between al-items-center color-white choose-parent-wrapper">
                     <div class="mazda-platform relative">
                         <img class="choose-mazda" src="./img/second-car.png" alt="car">
                     </div>
-                    <div class="text-center">
+                    <div class="text-center choose-wrapper">
                         <h2 class="h2-size fw-700 font-radius">Поможем вам с выбором автомобиля</h2>
                         <p class="p4-size choose-comment">Специалист свяжется с вами в течение 15 минут </p>
                         <form id="choose-auto-form" class="form flex flex-column al-items-center wrap">
@@ -419,7 +456,7 @@
                         <p class="p5-size">Доставка в Украину и оформление всех сопутствующих документов для постановки на учёт</p>
                     </div>                    
                 </div>
-                <div class="stages-second-block stages-items-indent flex flex-column">
+                <div class="stages-second-block stages-items-indent flex al-items-center flex-column">
                     <div class="stages-item relative">
                         <p class="stages-num fw-400 font-radius border-text">2</p>
                         <div class="stages-item-header text-center">
@@ -478,7 +515,7 @@
     </section>
     <div class="container">
         <section class="assortment-of-cars">
-            <div class="flex al-items-start justify-between">
+            <div class="flex al-items-start justify-between assortment-global-wrapper">
                 <div class="assortment-car">
                     <h2 class="h2-size fw-700 font-radius">Ассортимент автомобилей</h2>
                     <div class="assortment-wrapper">
@@ -489,7 +526,7 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="assortment-img-wrapper">
                     <p class="border-text assortment-price fw-700 text-end price-indent-bottom">до 
                         <span class="border-text font-radius assortment-price signika-num fw-700">1 500 000 &#36;</span>
                     </p>
@@ -502,14 +539,14 @@
         </section>
         <section class="for-buisness">
                 <h2 class="font-radius fw-700 h2-size buisness-title-bottom">ДЛЯ БИЗНЕСА</h2>
-                <div class="flex">
+                <div class="flex for-buisness-first-block">
                     <p class="border-text font-radius buisness-title">bastet</p>
                     <div class="buisness-first-wrapper">
                         <p class="p4-size">Самые выгодные покупки совершаются тогда, когда мы не привязываемся к конкретному авто, а просто играем выгодный лот.</p>
                         <p class="buisness-first-item fw-700 p4-size buisness-item-mr-top">Порой авто в пути купить выгоднее, чем заказывать его с материка. </p>
                     </div>
                 </div>
-                <div class="flex al-items-center">
+                <div class="flex al-items-center for-buisness-second-block">
                     <p class="border-text font-radius buisness-title">car</p>
                     <div class="buisness-second-wrapper">
                         <p class="p4-size">
@@ -535,7 +572,7 @@
                             <a href="#"><img src="./img/svg/vk.svg" alt="vk"></a>
                         </div>
                     </div>
-                    <div class="flex al-items-end">
+                    <div class="flex al-items-end pre-footer-about">
                         <div class="flex pre-footer-menu">
                             <ul class="flex flex-column pre-item-indent">
                                 <li><a href="#">О компании</a></li>
@@ -574,46 +611,6 @@
         </footer>
         </div>
     </div>
-    <section class="flex al-items-center justify-center">
-        <div class="choose-auto-cost flex al-items-center justify-center">
-            <div class="choose-auto-cost-bg flex al-items-center justify-center">
-                <div class="choose-auto-cost-wrapper color-white">
-                    <div class="choose-auto-cost-item flex al-items-center justify-between p7-size">
-                        <p class="p7-size">Стоимость тс</p>
-                        <p class="p7-size fw-700">3 000 000 ₽</p>
-                    </div>
-                    <div class="choose-auto-cost-item flex al-items-center justify-between">
-                        <p class="p7-size">Госпошлина</p>
-                        <p class="p7-size fw-700">200 000 ₽</p>
-                    </div>
-                    <div class="choose-auto-cost-item flex al-items-center justify-between">
-                        <p class="p7-size">Таможенное оформление</p>
-                        <p class="p7-size fw-700">500 000 ₽</p>
-                    </div>
-                    <div class="choose-auto-cost-item flex al-items-center justify-between">
-                        <p class="p7-size">Транспортировка по территории UA</p>
-                        <p class="p7-size fw-700">300 000 ₽</p>
-                    </div>
-                    <div class="choose-auto-cost-item flex al-items-center justify-between">
-                        <p class="p7-size">Транспортировка по территории США</p>
-                        <p class="p7-size fw-700">400 000 ₽</p>
-                    </div>
-                    <div class="choose-auto-cost-item flex al-items-center justify-between">
-                        <p class="p7-size">Страховка</p>
-                        <p class="p7-size fw-700">400 000 ₽</p>
-                    </div>
-                    <div class="choose-auto-cost-item flex al-items-center justify-between">
-                        <p class="p7-size">Сборы аукциона</p>
-                        <p class="p7-size fw-700">200 000 ₽</p>
-                    </div>
-                    <div class="choose-total-cost flex al-items-center justify-between">
-                        <p class="fw-700">Общая стоимость</p>
-                        <p class="fw-700">5 000 000 ₽</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>

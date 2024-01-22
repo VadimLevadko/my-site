@@ -69,3 +69,445 @@
         margin-left: 50px;
     }
 }
+@media screen and (max-width: 1100px) {
+    .nav,  .header-bg::before,
+    .header-bg::after {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .header-bg {
+        background-color: var(--black-color);
+        padding-bottom: 40px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    .nav-indent {
+        padding-bottom: 50px;
+    }
+    .auto-main-wrapper {
+        padding-left: 0;
+    }
+    .dodge-platform::before {
+        z-index: 0;
+    }
+    .line::after {
+        top: 98px;
+    }
+    .baster-car-comment .p1-size {
+        font-size: 40px;
+    }
+    .line .baster-car-item {
+        margin-top: 24px;
+    }
+    .baster-car-comment {
+        font-size: 18px;
+    }
+    .test {
+        height: auto;
+    }
+    .test::before {
+        height: 850px;
+    }
+    .assortment-price {
+        font-size: 66px;
+    }
+    .mazda-platform {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .choose-mazda {
+        max-width: 400px;
+    }
+    .mazda-platform::before {
+        width: 400px;
+        height: 140px;
+        bottom: 0;
+    }
+    .choose-wrapper {
+        max-width: 500px;
+    }
+    .choose-title {
+        padding-top: 40px;
+    }
+    .calc-bg {
+        min-height: 720px;
+    }
+    .platform {
+        max-width: 540px;
+    }
+    .buisness-title {
+        font-size: 88px;
+        line-height: 156px;
+    }
+    .footer-bg::after,
+    .footer-bg::before {
+        display: none;
+    }
+    .pre-footer-menu {
+        column-gap: 158px;
+    }
+    .footer-bg {
+        background-color: var(--black-color);
+    }
+    .pre-header {
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .test::before, .stages-first-block::after, .stages-first-block::before,
+    .mazda-platform {
+        display: none;
+    }
+    .choose-title {
+        max-width: 1400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .choose-global-wrapper {
+        display: block;
+    }
+    .choose-auto .container {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .choose-parent-wrapper {
+        justify-content: center;
+        padding: 30px 20px;
+        background-color: var(--sald-hover);
+        border-radius: 5px;
+    }
+    .stages-first-block {
+        padding-right: 0;
+        border-right: none;
+        padding-top: 0;
+        max-width: 280px;
+        padding-right: 10px;
+    }
+    .stages-second-block {
+        max-width: 280px;
+        padding-left: 10px;
+    }
+    .stages-item,
+    .stages-second-block .stages-item {
+        max-width: 280px;
+    }
+    .stages-second-block {
+        padding-left: 0;
+    }
+    .stages-second-block .stages-num {
+        left: auto;
+    }
+    .stages-item-header {
+        text-align: start;
+    }
+    .stages-items-indent {
+        row-gap: 110px;
+    }
+    .stage-container {
+        margin-top: 120px;
+        margin-bottom: 100px;
+    }
+    .calc-bg {
+        min-height: 300px;
+        clip-path: none;
+        z-index: -1;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 5px;
+    }
+    .calc-block {
+        margin-left: 0;
+        text-align: center;
+    }
+    .calc .btn, .assortment-wrapper, .buisness-second-wrapper .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .calc-img::before {
+        max-width: 28%;
+    }
+    .assortment-img-wrapper {
+        order: -1;
+        margin: 0 auto;
+    }
+    .assortment-global-wrapper {
+        flex-direction: column;
+    }
+    .price-indent-bottom {
+        margin-bottom: 44px;
+    }
+    .platform::before {
+        height: auto;
+        min-height: 135px;
+        bottom: 0;
+    }
+    .assortment-car {
+        margin-right: 0;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .assortment-of-cars {
+        margin-top: 110px;
+    }
+    .buisness-title {
+        text-align: center;
+        line-height: 100px;
+    }
+    .buisness-first-wrapper {
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .buisness-first-item {
+        margin: 0 auto;
+        margin-top: 12px;
+        max-width: 70%;
+    }
+    .buisness-second-wrapper {
+        text-align: center;
+    }
+    .for-buisness-first-block, .for-buisness-second-block {
+        flex-direction: column;
+    }
+    .for-buisness-second-block {
+        margin-top: 20px;
+    }
+    .buisness-title-bottom {
+        text-align: center;
+    }
+    .buisness-second-wrapper {
+        margin-left: 0;
+    }
+    .for-buisness {
+        margin-top: 120px;
+    }
+    .pre-header-icons-gap {
+        column-gap: 28px;
+    }
+    .pre-footer-about {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .get-consultation-wrapper {
+        margin-top: 30px;
+    }
+    .auto-car {
+        max-width: 65%;
+    }
+    .baster-car-main {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .baster-car-comment {
+        max-width: 290px;
+    }
+    .line::after {
+        width: 307px;
+        height: 1px;
+        left: -150.5px;
+    }
+    .baster-car {
+        flex-direction: column;
+    }
+    .dodge-wrapper {
+        order: -1;
+    }
+    .dodge-platform::before {
+        max-width: 70%;
+    }
+    .baster-car-item {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 690px) {
+    .choose-title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .h2-size {
+        font-size: 24px;
+    }
+    .get-consultation-wrapper {
+        margin-left: 0;
+    }
+    .p4-size {
+        font-size: 18px;
+    }
+    .choose-comment {
+        margin-top: 16px;
+    }
+    .stages-num {
+        display: none;
+    }
+    .stages-item-header {
+        text-align: center;
+    }
+    .stages-items-indent {
+        row-gap: 66px;
+    }
+    .stages-second-block {
+        margin-top: 66px;
+    }
+    .stages-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .calc-img::before {
+        display: none;
+    }
+    .assortment-wrapper {
+        max-width: 535px;
+    }
+    .assortment-price {
+        font-size: 60px;
+        text-align: center;
+    }
+    .get-consultation-margin-bottom {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .nav-indent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pre-footer-menu {
+        display: none;
+    }
+    .dodge-platform::before {
+        max-width: 100%;
+        right: 0;
+    }
+    .auto-car {
+        max-width: 90%;
+    }
+    .h1-title {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .from-usa-title {
+        font-size: 110px;
+        line-height: 110px;
+        text-align: center;
+    }
+    .first-letter-part {
+        justify-content: center;
+    }
+    .second-letter-part,
+    .third-letter-part {
+        text-align: center;
+    }
+    .form {
+        min-height: 204px;
+        height: auto;
+    }
+    .form-notes {
+        min-height: 140px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .h2-size {
+        font-size: 22px;
+    }
+    .p2-size {
+        font-size: 20px;
+    }
+    .p4-size {
+        font-size: 16px;
+    }
+    .p5-size {
+        font-size: 14px;
+    }
+    .choose-title {
+        font-size: 44px;
+        line-height: 44px;
+    }
+    .h1-title {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .from-usa-title {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .dodge-platform::before {
+        height: 190px;
+    }
+    .auto-main-wrapper {
+        height: inherit;
+    }
+    .assortment-see-more {
+        left: 0;
+        font-size: 14px;
+    }
+    .assortment-price {
+        font-size: 48px;
+    }
+    .price-indent-bottom {
+        margin-bottom: 32px;
+    }
+    .platform::before {
+        min-height: 78px;
+        background-position: right;
+    }
+    .assortment-car-wrapper {
+        max-width: 76%;
+    }
+    .platform {
+        text-align: end;
+    }
+    .assortment-wrapper {
+        max-width: 388px;
+        margin-top: 28px;
+    }
+    .assortment-item + .assortment-item {
+        margin-top: 16px;
+    }
+    .buisness-title {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .buisness-first-wrapper {
+        max-width: 81%;
+    }
+    .for-buisness-second-block {
+        margin-top: 28px;
+    }
+    .p6-size {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .assortment-wrapper {
+        max-width: 230px;
+    }
+    .buisness-first-wrapper {
+        max-width: 72%;
+    }
+    .calc-bg {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .platform::before {
+        min-height: 60px;
+    }
+    .h1-title {
+        font-size: 35px;
+        line-height: 41px;
+    }
+    .dodge-platform {
+        min-height: 180px;
+    }
+    .dodge-platform::before {
+        height: 116px;
+    }
+}
