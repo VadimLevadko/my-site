@@ -413,6 +413,9 @@
     .form-notes {
         min-height: 140px;
     }
+    .footer-bg {
+        margin-top: 90px;
+    }
 }
 @media screen and (max-width: 490px) {
     .h2-size {
@@ -484,6 +487,9 @@
     }
     .p6-size {
         font-size: 10px;
+    }
+    .pre-footer .pre-header-icons-gap {
+        display: none;
     }
 }
 @media screen and (max-width: 430px) {
