@@ -782,9 +782,29 @@ select {
     padding-bottom: 8px;
 }
 
-
-
-
+.close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+.close li {
+    width: 22px;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    left: calc(50% - 13px);
+    transition: all 0.2s linear;
+    top: calc(50% - 1px);
+}
+.close li:first-child {
+    transform: rotate(45deg);
+}
+.close li:last-child {
+    transform: rotate(-45deg);
+}
 .menu {
     margin-left: 30px;
 }
@@ -793,7 +813,6 @@ select {
     width: 30px;
     height: 30px;
     position: relative;
-    z-index: 2;
 }
 .menu-icon span {
     width: 26px;
@@ -816,22 +835,8 @@ select {
     opacity: 0;
     position: absolute;
 }
-#menu-toggle:checked ~ .menu-icon span {
-    top: calc(50% - 1px);
-    background-color: #fff;
-}
-#menu-toggle:checked ~ .menu-icon span:first-child {
-    transform: rotate(45deg);
-}
-#menu-toggle:checked ~ .menu-icon span:nth-child(2) {
-    opacity: 0;
-}
-#menu-toggle:checked ~ .menu-icon span:last-child {
-    transform: rotate(-45deg);
-}
 .menu-bg {
     position: fixed;
-    display: none;
     width: 100%;
     height: 100%;
     top: 0;
@@ -863,9 +868,6 @@ select {
 .menu-nav-items a {
     color: black;
     font-size: 22px;
-}
-#menu-toggle:checked ~ .menu-bg {
-    display: flex;
 }
 .hidden {
     overflow: hidden;

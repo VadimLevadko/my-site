@@ -14,6 +14,9 @@
     }
 }
 @media screen and (max-width: 1300px) {
+    .header-phone-block, .buisness-first-wrapper {
+        margin-left: 40px;
+    }
     .buisness-title {
         font-size: 145px;
         line-height: 166px;
@@ -23,7 +26,6 @@
     }
     .buisness-first-wrapper {
         max-width: 473px;
-        margin-left: 40px;
     }
     .buisness-second-wrapper {
         margin-left: 90px;
@@ -56,9 +58,6 @@
     .header-items-wrapper {
         column-gap: 39px;
     }
-    .header-phone-block {
-        margin-left: 40px;
-    }
     .header-logo {
         margin-right: 20px;
     }
@@ -71,7 +70,8 @@
 }
 @media screen and (max-width: 1100px) {
     .nav,  .header-bg::before,
-    .header-bg::after {
+    .header-bg::after, .footer-bg::after,
+    .footer-bg::before {
         display: none;
     }
     .menu {
@@ -142,10 +142,6 @@
         font-size: 88px;
         line-height: 156px;
     }
-    .footer-bg::after,
-    .footer-bg::before {
-        display: none;
-    }
     .pre-footer-menu {
         column-gap: 158px;
     }
@@ -160,6 +156,24 @@
     .test::before, .stages-first-block::after, .stages-first-block::before,
     .mazda-platform {
         display: none;
+    }
+    .calc .btn, .assortment-wrapper, .buisness-second-wrapper .btn,
+    .assortment-img-wrapper, .assortment-car, .buisness-first-wrapper,
+    .buisness-first-item, .baster-car-main  {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .for-buisness-first-block, .for-buisness-second-block,
+    .assortment-global-wrapper, .pre-footer-about, .baster-car {
+        flex-direction: column;
+    }
+    .buisness-second-wrapper, .calc-block, .assortment-car,
+    .buisness-title, .buisness-first-wrapper, .buisness-title-bottom,
+    .baster-car-main {
+        text-align: center;
+    }
+    .assortment-img-wrapper, .dodge-wrapper {
+        order: -1;
     }
     .choose-title {
         max-width: 1400px;
@@ -224,21 +238,9 @@
     }
     .calc-block {
         margin-left: 0;
-        text-align: center;
-    }
-    .calc .btn, .assortment-wrapper, .buisness-second-wrapper .btn {
-        margin-left: auto;
-        margin-right: auto;
     }
     .calc-img::before {
         max-width: 28%;
-    }
-    .assortment-img-wrapper {
-        order: -1;
-        margin: 0 auto;
-    }
-    .assortment-global-wrapper {
-        flex-direction: column;
     }
     .price-indent-bottom {
         margin-bottom: 44px;
@@ -249,39 +251,23 @@
         bottom: 0;
     }
     .assortment-car {
-        margin-right: 0;
-        text-align: center;
-        margin: 0 auto;
         margin-top: 30px;
     }
     .assortment-of-cars {
         margin-top: 110px;
     }
     .buisness-title {
-        text-align: center;
         line-height: 100px;
     }
     .buisness-first-wrapper {
         max-width: 70%;
-        text-align: center;
-        margin: 0 auto;
     }
     .buisness-first-item {
-        margin: 0 auto;
         margin-top: 12px;
         max-width: 70%;
     }
-    .buisness-second-wrapper {
-        text-align: center;
-    }
-    .for-buisness-first-block, .for-buisness-second-block {
-        flex-direction: column;
-    }
     .for-buisness-second-block {
         margin-top: 20px;
-    }
-    .buisness-title-bottom {
-        text-align: center;
     }
     .buisness-second-wrapper {
         margin-left: 0;
@@ -293,7 +279,6 @@
         column-gap: 28px;
     }
     .pre-footer-about {
-        flex-direction: column;
         align-items: baseline;
     }
     .get-consultation-wrapper {
@@ -301,10 +286,6 @@
     }
     .auto-car {
         max-width: 65%;
-    }
-    .baster-car-main {
-        margin: 0 auto;
-        text-align: center;
     }
     .baster-car-comment {
         max-width: 290px;
@@ -314,12 +295,6 @@
         height: 1px;
         left: -150.5px;
     }
-    .baster-car {
-        flex-direction: column;
-    }
-    .dodge-wrapper {
-        order: -1;
-    }
     .dodge-platform::before {
         max-width: 70%;
     }
@@ -328,8 +303,20 @@
     }
 }
 @media screen and (max-width: 690px) {
-    .choose-title {
+    .stages-item-header,  .stages-wrapper,
+    .assortment-price {
+        text-align: center;
+    }
+    .stages-num, .calc-img::before {
+        display: none;
+    }
+    .assortment-price, .choose-title {
         font-size: 60px;
+    }
+    .p4-size, .get-consultation-margin-bottom {
+        font-size: 18px;
+    }
+    .choose-title {
         line-height: 60px;
     }
     .h2-size {
@@ -338,17 +325,8 @@
     .get-consultation-wrapper {
         margin-left: 0;
     }
-    .p4-size {
-        font-size: 18px;
-    }
     .choose-comment {
         margin-top: 16px;
-    }
-    .stages-num {
-        display: none;
-    }
-    .stages-item-header {
-        text-align: center;
     }
     .stages-items-indent {
         row-gap: 66px;
@@ -359,23 +337,16 @@
     .stages-wrapper {
         flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
-    }
-    .calc-img::before {
-        display: none;
     }
     .assortment-wrapper {
         max-width: 535px;
     }
-    .assortment-price {
-        font-size: 60px;
-        text-align: center;
-    }
-    .get-consultation-margin-bottom {
-        font-size: 18px;
-    }
 }
 @media screen and (max-width: 590px) {
+    .second-letter-part, .third-letter-part,
+    .from-usa-title {
+        text-align: center;
+    }
     .nav-indent {
         padding-left: 0;
         padding-right: 0;
@@ -397,14 +368,9 @@
     .from-usa-title {
         font-size: 110px;
         line-height: 110px;
-        text-align: center;
     }
     .first-letter-part {
         justify-content: center;
-    }
-    .second-letter-part,
-    .third-letter-part {
-        text-align: center;
     }
     .form {
         min-height: 204px;
@@ -418,6 +384,9 @@
     }
 }
 @media screen and (max-width: 490px) {
+    .for-buisness-second-block, .assortment-wrapper {
+        margin-top: 28px;
+    }
     .h2-size {
         font-size: 22px;
     }
@@ -470,7 +439,6 @@
     }
     .assortment-wrapper {
         max-width: 388px;
-        margin-top: 28px;
     }
     .assortment-item + .assortment-item {
         margin-top: 16px;
@@ -481,9 +449,6 @@
     }
     .buisness-first-wrapper {
         max-width: 81%;
-    }
-    .for-buisness-second-block {
-        margin-top: 28px;
     }
     .p6-size {
         font-size: 10px;

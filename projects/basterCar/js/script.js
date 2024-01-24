@@ -13,7 +13,6 @@ var swiper = new Swiper(".swiper-container", {
   loop: true,
 });
 
-
 const btn = document.querySelectorAll('.btn-details')
 
 btn.forEach(el => {
@@ -23,4 +22,16 @@ btn.forEach(el => {
     slide.classList.add('none')
     chooseDetails.classList.remove('none')
   })
+})
+
+const menuBg = document.querySelector('.menu-bg')
+const open = document.querySelector('.menu-icon')
+const close = document.querySelector('.close')
+
+open.addEventListener('click', function() {
+  menuBg.style.display = 'flex'
+  menuBg.style.opacity = 1
+})
+close.addEventListener('click', function() {
+  menuBg.style.display = 'none'
 })
