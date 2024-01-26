@@ -25,13 +25,16 @@ btn.forEach(el => {
 })
 
 const menuBg = document.querySelector('.menu-bg')
-const open = document.querySelector('.menu-icon')
+const open = document.querySelectorAll('.menu-icon')
 const close = document.querySelector('.close')
 
-open.addEventListener('click', function() {
-  menuBg.style.display = 'flex'
-  menuBg.style.opacity = 1
+open.forEach(btnOpen => {
+  btnOpen.addEventListener('click', () => {
+    event.preventDefault()
+    menuBg.style.display = 'flex'
+    menuBg.style.opacity = 1
+  })
 })
-close.addEventListener('click', function() {
+close.addEventListener('click', () => {
   menuBg.style.display = 'none'
 })

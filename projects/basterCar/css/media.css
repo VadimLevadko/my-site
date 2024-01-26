@@ -387,6 +387,10 @@
     .for-buisness-second-block, .assortment-wrapper {
         margin-top: 28px;
     }
+    .menu-wrapper-part-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .h2-size {
         font-size: 22px;
     }
@@ -455,6 +459,16 @@
     }
     .pre-footer .pre-header-icons-gap {
         display: none;
+    }
+    .pre-header {
+        align-items: center;
+    }
+    .pre-header .none {
+        display: block;
+    }
+    .close {
+        top: 16px;
+        right: 16px;
     }
 }
 @media screen and (max-width: 430px) {
