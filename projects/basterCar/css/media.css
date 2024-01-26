@@ -21,6 +21,12 @@
         font-size: 145px;
         line-height: 166px;
     }
+    .line::after {
+        width: 246px;
+    }
+    .baster-item-block {
+        margin-top: 22px;
+    }
     .buisness-item-mr-top {
         margin-top: 12px;
     }
@@ -154,7 +160,7 @@
 }
 @media screen and (max-width: 960px) {
     .test::before, .stages-first-block::after, .stages-first-block::before,
-    .mazda-platform {
+    .mazda-platform, .choose-auto .before::before {
         display: none;
     }
     .calc .btn, .assortment-wrapper, .buisness-second-wrapper .btn,
@@ -174,6 +180,12 @@
     }
     .assortment-img-wrapper, .dodge-wrapper {
         order: -1;
+    }
+    .choose-bg {
+        height: inherit;
+    }
+    .stages-wrapper {
+        justify-content: space-around;
     }
     .choose-title {
         max-width: 1400px;

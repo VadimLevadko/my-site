@@ -376,7 +376,7 @@ ul {
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 69%);
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
 }
 .choose-bg {
     height: 1148px;
