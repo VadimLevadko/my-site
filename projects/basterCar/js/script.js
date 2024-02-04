@@ -13,14 +13,12 @@ var swiper = new Swiper(".swiper-container", {
   loop: true,
 });
 
-const btn = document.querySelectorAll('.btn-details')
+const btnDetails = document.querySelectorAll('.btn-details')
 
-btn.forEach(el => {
-  el.addEventListener('click', function() {
-    const slide = this.parentElement.parentElement.parentElement
-    const chooseDetails = slide.parentElement.firstChild.nextElementSibling
-    slide.classList.add('none')
-    chooseDetails.classList.remove('none')
+btnDetails.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const flipCardInner = this.parentElement.parentElement.parentElement.parentElement
+    flipCardInner.style.transform = 'rotateY(180deg)'
   })
 })
 
