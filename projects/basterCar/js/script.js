@@ -18,9 +18,10 @@ const btnDetails = document.querySelectorAll('.btn-details')
 btnDetails.forEach(btn => {
   btn.addEventListener('click', function() {
     const flipCardInner = this.parentElement.parentElement.parentElement.parentElement
-    flipCardInner.style.transform = 'rotateY(180deg)'
+    flipCardInner.classList.add('rotate')
   })
 })
+
 
 const menuBg = document.querySelector('.menu-bg')
 const open = document.querySelectorAll('.menu-icon')
