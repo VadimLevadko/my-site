@@ -12,7 +12,7 @@
 <body>
     <header class="header">
             <div class="relative header-bg before after absolute">
-                <div class="container">
+                <div class="container margin-center">
                     <div class="nav-indent flex al-items-center flex-between">
                         <img class="header-logo" src="./img/svg/logo.svg" alt="logo">
                         <div class="menu none">
@@ -21,7 +21,7 @@
                                 <span></span>
                                 <span></span>
                             </label>
-                            <div class="menu-bg al-items-center justify-center flex-column none fadeIn">
+                            <div class="menu-bg al-items-center justify-center flex-column none">
                                 <div class="menu-items before after absolute relative">
                                     <ul class="close">
                                         <li></li>
@@ -72,13 +72,13 @@
                         </nav>
                     </div>
                     <div class="auto-from-usa">
-                        <div class="auto-main-wrapper flex flex-column">
+                        <div class="auto-main-wrapper flex flex-column margin-center">
                             <div class="flex first-letter-part">
                                 <p class="h1-title border-text font-radius">авто</p>
                                 <p class="h1-title sald-color font-radius">мобили</p>
                             </div>
                             <p class="h1-title uppercase sald-color font-radius second-letter-part">напрямую из</p>
-                            <p class="from-usa-title border-text uppercase border-text font-radius third-letter-part">сша</p>
+                            <p class="from-usa-title text-end border-text uppercase border-text font-radius third-letter-part">сша</p>
                         </div>
                         <div class="baster-car flex justify-between">
                             <div class="baster-car-main">
@@ -109,14 +109,14 @@
             </div>
     </header>
     <section class="popular-models">
-        <div class="container flex al-items-center justify-center flex-column modelSlider">
+        <div class="container flex al-items-center justify-center flex-column model-slider preverse-3d margin-center">
             <h2 class="h2-size fw-700 text-center font-radius popular-title-bottom">Самые популярные модели</h2>
-            <input type="radio" name="slider" id="s1" checked>
-            <input type="radio" name="slider" id="s2">
-            <input type="radio" name="slider" id="s3">
-            <input type="radio" name="slider" id="s4">
-            <input type="radio" name="slider" id="s5">
-            <div class="cards flex al-items-center">
+            <input class="none" type="radio" name="slider" id="s1" checked>
+            <input class="none" type="radio" name="slider" id="s2">
+            <input class="none" type="radio" name="slider" id="s3">
+            <input class="none" type="radio" name="slider" id="s4">
+            <input class="none" type="radio" name="slider" id="s5">
+            <div class="cards flex al-items-center preverse-3d">
                 <label class="model-slider-item preverse-3d" for="s1" id="slide1">
                     <div class="card-inner relative preverse-3d">
                         <div class="choose-auto-cost flex al-items-center justify-center">
@@ -387,7 +387,7 @@
     </section>
     <section class="choose-auto">
         <div class="relative choose-bg flex al-items-center choose-global-wrapper before absolute">
-            <div class="container">
+            <div class="container margin-center">
                 <p class="choose-title border-text font-radius">Bastet Car</p>
                 <div class="flex justify-between al-items-center color-white choose-parent-wrapper">
                     <div class="mazda-platform before absolute relative">
@@ -528,7 +528,7 @@
             </div>
         </div>
     </section>
-    <div class="container">
+    <div class="container margin-center">
         <section class="assortment-of-cars">
             <div class="flex al-items-start justify-between assortment-global-wrapper">
                 <div class="assortment-car">
@@ -574,7 +574,7 @@
         </section>
     </div>
     <div class="footer-bg before after absolute relative">
-        <div class="container">
+        <div class="container margin-center">
             <section class="pre-footer">
                 <div class="pre-footer-wrapper color-white">
                     <div class="pre-header flex justify-between al-items-end ">
@@ -633,7 +633,6 @@
         </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

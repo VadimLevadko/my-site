@@ -26,15 +26,18 @@ body {
     font-family: 'Signika', sans-serif;
     font-weight: 300;
 }
-img {
-    max-width: 100%;
-}
 a {
     color: inherit;
     text-decoration: none;
 }
 ul {
     list-style: none;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+img, .nav, .header-bg::before, .mazda-platform::before,
+.dodge-platform::before, .calc-bg, .calc-img::before,
+.platform::before, .menu-wrapper-part-2::before {
+    max-width: 100%;
 }
 .btn {
     display: inline-block;
@@ -58,10 +61,8 @@ ul {
 .black-color {
     color: var(--black-color);
 }
-/* -------------------------------------------------------------------------------------------------------------------------------- */
 .container {
     max-width: 1400px;
-    margin: 0 auto;
 }
 .color-white {
     color: var(--base-color);
@@ -172,15 +173,8 @@ ul {
 .none {
     display: none;
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    } 100% {
-        opacity: 1;
-    }
-}
-.fadeIn {
-    animation: fadeIn 0.3s;
+.text-center {
+    text-align: center;
 }
 .before::before,
 .after::after {
@@ -193,16 +187,18 @@ ul {
 .absolute::after {
     position: absolute;
 }
+.preverse-3d {
+    transform-style: preserve-3d;
+}
+.rotate {
+    transform: rotateY(180deg);
+}
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .header-items-wrapper {
     column-gap: 76px;
 }
 .nav {
-    max-width: 100%;
     width: 100%;
-}
-.text-center {
-    text-align: center;
 }
 .header-phone-block::before {
     width: 30px;
@@ -232,7 +228,6 @@ ul {
 .header-bg::before {
     top: 0;
     right: 0;
-    max-width: 100%;
     width: 100%;
     min-height: 1280px;
     background-color: #1B1821;
@@ -252,12 +247,10 @@ ul {
 .from-usa-title {
     font-size: 160px;
     line-height: 160px;
-    text-align: end;
     letter-spacing: 0;
 }
 .auto-main-wrapper {
     max-width: 596px;
-    margin: 0 auto;
     height: 246px;
 }
 .baster-car-main {
@@ -300,9 +293,6 @@ ul {
     background-image: url('../img/white-platform-for-car.png');
 }
 /* -------------------------------------------------------------------------------------------------------------------------------- */
-.slider-active {
-    max-width: 508px;
-}
 .models-item-padding {
     padding-left: 18px;
     padding-right: 18px;
@@ -320,28 +310,6 @@ ul {
 }
 .models-img-top-indent {
     padding-top: 32px;
-}
-
-.swiper-container {
-    width: 100%;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right {
-    background-image: none;
-}
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 508px;
-    height: 348px;
-    box-shadow: var(--shadow);
-    filter: blur(2px);
-    background: #FFF;
-}
-.swiper-slide-active {
-    filter: blur(0);
 }
 .price {
     margin-top: 4px;
@@ -362,6 +330,91 @@ ul {
 }
 .models-top-bottom-padding {
     margin-top: 200px;
+}
+.popular-models .container {
+    margin-top: 200px;
+}
+.popular-title-bottom {
+    margin-bottom: 48px;
+}
+.cards {
+    width: 100%;
+    min-height: 350px;
+    perspective: 1000px;
+}
+.cards .model-slider-item {
+    position: absolute;
+    width: 509px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+    height: 100%;
+}
+#s1:not(:checked)~.cards #slide1,
+#s2:not(:checked)~.cards #slide2,
+#s3:not(:checked)~.cards #slide3,
+#s4:not(:checked)~.cards #slide4,
+#s5:not(:checked)~.cards #slide5 {
+    filter: blur(2px);
+}
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+    transform: translate3d(-152%, 0, -220px);
+    scale: 0.82;
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+    transform: translate3d(-70%, 0, -120px);
+    scale: 0.951;
+}
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+    transform: translate3d(0, 0, 0);
+}
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+    transform: translate3d(70%, 0, -120px);
+    scale: 0.951;
+}
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+    transform: translate3d(152%, 0, -220px);
+    scale: 0.82;
+}
+.card-inner {
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    border-radius: 4px;
+    transition: transform 0.8s;
+    width: 100%;
+    height: 100%;
+}
+.front, .choose-auto-cost {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+.choose-auto-cost {
+    transform: rotateY(180deg);
 }
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .choose-title {
@@ -419,7 +472,7 @@ select {
 }
 .form {
     max-width: 480px;
-    height: 204px;
+    min-height: 206px;
     row-gap: 12px;
     column-gap: 14px;
     height: 204px;
@@ -443,7 +496,6 @@ select {
 }
 .mazda-platform::before {
     width: 100%;
-    max-width: 100%;
     height: 171px;
     background-image: url('../img/mazda-platform.png');
     bottom: 0;
@@ -454,7 +506,6 @@ select {
 }
 .dodge-platform::before {
     width: 100%;
-    max-width: 100%;
     height: 171px;
     background-image: url('../img/dodge-platform.png');
     right: -25px;
@@ -523,7 +574,6 @@ select {
 }
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .calc-bg {
-    max-width: 100%;
     min-height: 1148px;
     background-color: var(--black-color);
     clip-path: polygon(0 0, 100% 35%, 100% 55%, 0 100%);
@@ -537,7 +587,6 @@ select {
     margin-bottom: 24px;
 }
 .calc-img::before {
-    max-width: 100%;
     width: 100%;
     min-height: 778px;
     background-image: url(../img/calculator.png);
@@ -572,7 +621,6 @@ select {
 }
 .platform::before {
     width: 100%;
-    max-width: 100%;
     height: 171px;
     background-image: url('../img/blue-platform.png');
     left: -42px;
@@ -848,7 +896,6 @@ select {
 .menu-wrapper-part-2::before {
     left: 0;
     bottom: 0;
-    max-width: 100%;
     width: 100%;
     min-height: 100%;
     background-color: var(--black-color);
@@ -867,120 +914,4 @@ select {
 .menu-apps-links {
     z-index: 1;
     margin-top: 20px;
-}
-
-
-
-
-
-.modelSlider {
-    transform-style: preserve-3d;
-}
-.popular-models .container {
-    margin-top: 200px;
-}
-.popular-title-bottom {
-    margin-bottom: 48px;
-}
-.modelSlider input {
-    display: none;
-}
-.cards {
-    width: 100%;
-    min-height: 350px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-.cards .model-slider-item {
-    position: absolute;
-    width: 509px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.55s ease;
-    height: 100%;
-}
-.cards .card {
-    position: relative;
-    height: 100%;
-    background-color: #323444;
-    border-radius: 10px;
-    padding: 30px 35px;
-}
-#s1:not(:checked)~.cards #slide1,
-#s2:not(:checked)~.cards #slide2,
-#s3:not(:checked)~.cards #slide3,
-#s4:not(:checked)~.cards #slide4,
-#s5:not(:checked)~.cards #slide5 {
-    filter: blur(2px);
-}
-
-#s1:checked~.cards #slide4,
-#s2:checked~.cards #slide5,
-#s3:checked~.cards #slide1,
-#s4:checked~.cards #slide2,
-#s5:checked~.cards #slide3 {
-    transform: translate3d(-152%, 0, -220px);
-    scale: 0.82;
-}
-
-#s1:checked~.cards #slide5,
-#s2:checked~.cards #slide1,
-#s3:checked~.cards #slide2,
-#s4:checked~.cards #slide3,
-#s5:checked~.cards #slide4 {
-    transform: translate3d(-70%, 0, -120px);
-    scale: 0.951;
-}
-
-#s1:checked~.cards #slide1,
-#s2:checked~.cards #slide2,
-#s3:checked~.cards #slide3,
-#s4:checked~.cards #slide4,
-#s5:checked~.cards #slide5 {
-    transform: translate3d(0, 0, 0);
-}
-
-#s1:checked~.cards #slide2,
-#s2:checked~.cards #slide3,
-#s3:checked~.cards #slide4,
-#s4:checked~.cards #slide5,
-#s5:checked~.cards #slide1 {
-    transform: translate3d(70%, 0, -120px);
-    scale: 0.951;
-}
-
-#s1:checked~.cards #slide3,
-#s2:checked~.cards #slide4,
-#s3:checked~.cards #slide5,
-#s4:checked~.cards #slide1,
-#s5:checked~.cards #slide2 {
-    transform: translate3d(152%, 0, -220px);
-    scale: 0.82;
-}
-
-.preverse-3d {
-    transform-style: preserve-3d;
-}
-.card-inner {
-    box-shadow: var(--shadow);
-    background-color: #fff;
-    border-radius: 4px;
-    transition: transform 0.8s;
-    width: 100%;
-    height: 100%;
-}
-.front, .choose-auto-cost {
-    position: absolute;
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-}
-.choose-auto-cost {
-    transform: rotateY(180deg);
-}
-
-.rotate {
-    transform: rotateY(180deg) !important;
 }
