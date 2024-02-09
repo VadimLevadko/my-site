@@ -39,6 +39,9 @@ img, .nav, .header-bg::before, .mazda-platform::before,
 .platform::before, .menu-wrapper-part-2::before {
     max-width: 100%;
 }
+.signika-num {
+    font-family: 'Signika-num';
+}
 .btn {
     display: inline-block;
     width: 100%;
@@ -69,6 +72,9 @@ img, .nav, .header-bg::before, .mazda-platform::before,
 }
 .border-radius {
     border-radius: 4px;
+}
+.hidden {
+    overflow: hidden;
 }
 .flex {
     display: flex;
@@ -183,6 +189,9 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     background-repeat: no-repeat;
     background-size: contain;
 }
+.pos-absolute, .cards .model-slider-item, .front, .choose-auto-cost {
+    position: absolute;
+}
 .absolute::before,
 .absolute::after {
     position: absolute;
@@ -193,6 +202,43 @@ img, .nav, .header-bg::before, .mazda-platform::before,
 .rotate {
     transform: rotateY(180deg);
 }
+.header-phone-block::before,
+.pre-email {
+    margin-right: 8px;
+}
+.header-phone-block::before, .pre-item-before::before,
+.close, .menu-icon  {
+    width: 30px;
+    height: 30px;
+}
+.form, .menu-nav-items {
+    row-gap: 12px;
+}
+.header-bg::before, .header-bg::before, .dodge-platform::before,
+.calc-img::before, .platform::before, .footer-bg::before, 
+.menu-wrapper-part-2::after, .mazda-platform::before {
+    z-index: -1;
+}
+.choose-bg::before, .choose-bg::before,
+.footer-bg::after, .header-bg::after {
+    z-index: -2;
+}
+.pre-btn-submit, .pre-email {
+    border: 2px solid var(--base-color);
+}
+.menu-bg, .menu-items, .menu-items::after, .menu-apps-links {
+    z-index: 1;
+}
+.close, .select::after {
+    z-index: 2;
+}
+.line .baster-car-item:last-child, .calc-indent-mid,
+.assortment-item + .assortment-item, .buisness-item-mr-top {
+    margin-top: 24px;
+}
+.baster-car-wrapper, .choose-comment, .calc-indent-mid {
+    margin-bottom: 24px;
+}
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .header-items-wrapper {
     column-gap: 76px;
@@ -201,10 +247,7 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     width: 100%;
 }
 .header-phone-block::before {
-    width: 30px;
-    height: 30px;
     background-image: url('../img/svg/smartphone.svg');
-    margin-right: 8px;
 }
 .header-phone-block {
     margin-left: 154px;
@@ -232,7 +275,6 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     min-height: 1280px;
     background-color: #1B1821;
     clip-path: polygon(100% 0, 100% 100%, 0 0);
-    z-index: -1;
 }
 .header-bg::after {
     top: 0;
@@ -242,7 +284,6 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     min-height: 1082px;
     background-color: var(--sald-hover);
     clip-path: polygon(0 0, 100% 72%, 0% 100%);
-    z-index: -2;
 }
 .from-usa-title {
     font-size: 160px;
@@ -258,7 +299,6 @@ img, .nav, .header-bg::before, .mazda-platform::before,
 }
 .baster-car-wrapper {
     margin-top: 4px;
-    margin-bottom: 24px;
 }
 .baster-car-item::before {
     width: 5.5px;
@@ -270,9 +310,8 @@ img, .nav, .header-bg::before, .mazda-platform::before,
 .line::after {
     width: 247px;
     height: 1px;
-    background-color: #FFF;
+    background-color: var(--base-color);
     rotate: -90deg;
-    position: absolute;
     left: -120.5px;
     top: 128px;
 }
@@ -343,7 +382,6 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     perspective: 1000px;
 }
 .cards .model-slider-item {
-    position: absolute;
     width: 509px;
     left: 0;
     right: 0;
@@ -401,14 +439,13 @@ img, .nav, .header-bg::before, .mazda-platform::before,
 }
 .card-inner {
     box-shadow: var(--shadow);
-    background-color: #fff;
+    background-color: var(--base-color);
     border-radius: 4px;
     transition: transform 0.8s;
     width: 100%;
     height: 100%;
 }
 .front, .choose-auto-cost {
-    position: absolute;
     backface-visibility: hidden;
     width: 100%;
     height: 100%;
@@ -429,14 +466,12 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 69%);
     top: 0;
     right: 0;
-    z-index: -2;
 }
 .choose-bg {
     height: 1148px;
 }
 .choose-comment {
     margin-top: 32px;
-    margin-bottom: 24px;
 }
 .form-item {
     padding: 18px 24px;
@@ -445,7 +480,7 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     max-width: 234px;
     width: 100%;
     background-color: var(--sald-hover);
-    color: #FFF;
+    color: var(--base-color);
 }
 input::placeholder,
 textarea::placeholder {
@@ -461,11 +496,9 @@ textarea:focus-visible {
     width: 16px;
     height: 8px;
     background-image: url('../img/svg/select.svg');
-    background-repeat: no-repeat;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 2;
 }
 select {
     appearance: none;
@@ -473,10 +506,8 @@ select {
 .form {
     max-width: 480px;
     min-height: 206px;
-    row-gap: 12px;
     column-gap: 14px;
     height: 204px;
-    margin: 0 auto;
 }
 .form-notes {
     min-height: 100%;
@@ -499,7 +530,6 @@ select {
     height: 171px;
     background-image: url('../img/mazda-platform.png');
     bottom: 0;
-    z-index: -1;
 }
 .dodge-platform {
     min-height: 280px;
@@ -510,7 +540,6 @@ select {
     background-image: url('../img/dodge-platform.png');
     right: -25px;
     bottom: 0;
-    z-index: -1;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .stage-container {
@@ -524,7 +553,6 @@ select {
 .stages-num {
     font-size: 100px;
     line-height: 110px;
-    position: absolute;
     top: 0;
     right: 0;
 }
@@ -557,12 +585,12 @@ select {
 }
 .stages-first-block {
     padding-right: 130px;
-    border-right: 1px solid black;
+    border-right: 1px solid #000;
     padding-top: 28px;
 }
 .stages-first-block::after,
 .stages-first-block::before {
-    background-color: black;
+    background-color: #000;
     width: 5.5px;
     height: 5.5px;
     border-radius: 50%;
@@ -582,16 +610,11 @@ select {
     max-width: 418px;
     margin-top: 48px;
 }
-.calc-indent-mid {
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
 .calc-img::before {
     width: 100%;
     min-height: 778px;
-    background-image: url(../img/calculator.png);
+    background-image: url('../img/calculator.png');
     left: 0;
-    z-index: -1;
 }
 .calc-block {
     margin-left: 76px;
@@ -604,14 +627,8 @@ select {
     max-width: 484px;
     margin-top: 48px;
 }
-.assortment-item + .assortment-item {
-    margin-top: 24px;
-}
 .assortment-price {
     font-size: 78px;
-}
-.signika-num {
-    font-family: 'Signika-num';
 }
 .assortment-car-wrapper {
     padding-right: 82px;
@@ -624,7 +641,6 @@ select {
     height: 171px;
     background-image: url('../img/blue-platform.png');
     left: -42px;
-    z-index: -1;
     bottom: 0;
 }
 .arrow-line::after {
@@ -652,9 +668,6 @@ select {
 .buisness-first-item {
     max-width: 388px;
 }
-.buisness-item-mr-top {
-    margin-top: 24px;
-}
 .buisness-second-wrapper {
     max-width: 554px;
     margin-left: 124px;
@@ -673,7 +686,6 @@ select {
     min-height: 513px;
     background-color: var(--black-color);
     clip-path: polygon(0 0, 100% 75%, 100% 100%, 0% 100%);
-    z-index: -1;
 }
 .footer-bg::after {
     top: 0;
@@ -683,7 +695,6 @@ select {
     min-height: 354px;
     background-color: var(--sald-hover);
     clip-path: polygon(0 45%, 100% 6%, 100% 100%, 0% 100%);
-    z-index: -2;
 }
 .pre-header {
     margin-bottom: 52px;
@@ -697,8 +708,6 @@ select {
 }
 .pre-item-before::before {
     margin-right: 16px;
-    width: 30px;
-    height: 30px;
 }
 .pre-item-phone::before {
     background-image: url('../img/svg/smartphone.svg');
@@ -712,15 +721,12 @@ select {
 .pre-email {
     width: 100%;
     max-width: 234px;
-    height: 52px;
+    min-height: 52px;
     background: transparent;
-    border: 2px solid #FFF;
     padding: 18px 24px 14px 24px;
-    margin-right: 8px;
 }
 .pre-btn-submit {
     max-width: 134px;
-    border: 2px solid #FFF;
     min-height: 52px;
 }
 .get-consultation-wrapper {
@@ -742,7 +748,7 @@ select {
     width: 24.43px;
     height: 27px;
     border-radius: 64.285px;
-    background-color: #fff;
+    background-color: var(--base-color);
 }
 .pre-footer-menu {
     column-gap: 240px;
@@ -752,8 +758,6 @@ select {
     width: 100%;
     max-width: 509px;
     background-image: url('../img/cost-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .choose-auto-cost-bg {
     margin-top: 32px;
@@ -784,22 +788,18 @@ select {
     padding-top: 0px;
     padding-bottom: 8px;
 }
-
+/* -------------------------------------------------------------------------------------------------------------------------------- */
 .close {
     position: absolute;
     top: 32px;
     right: 32px;
-    width: 30px;
-    height: 30px;
-    z-index: 2;
 }
 .close li {
     width: 22px;
     height: 2px;
-    background-color: #FFF;
+    background-color: var(--base-color);
     position: absolute;
     left: calc(50% - 13px);
-    transition: all 0.2s linear;
     top: calc(50% - 1px);
 }
 .close li:first-child {
@@ -813,14 +813,11 @@ select {
 }
 .menu-icon {
     display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
 }
 .menu-icon span {
     width: 26px;
     height: 2px;
-    background-color: #FFF;
+    background-color: var(--base-color);
     position: absolute;
     left: calc(50% - 13px);
     transition: all 0.2s linear;
@@ -834,10 +831,6 @@ select {
 .menu-icon span:last-child {
     bottom: 20%;
 }
-#menu-toggle {
-    opacity: 0;
-    position: absolute;
-}
 .menu-bg {
     position: fixed;
     width: 100%;
@@ -847,30 +840,21 @@ select {
     font-size: 26px;
     row-gap: 30px;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
     padding-left: 20px;
     padding-right: 20px;
 }
 .menu-items {
     max-width: 465px;
     width: 100%;
-    background-color: #FFF;
-    text-align: center;
+    background-color: var(--base-color);
     padding-top: 108px;
-}
-.menu-nav-items {
-    row-gap: 12px;
 }
 .menu-items {
     color: #000;
-    z-index: 1;
 }
 .menu-nav-items a {
-    color: black;
+    color: #000;
     font-size: 22px;
-}
-.hidden {
-    overflow: hidden;
 }
 .menu-items::after {
     width: 100%;
@@ -879,7 +863,6 @@ select {
     top: 0;
     right: 0;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
-    z-index: 1;
 }
 .menu-items::before {
     max-width: 277px;
@@ -909,9 +892,7 @@ select {
     height: 85px;
     background-color: var(--sald-hover);
     clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
-    z-index: -1;
 }
 .menu-apps-links {
-    z-index: 1;
     margin-top: 20px;
 }
