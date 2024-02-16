@@ -90,8 +90,12 @@
         padding-right: 20px;
         z-index: 2;
     }
+    .table-container {
+        margin-bottom: 40px;
+    }
     .aside {
         padding-top: 42px;
+        padding-bottom: 20px;
     }
     .aside__footer-wrapper {
         margin-top: 50%;
