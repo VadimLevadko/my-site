@@ -118,4 +118,7 @@
     .table-container {
         overflow-x: scroll;
     }
+    .aside__footer-wrapper {
+        margin-top: 30%;
+    }
 }
