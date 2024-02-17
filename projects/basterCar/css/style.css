@@ -326,11 +326,6 @@ img, .nav, .header-bg::before, .mazda-platform::before,
     max-width: 94%;
     margin-top: -48px;
 }
-.auto-car::before {
-    width: 791px;
-    height: 171px;
-    background-image: url('../img/white-platform-for-car.png');
-}
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .models-item-padding {
     padding-left: 18px;
