@@ -81,6 +81,7 @@
         transition-duration: .25s;
         padding-left: 20px;
         padding-right: 20px;
+        background-color: var(--color-white);
         z-index: 2;
     }
     .table-container {
@@ -91,7 +92,7 @@
         padding-bottom: 20px;
     }
     .aside__footer-wrapper {
-        margin-top: 100%;
+        margin-top: 50%;
     }
     .table-container {
         margin-left: auto;
@@ -110,5 +111,8 @@
     }
     .table-container {
         overflow-x: scroll;
+    }
+    .aside__footer-wrapper {
+        margin-top: 20%;
     }
 }
