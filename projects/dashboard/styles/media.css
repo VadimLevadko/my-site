@@ -83,7 +83,7 @@
         margin: 0;
         padding: 80px 0;
         list-style: none;
-        background-color: #ECEFF1;
+        background-color: var(--color-white);
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
         transition-duration: .25s;
         padding-left: 20px;
@@ -98,7 +98,7 @@
         padding-bottom: 20px;
     }
     .aside__footer-wrapper {
-        margin-top: 50%;
+        margin-top: 100%;
     }
     .table-container {
         margin-left: auto;
@@ -117,8 +117,5 @@
     }
     .table-container {
         overflow-x: scroll;
-    }
-    .aside__footer-wrapper {
-        margin-top: 30%;
     }
 }
