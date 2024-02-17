@@ -52,6 +52,9 @@ input {
 .flex {
     display: flex;
 }
+.relative {
+    position: relative;
+}
 .fs-22 {
     font-size: 22px;
 }
@@ -207,6 +210,14 @@ input {
 .table__main {
     margin-bottom: 26px;
 }
+.table__main::before {
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    top: 36px;
+    background-color: var(--light-gray);
+}
 .table__main-table {
     padding-left: 36px;
     padding-right: 39px;
@@ -241,16 +252,13 @@ input {
     margin-right: 8px;
     background-image: url('../images/svg/search.svg');
 }
-.table__main-item th,
-.table__main-item td {
-    border-bottom: 1px solid var(--light-gray);
-}
 .table__main-item th {
-    padding-bottom: 14px;
+    padding-bottom: 15px;
 }
 .table__main-item td {
     padding-top: 16px;
     padding-bottom: 19px;
+    border-bottom: 1px solid var(--light-gray);
 }
 .table__main-btn-status-wrapper {
     width: 80px;
