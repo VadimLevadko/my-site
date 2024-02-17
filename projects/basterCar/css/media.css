@@ -191,7 +191,8 @@
     .header-bg {
         background-color: var(--black-color);
         padding-bottom: 40px;
-        border-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         margin-bottom: 50px;
     }
     .nav-indent {
