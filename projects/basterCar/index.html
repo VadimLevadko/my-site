@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-on-black-white flex al-items-center justify-center fs-18 fw-400 border-radius">Заказать звонок</a>
+                            <a data-get-call-open class="btn btn-on-black-white flex al-items-center justify-center fs-18 fw-400 border-radius pointer">Заказать звонок</a>
                         </nav>
                     </div>
                     <div class="auto-from-usa">
@@ -96,7 +96,7 @@
                                     <li class="baster-car-item flex al-items-center before">Страхование</li>
                                     <li class="baster-car-item flex al-items-center before">Ремонт авто</li>
                                 </ul>
-                                <a href="#" class="btn flex al-items-center justify-center btn-white black-color border-radius">Получить предложения</a>
+                                <a href="#choose-auto" class="btn flex al-items-center justify-center btn-white black-color border-radius">Получить предложения</a>
                             </div>
                             <div class="text-end dodge-wrapper">
                                 <div class="dodge-platform before absolute relative">
@@ -385,7 +385,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-auto">
+    <section id="choose-auto" class="choose-auto">
         <div class="relative choose-bg flex al-items-center choose-global-wrapper before absolute">
             <div class="container margin-center">
                 <p class="choose-title border-text font-radius">Bastet Car</p>
@@ -528,6 +528,31 @@
             </div>
         </div>
     </section>
+    <div data-get-call class="get-call-wrapper hide-form">
+        <div class="text-center choose-wrapper">
+            <div data-get-call-close class="close-wrapper margin-center text-end">
+                <img class="pointer" src="./img/svg/close-window-icon.svg" alt="Close window icon">
+            </div>
+            <h2 class="h2-size fw-700 font-radius">Поможем вам с выбором автомобиля</h2>
+            <p class="p4-size choose-comment">Специалист свяжется с вами в течение 15 минут </p>
+            <form class="form flex flex-column al-items-center wrap margin-center">
+                <input class="form-item" type="tel" placeholder="+380 (__)-__-__-___" required>
+                <input class="form-item" type="number" placeholder="Максимальный бюджет, &#36;" required min="3000000" max="5000000" step="250000">
+                <select class="form-item select relative" name="cars">
+                    <option value="Mazda CX5">Mazda CX5</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="Dodge Challenger">Dodge Challenger</option>
+                </select>
+                <textarea class="form-item form-notes" placeholder="Примечания"></textarea>
+            </form>
+            <p class="form-warning p7-size">Нажимая на кнопку вы даёте согласие на
+                <span class="dec-underline p7-size">обработку ваших персональных данных</span>
+            </p>
+            <button form="choose-auto-form" type="submit" class="btn flex al-items-center justify-center btn-white black-color border-radius margin-center pointer">
+                Получить предложения
+            </button>
+        </div>
+    </div>
     <div class="container margin-center">
         <section class="assortment-of-cars">
             <div class="flex al-items-start justify-between assortment-global-wrapper">
@@ -605,12 +630,16 @@
                             <div class="flex flex-column pre-item-indent">
                                 <div class="pre-item-before before pre-item-phone relative flex al-items-center">
                                     <div class="flex flex-column">
-                                        <a  href="tel:+380980421806" class="header-phone-item">380 (98) 042 18 06</a>
-                                        <a  href="tel:+380980421806">380 (98) 042 18 06</a>
+                                        <a href="tel:+380980421806" class="header-phone-item">380 (98) 042 18 06</a>
+                                        <a href="tel:+380980421806">380 (98) 042 18 06</a>
                                     </div>
                                 </div>
-                                <p class="pre-item-before before pre-item-pin flex al-items-center relative">г. Киев,  ул. Киевская, д. 36/1</p>
-                                <p class="pre-item-before before pre-item-email flex al-items-center relative">carrrop@mail.com</p>
+                                <p class="pre-item-before before pre-item-pin flex al-items-center relative">
+                                    <a href="https://maps.app.goo.gl/fEZreweZsrj6fLEr9">г.Киев, ул.Киевская, д.36/1</a>
+                                </p>
+                                <p class="pre-item-before before pre-item-email flex al-items-center relative">
+                                    <a href="mailto:carrrop@mail.com">carrrop@mail.com</a>
+                                </p>
                             </div>
                         </div>
                         <div class="get-consultation-wrapper">

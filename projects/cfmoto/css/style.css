@@ -183,8 +183,8 @@ strong {
     background: url('../images/main-bg.png') no-repeat;
     background-size: 100%;
     background-position: center;
-    padding-bottom: 192px;
     background-size: cover;
+    height: 100vh;
 }
 .header-btn {
     max-width: 274px;

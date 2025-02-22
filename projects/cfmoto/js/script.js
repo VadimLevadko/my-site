@@ -1,6 +1,6 @@
 const anwanserOpen = document.querySelectorAll('.open-anwanser')
 
-function defaulSetting() {
+function defaultSetting() {
     anwanserOpen.forEach((el) => {
         const parent = el.parentElement
         const preParent = parent.parentElement
@@ -15,7 +15,7 @@ anwanserOpen.forEach((elem) => {
         const parent = this.parentElement
         const preParent = parent.parentElement
         const p = preParent.children[1]
-        defaulSetting()
+        defaultSetting()
         this.classList.add('open-anwanser-active')
         preParent.classList.add('anwanser-border-active')
         p.classList.remove('hidden')

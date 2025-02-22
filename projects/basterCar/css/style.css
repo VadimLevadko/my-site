@@ -14,9 +14,12 @@
     --p6-size: 14px;
     --p7-size: 12px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden; 
-    overflow-y: auto
+    overflow-y: auto;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -890,4 +893,22 @@ select {
 }
 .menu-apps-links {
     margin-top: 20px;
+}
+
+.get-call-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--base-color);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #121214CC;
+}
+.close-wrapper {
+    max-width: 50%;
+}
+.hide-form {
+    display: none;
 }

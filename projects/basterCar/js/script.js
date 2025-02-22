@@ -22,3 +22,18 @@ open.forEach(btnOpen => {
 close.addEventListener('click', () => {
   menuBg.style.display = 'none'
 })
+
+const callForm = document.querySelector('[data-get-call]');
+const getCallBtnOpen = document.querySelector('[data-get-call-open]');
+const getCallBtnClose = document.querySelector('[data-get-call-close]');
+
+const handleCloseForm = () => {
+  return callForm.classList.add('hide-form')
+}
+
+const handleOpenForm = () => {
+  return callForm.classList.remove('hide-form')
+}
+
+getCallBtnOpen.addEventListener('click', handleOpenForm)
+getCallBtnClose.addEventListener('click', handleCloseForm)
